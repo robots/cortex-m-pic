@@ -1,0 +1,1 @@
+FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o: startup_stm32g031xx.c

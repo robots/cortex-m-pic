@@ -1,0 +1,1262 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+                              FLASH_RUN/stm32g0_disco/main.o (printf)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+                              FLASH_RUN/stm32g0_disco/main.o (puts)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o) (__swbuf_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o) (__swsetup_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o) (_fflush_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o) (__sinit)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o) (_fwalk)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o) (_global_impure_ptr)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o) (__retarget_lock_init_recursive)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o) (__smakebuf_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o) (memset)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o) (_free_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o) (_malloc_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o) (_vfprintf_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o) (_printf_i)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o) (__sread)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o) (_write_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o) (_close_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o) (_fstat_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o) (__sfvwrite_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o) (_isatty_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o) (_lseek_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o) (memchr)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o) (memcpy)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o) (memmove)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o) (_realloc_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o) (_read_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o) (errno)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o) (__gnu_thumb1_case_shi)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                              FLASH_RUN/stm32g0_disco/system_stm32g0xx.o (__aeabi_uidiv)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o) (__aeabi_idiv)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o) (_read)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-errno.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o) (__errno)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-strlen.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o) (strlen)
+
+Allocating common symbols
+Common symbol       size              file
+
+__lock___atexit_recursive_mutex
+                    0x1               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___arc4random_mutex
+                    0x1               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+errno               0x4               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+__lock___env_recursive_mutex
+                    0x1               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___sinit_recursive_mutex
+                    0x1               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___malloc_recursive_mutex
+                    0x1               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___at_quick_exit_mutex
+                    0x1               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___dd_hash_mutex
+                    0x1               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___tz_mutex   0x1               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___sfp_recursive_mutex
+                    0x1               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/main.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/main.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/main.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .text._printf_r
+                0x0000000000000000       0x28 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .text.__swbuf  0x0000000000000000       0x14 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+ .text.fflush   0x0000000000000000       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_lock
+                0x0000000000000000       0x18 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_unlock
+                0x0000000000000000       0x18 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .text._cleanup
+                0x0000000000000000       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_lock_all
+                0x0000000000000000       0x1c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_unlock_all
+                0x0000000000000000       0x1c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+ .text._fwalk   0x0000000000000000       0x36 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_init
+                0x0000000000000000        0x2 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_close
+                0x0000000000000000        0x2 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_close_recursive
+                0x0000000000000000        0x2 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_acquire
+                0x0000000000000000        0x2 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire
+                0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_try_acquire_recursive
+                0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .text.__retarget_lock_release
+                0x0000000000000000        0x2 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.__sprint_r
+                0x0000000000000000       0x1c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.vfprintf
+                0x0000000000000000       0x18 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+ .text.__seofread
+                0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .text.__sfvwrite_r
+                0x0000000000000000      0x2cc /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .debug_frame   0x0000000000000000       0x30 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .text.memcpy   0x0000000000000000       0x12 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000000       0x28 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .text.memmove  0x0000000000000000       0x26 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000000000       0x28 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .text._realloc_r
+                0x0000000000000000       0x4c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x0000000000000000       0x30 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x0000000000000000       0x1a /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x0000000000000000       0xcc /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .text._malloc_usable_size_r
+                0x0000000000000000       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x0000000000000000       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .text          0x0000000000000000      0x1d4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .debug_frame   0x0000000000000000       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._getpid  0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._stat    0x0000000000000000       0x3c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._swiopen
+                0x0000000000000000       0xbc /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._open    0x0000000000000000       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .rodata._get_semihosting_exts.str1.1
+                0x0000000000000000       0x16 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._get_semihosting_exts
+                0x0000000000000000       0xac /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text.initialise_semihosting_exts
+                0x0000000000000000       0x34 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._has_ext_exit_extended
+                0x0000000000000000       0x18 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._has_ext_stdout_stderr
+                0x0000000000000000       0x18 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .rodata.initialise_monitor_handles.str1.1
+                0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text.initialise_monitor_handles
+                0x0000000000000000       0xb4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._link    0x0000000000000000       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._unlink  0x0000000000000000       0x24 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._gettimeofday
+                0x0000000000000000       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._clock   0x0000000000000000       0x12 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._times   0x0000000000000000       0x18 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._system  0x0000000000000000       0x40 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._rename  0x0000000000000000       0x34 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .bss.monitor_stderr
+                0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .bss.monitor_stdin
+                0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .bss.monitor_stdout
+                0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .data.supports_ext_exit_extended
+                0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .data.supports_ext_stdout_stderr
+                0x0000000000000000        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-errno.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-errno.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-errno.o)
+ .text          0x0000000000000000        0xe /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-strlen.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-strlen.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x0000000020000000 0x0000000000002000 xrw
+FLASH            0x0000000008000000 0x0000000000008000 xr
+EEMUL            0x0000000008008000 0x0000000000000000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD FLASH_RUN/stm32g0_disco/main.o
+LOAD FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+LOAD FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a
+START GROUP
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a
+END GROUP
+START GROUP
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a
+END GROUP
+                0x0000000020002000                _estack = (ORIGIN (RAM) + LENGTH (RAM))
+                0x0000000008008000                _seemul = ORIGIN (EEMUL)
+                0x0000000020001f00                _end_ram = ((ORIGIN (RAM) + LENGTH (RAM)) - _Minimum_Stack_Size)
+                0x0000000000000100                _Minimum_Stack_Size = 0x100
+                0x0000000000000001                ASSERT ((ORIGIN (FLASH) == ALIGN (ORIGIN (FLASH), 0x80)), Start of memory region flash not aligned for startup vector table)
+
+.text           0x0000000008000000     0x192c
+                0x0000000008000000                . = ALIGN (0x80)
+                0x0000000000000000                _isr_vectorsflash_offs = (. - 0x8000000)
+ *(.isr_vectorsflash)
+ .isr_vectorsflash
+                0x0000000008000000       0xbc FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+                0x0000000008000000                g_pfnVectors
+                0x00000000080000bc                . = ALIGN (0x4)
+ *(.text)
+ .text          0x00000000080000bc       0x14 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                0x00000000080000bc                __gnu_thumb1_case_shi
+ .text          0x00000000080000d0      0x114 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x00000000080000d0                __udivsi3
+                0x00000000080000d0                __aeabi_uidiv
+                0x00000000080001dc                __aeabi_uidivmod
+ .text          0x00000000080001e4        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x00000000080001e4                __aeabi_ldiv0
+                0x00000000080001e4                __aeabi_idiv0
+ *(.text.*)
+ .text.main     0x00000000080001e8       0xd8 FLASH_RUN/stm32g0_disco/main.o
+                0x00000000080001e8                main
+ .text.Reset_Handler
+                0x00000000080002c0        0xe FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+                0x00000000080002c0                Reset_Handler
+ *fill*         0x00000000080002ce        0x2 
+ .text.__Init_Data
+                0x00000000080002d0       0x60 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+                0x00000000080002d0                __Init_Data
+ .text.Default_Handler
+                0x0000000008000330        0x6 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+                0x0000000008000330                TIM1_CC_IRQHandler
+                0x0000000008000330                SysTick_Handler
+                0x0000000008000330                PVD_IRQHandler
+                0x0000000008000330                PendSV_Handler
+                0x0000000008000330                I2C1_IRQHandler
+                0x0000000008000330                LPTIM2_IRQHandler
+                0x0000000008000330                RTC_TAMP_IRQHandler
+                0x0000000008000330                SPI1_IRQHandler
+                0x0000000008000330                DMA1_Ch4_5_DMAMUX1_OVR_IRQHandler
+                0x0000000008000330                EXTI2_3_IRQHandler
+                0x0000000008000330                ADC1_IRQHandler
+                0x0000000008000330                I2C2_IRQHandler
+                0x0000000008000330                TIM17_IRQHandler
+                0x0000000008000330                TIM16_IRQHandler
+                0x0000000008000330                TIM3_IRQHandler
+                0x0000000008000330                EXTI4_15_IRQHandler
+                0x0000000008000330                RCC_IRQHandler
+                0x0000000008000330                DMA1_Channel1_IRQHandler
+                0x0000000008000330                Default_Handler
+                0x0000000008000330                LPUSART1_IRQHandler
+                0x0000000008000330                TIM14_IRQHandler
+                0x0000000008000330                EXTI0_1_IRQHandler
+                0x0000000008000330                SPI2_IRQHandler
+                0x0000000008000330                MemManage_Handler
+                0x0000000008000330                SVC_Handler
+                0x0000000008000330                WWDG_IRQHandler
+                0x0000000008000330                TIM2_IRQHandler
+                0x0000000008000330                DMA1_Channel2_3_IRQHandler
+                0x0000000008000330                USART2_IRQHandler
+                0x0000000008000330                FLASH_IRQHandler
+                0x0000000008000330                USART1_IRQHandler
+                0x0000000008000330                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x0000000008000330                LPTIM1_IRQHandler
+                0x0000000008000330                MMI_Handler
+ *fill*         0x0000000008000336        0x2 
+ .text.SystemInit
+                0x0000000008000338       0x18 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000008000338                SystemInit
+ .text.SystemCoreClockUpdate
+                0x0000000008000350      0x12c FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000008000350                SystemCoreClockUpdate
+ .text.printf   0x000000000800047c       0x34 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+                0x000000000800047c                printf
+                0x000000000800047c                iprintf
+ .text._puts_r  0x00000000080004b0       0xe4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+                0x00000000080004b0                _puts_r
+ .text.puts     0x0000000008000594       0x14 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+                0x0000000008000594                puts
+ .text.__swbuf_r
+                0x00000000080005a8       0xac /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                0x00000000080005a8                __swbuf_r
+ .text.__swsetup_r
+                0x0000000008000654       0xf0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                0x0000000008000654                __swsetup_r
+ .text.__sflush_r
+                0x0000000008000744      0x118 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                0x0000000008000744                __sflush_r
+ .text._fflush_r
+                0x000000000800085c       0x80 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                0x000000000800085c                _fflush_r
+ .text.std      0x00000000080008dc       0x48 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .text._cleanup_r
+                0x0000000008000924       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008000924                _cleanup_r
+ .text.__sfmoreglue
+                0x0000000008000934       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008000934                __sfmoreglue
+ .text.__sfp_lock_acquire
+                0x0000000008000960       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008000960                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x0000000008000970       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008000970                __sfp_lock_release
+ .text.__sinit_lock_acquire
+                0x0000000008000980       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008000980                __sinit_lock_acquire
+ .text.__sinit_lock_release
+                0x0000000008000990       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008000990                __sinit_lock_release
+ .text.__sinit  0x00000000080009a0       0x70 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x00000000080009a0                __sinit
+ .text.__sfp    0x0000000008000a10       0x90 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008000a10                __sfp
+ .text._fwalk_reent
+                0x0000000008000aa0       0x40 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+                0x0000000008000aa0                _fwalk_reent
+ .text.__retarget_lock_init_recursive
+                0x0000000008000ae0        0x2 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x0000000008000ae0                __retarget_lock_init_recursive
+ .text.__retarget_lock_acquire_recursive
+                0x0000000008000ae2        0x2 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x0000000008000ae2                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_release_recursive
+                0x0000000008000ae4        0x2 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x0000000008000ae4                __retarget_lock_release_recursive
+ *fill*         0x0000000008000ae6        0x2 
+ .text.__swhatbuf_r
+                0x0000000008000ae8       0x50 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+                0x0000000008000ae8                __swhatbuf_r
+ .text.__smakebuf_r
+                0x0000000008000b38       0x88 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+                0x0000000008000b38                __smakebuf_r
+ .text.memset   0x0000000008000bc0       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x0000000008000bc0                memset
+ .text._free_r  0x0000000008000bd0       0x94 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+                0x0000000008000bd0                _free_r
+ .text._malloc_r
+                0x0000000008000c64       0xbc /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000008000c64                _malloc_r
+ .text.__sfputc_r
+                0x0000000008000d20       0x2a /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.__sfputs_r
+                0x0000000008000d4a       0x24 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008000d4a                __sfputs_r
+ *fill*         0x0000000008000d6e        0x2 
+ .text._vfprintf_r
+                0x0000000008000d70      0x274 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008000d70                _vfiprintf_r
+                0x0000000008000d70                _vfprintf_r
+ .text._printf_common
+                0x0000000008000fe4       0xde /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000008000fe4                _printf_common
+ *fill*         0x00000000080010c2        0x2 
+ .text._printf_i
+                0x00000000080010c4      0x224 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000080010c4                _printf_i
+ .text._sbrk_r  0x00000000080012e8       0x24 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+                0x00000000080012e8                _sbrk_r
+ .text.__sread  0x000000000800130c       0x28 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                0x000000000800130c                __sread
+ .text.__swrite
+                0x0000000008001334       0x38 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001334                __swrite
+ .text.__sseek  0x000000000800136c       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                0x000000000800136c                __sseek
+ .text.__sclose
+                0x0000000008001398        0xc /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001398                __sclose
+ .text._write_r
+                0x00000000080013a4       0x28 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+                0x00000000080013a4                _write_r
+ .text._close_r
+                0x00000000080013cc       0x24 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+                0x00000000080013cc                _close_r
+ .text._fstat_r
+                0x00000000080013f0       0x24 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+                0x00000000080013f0                _fstat_r
+ .text._isatty_r
+                0x0000000008001414       0x24 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+                0x0000000008001414                _isatty_r
+ .text._lseek_r
+                0x0000000008001438       0x28 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+                0x0000000008001438                _lseek_r
+ .text.memchr   0x0000000008001460       0x16 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+                0x0000000008001460                memchr
+ *fill*         0x0000000008001476        0x2 
+ .text.__malloc_lock
+                0x0000000008001478       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                0x0000000008001478                __malloc_lock
+ .text.__malloc_unlock
+                0x0000000008001488       0x10 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                0x0000000008001488                __malloc_unlock
+ .text._read_r  0x0000000008001498       0x28 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+                0x0000000008001498                _read_r
+ .text.findslot
+                0x00000000080014c0       0x34 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text.checkerror
+                0x00000000080014f4       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text.error    0x0000000008001514       0x1c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .text._swiread
+                0x0000000008001530       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x0000000008001530                _swiread
+ .text._read    0x0000000008001550       0x34 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x0000000008001550                _read
+ .text._swilseek
+                0x0000000008001584       0x76 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x0000000008001584                _swilseek
+ .text._lseek   0x00000000080015fa        0x8 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x00000000080015fa                _lseek
+ .text._swiwrite
+                0x0000000008001602       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x0000000008001602                _swiwrite
+ .text._write   0x0000000008001622       0x3e /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x0000000008001622                _write
+ .text._swiclose
+                0x0000000008001660       0x18 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x0000000008001660                _swiclose
+ .text._close   0x0000000008001678       0x4c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x0000000008001678                _close
+ .text._sbrk    0x00000000080016c4       0x4c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x00000000080016c4                _sbrk
+ .text._swistat
+                0x0000000008001710       0x44 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x0000000008001710                _swistat
+ .text._fstat   0x0000000008001754       0x1a /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x0000000008001754                _fstat
+ .text._isatty  0x000000000800176e       0x3a /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x000000000800176e                _isatty
+ .text.__errno  0x00000000080017a8        0xc /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-errno.o)
+                0x00000000080017a8                __errno
+ *(.stub .gnu.linkonce.t.*)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00000000080017b4       0x7f FLASH_RUN/stm32g0_disco/main.o
+ *fill*         0x0000000008001833        0x1 
+ .rodata.AHBPrescTable
+                0x0000000008001834       0x40 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000008001834                AHBPrescTable
+ .rodata.APBPrescTable
+                0x0000000008001874       0x20 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000008001874                APBPrescTable
+ .rodata.__sf_fake_stderr
+                0x0000000008001894       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008001894                __sf_fake_stderr
+ .rodata.__sf_fake_stdin
+                0x00000000080018b4       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x00000000080018b4                __sf_fake_stdin
+ .rodata.__sf_fake_stdout
+                0x00000000080018d4       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x00000000080018d4                __sf_fake_stdout
+ .rodata._global_impure_ptr
+                0x00000000080018f4        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                0x00000000080018f4                _global_impure_ptr
+ .rodata._vfprintf_r.str1.1
+                0x00000000080018f8       0x11 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .rodata._printf_i.str1.1
+                0x0000000008001909       0x22 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *(.glue_7 .glue_7t)
+ .glue_7        0x000000000800192b        0x0 linker stubs
+ .glue_7t       0x000000000800192b        0x0 linker stubs
+                0x000000000800192c                . = ALIGN (0x4)
+ *fill*         0x000000000800192b        0x1 
+                0x000000000800192c                _etext = .
+
+.vfp11_veneer   0x000000000800192c        0x0
+ .vfp11_veneer  0x000000000800192c        0x0 linker stubs
+
+.v4_bx          0x000000000800192c        0x0
+ .v4_bx         0x000000000800192c        0x0 linker stubs
+
+.iplt           0x000000000800192c        0x0
+ .iplt          0x000000000800192c        0x0 FLASH_RUN/stm32g0_disco/main.o
+
+.rel.dyn        0x000000000800192c        0x0
+ .rel.iplt      0x000000000800192c        0x0 FLASH_RUN/stm32g0_disco/main.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x000000000800192c        0x0
+                0x000000000800192c                __exidx_start = .
+ *(.ARM.exidx*)
+                0x000000000800192c                __exidx_end = .
+                0x000000000800192c                _sidata = .
+
+.data           0x0000000020000000       0x70 load address 0x000000000800192c
+                0x0000000020000000                . = .
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                PROVIDE (_sdata = .)
+                0x0000000020000000                . = ALIGN (0x80)
+                0x0000000000000000                _isr_vectorsram_offs = (. - 0x20000000)
+ *(.isr_vectorsram)
+                0x0000000020000000                . = ALIGN (0x4)
+ *(.ramfunc*)
+                0x0000000020000000                . = ALIGN (0x4)
+ *(.data .data.*)
+ .data.SystemCoreClock
+                0x0000000020000000        0x4 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000020000000                SystemCoreClock
+ .data.SystemAPBClock
+                0x0000000020000004        0x4 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000020000004                SystemAPBClock
+ .data._impure_ptr
+                0x0000000020000008        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                0x0000000020000008                _impure_ptr
+ .data.impure_data
+                0x000000002000000c       0x60 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data.__heap_limit
+                0x000000002000006c        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                0x000000002000006c                __heap_limit
+ *(.gnu.linkonce.d.*)
+                0x0000000020000070                . = ALIGN (0x4)
+                0x0000000020000070                PROVIDE (_edata = .)
+
+.igot.plt       0x0000000020000070        0x0 load address 0x000000000800199c
+ .igot.plt      0x0000000020000070        0x0 FLASH_RUN/stm32g0_disco/main.o
+
+.bss            0x0000000020000070       0xbc load address 0x000000000800199c
+                0x0000000020000070                . = ALIGN (0x4)
+                0x0000000020000070                PROVIDE (_sbss = .)
+ *(.bss .bss.*)
+ .bss.__malloc_free_list
+                0x0000000020000070        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000020000070                __malloc_free_list
+ .bss.__malloc_sbrk_start
+                0x0000000020000074        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000020000074                __malloc_sbrk_start
+ .bss.heap_end.6339
+                0x0000000020000078        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .bss.openfiles
+                0x000000002000007c       0xa0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ *(COMMON)
+ COMMON         0x000000002000011c        0x9 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x000000002000011c                __lock___atexit_recursive_mutex
+                0x000000002000011d                __lock___arc4random_mutex
+                0x000000002000011e                __lock___env_recursive_mutex
+                0x000000002000011f                __lock___sinit_recursive_mutex
+                0x0000000020000120                __lock___malloc_recursive_mutex
+                0x0000000020000121                __lock___at_quick_exit_mutex
+                0x0000000020000122                __lock___dd_hash_mutex
+                0x0000000020000123                __lock___tz_mutex
+                0x0000000020000124                __lock___sfp_recursive_mutex
+ *fill*         0x0000000020000125        0x3 
+ COMMON         0x0000000020000128        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+                0x0000000020000128                errno
+                0x000000002000012c                . = ALIGN (0x4)
+                0x000000002000012c                PROVIDE (_ebss = .)
+                0x000000002000012c                _end_sram = .
+                0x000000002000012c                PROVIDE (end = _ebss)
+                [!provide]                        PROVIDE (_end = _ebss)
+
+._usrstack      0x000000002000012c      0x100 load address 0x0000000008001a58
+                0x000000002000012c                . = ALIGN (0x4)
+                0x000000002000012c                _susrstack = .
+                0x000000002000022c                . = (. + _Minimum_Stack_Size)
+ *fill*         0x000000002000012c      0x100 
+                0x000000002000022c                . = ALIGN (0x4)
+                0x000000002000022c                _eusrstack = .
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x79
+ *(.comment)
+ .comment       0x0000000000000000       0x79 FLASH_RUN/stm32g0_disco/main.o
+                                         0x7a (size before relaxing)
+ .comment       0x0000000000000079       0x7a FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .comment       0x0000000000000079       0x7a FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x78
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 FLASH_RUN/stm32g0_disco/main.o
+ .debug_aranges
+                0x0000000000000020       0x30 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_aranges
+                0x0000000000000050       0x28 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x1216
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0xcb2 FLASH_RUN/stm32g0_disco/main.o
+ .debug_info    0x0000000000000cb2      0x14b FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_info    0x0000000000000dfd      0x419 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+
+.debug_abbrev   0x0000000000000000      0x42a
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x21f FLASH_RUN/stm32g0_disco/main.o
+ .debug_abbrev  0x000000000000021f       0xe3 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_abbrev  0x0000000000000302      0x128 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+
+.debug_line     0x0000000000000000      0x552
+ *(.debug_line)
+ .debug_line    0x0000000000000000      0x274 FLASH_RUN/stm32g0_disco/main.o
+ .debug_line    0x0000000000000274       0xb0 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_line    0x0000000000000324      0x22e FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+
+.debug_frame    0x0000000000000000      0xcb4
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x30 FLASH_RUN/stm32g0_disco/main.o
+ .debug_frame   0x0000000000000030       0x68 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_frame   0x0000000000000098       0x4c FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .debug_frame   0x00000000000000e4       0x50 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .debug_frame   0x0000000000000134       0x44 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+ .debug_frame   0x0000000000000178       0x48 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00000000000001c0       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00000000000001ec       0x68 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x0000000000000254      0x170 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00000000000003c4       0x58 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x000000000000041c       0xb0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .debug_frame   0x00000000000004cc       0x54 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x0000000000000520       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000000540       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x000000000000056c       0x30 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x000000000000059c       0x9c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x0000000000000638       0x54 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x000000000000068c       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000000000006b8       0x90 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x0000000000000748       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x0000000000000774       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x00000000000007a0       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00000000000007cc       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x00000000000007f8       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x0000000000000824       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x0000000000000844       0x40 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000000884       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x00000000000008b0       0x48 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x00000000000008f8       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000000918      0x37c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .debug_frame   0x0000000000000c94       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-errno.o)
+
+.debug_str      0x0000000000000000      0x758
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x648 FLASH_RUN/stm32g0_disco/main.o
+                                        0x6ae (size before relaxing)
+ .debug_str     0x0000000000000648       0x95 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+                                        0x19d (size before relaxing)
+ .debug_str     0x00000000000006dd       0x7b FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                                        0x2f4 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x12c
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x38 FLASH_RUN/stm32g0_disco/main.o
+ .debug_loc     0x0000000000000038       0x90 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_loc     0x00000000000000c8       0x64 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x48
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x10 FLASH_RUN/stm32g0_disco/main.o
+ .debug_ranges  0x0000000000000010       0x20 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_ranges  0x0000000000000030       0x18 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+
+.ARM.attributes
+                0x0000000000000000       0x2a
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x0000000000000000       0x2c FLASH_RUN/stm32g0_disco/main.o
+ .ARM.attributes
+                0x000000000000002c       0x2c FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .ARM.attributes
+                0x0000000000000058       0x2c FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .ARM.attributes
+                0x0000000000000084       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .ARM.attributes
+                0x00000000000000b0       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+ .ARM.attributes
+                0x00000000000000dc       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .ARM.attributes
+                0x0000000000000108       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+ .ARM.attributes
+                0x0000000000000134       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x0000000000000160       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x000000000000018c       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x00000000000001b8       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000000001e4       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .ARM.attributes
+                0x0000000000000210       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+ .ARM.attributes
+                0x000000000000023c       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x0000000000000268       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x0000000000000294       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x00000000000002c0       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .ARM.attributes
+                0x00000000000002ec       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .ARM.attributes
+                0x0000000000000318       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000000000000344       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x0000000000000370       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+ .ARM.attributes
+                0x000000000000039c       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+ .ARM.attributes
+                0x00000000000003c8       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+ .ARM.attributes
+                0x00000000000003f4       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .ARM.attributes
+                0x0000000000000420       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+ .ARM.attributes
+                0x000000000000044c       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+ .ARM.attributes
+                0x0000000000000478       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .ARM.attributes
+                0x00000000000004a4       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000000000004d0       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000000000004fc       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x0000000000000528       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .ARM.attributes
+                0x0000000000000554       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+ .ARM.attributes
+                0x0000000000000580       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .ARM.attributes
+                0x00000000000005ac       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .ARM.attributes
+                0x00000000000005d8       0x1e /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .ARM.attributes
+                0x00000000000005f6       0x1e /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000000000000614       0x1e /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000000000000632       0x1e /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000650       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+ .ARM.attributes
+                0x000000000000067c       0x2c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x00000000000006a8       0x1c /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-strlen.o)
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+                0x0000000000000400                __Stack_Size = 0x400
+                [!provide]                        PROVIDE (_Stack_Size = __Stack_Size)
+                0x0000000020001c00                __Stack_Init = (_estack - __Stack_Size)
+                [!provide]                        PROVIDE (_Stack_Init = __Stack_Init)
+OUTPUT(FLASH_RUN/stm32g0_disco/stm32g0_disco.elf elf32-littlearm)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC1_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+AHBPrescTable                                     FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+APBPrescTable                                     FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+DMA1_Ch4_5_DMAMUX1_OVR_IRQHandler                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+DMA1_Channel1_IRQHandler                          FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+DMA1_Channel2_3_IRQHandler                        FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+Default_Handler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+EXTI0_1_IRQHandler                                FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+EXTI2_3_IRQHandler                                FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+EXTI4_15_IRQHandler                               FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+FLASH_IRQHandler                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+HardFault_Handler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+I2C1_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+I2C2_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+LPTIM1_IRQHandler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+LPTIM2_IRQHandler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+LPUSART1_IRQHandler                               FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+MMI_Handler                                       FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+MemManage_Handler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+NMI_Handler                                       FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+PVD_IRQHandler                                    FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+PendSV_Handler                                    FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+RCC_IRQHandler                                    FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+RTC_TAMP_IRQHandler                               FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+Reset_Handler                                     FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+SPI1_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+SPI2_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+SVC_Handler                                       FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+SysTick_Handler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+SystemAPBClock                                    FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+SystemCoreClock                                   FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+SystemCoreClockUpdate                             FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                                                  FLASH_RUN/stm32g0_disco/main.o
+SystemInit                                        FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                                                  FLASH_RUN/stm32g0_disco/main.o
+TIM14_IRQHandler                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM16_IRQHandler                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM17_IRQHandler                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM1_BRK_UP_TRG_COM_IRQHandler                    FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM1_CC_IRQHandler                                FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM2_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM3_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+USART1_IRQHandler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+USART2_IRQHandler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+WWDG_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+__Init_Data                                       FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+__aeabi_idiv                                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+__aeabi_idiv0                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+__aeabi_idivmod                                   /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+__aeabi_ldiv0                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+__aeabi_uidiv                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                                  FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+__aeabi_uidivmod                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+__divsi3                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+__errno                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-errno.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+__fp_lock_all                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__fp_unlock_all                                   /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__gnu_thumb1_case_shi                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+__heap_limit                                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+__lock___arc4random_mutex                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___at_quick_exit_mutex                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___atexit_recursive_mutex                   /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___dd_hash_mutex                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___env_recursive_mutex                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__lock___malloc_recursive_mutex                   /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+__lock___sfp_recursive_mutex                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__lock___sinit_recursive_mutex                    /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__lock___tz_mutex                                 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__malloc_free_list                                /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+__malloc_lock                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+__malloc_sbrk_start                               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+__malloc_unlock                                   /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+__retarget_lock_acquire                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__retarget_lock_acquire_recursive                 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+__retarget_lock_close                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__retarget_lock_close_recursive                   /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__retarget_lock_init                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__retarget_lock_init_recursive                    /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__retarget_lock_release                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__retarget_lock_release_recursive                 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+__retarget_lock_try_acquire                       /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__retarget_lock_try_acquire_recursive             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+__sclose                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__seofread                                        /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+__sf_fake_stderr                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+__sf_fake_stdin                                   /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+__sf_fake_stdout                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+__sflush_r                                        /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+__sfmoreglue                                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__sfp                                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__sfp_lock_acquire                                /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__sfp_lock_release                                /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__sfputs_r                                        /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+__sfvwrite_r                                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+__sinit                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+__sinit_lock_acquire                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__sinit_lock_release                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__smakebuf_r                                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+__sprint_r                                        /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+__sread                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__sseek                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__swbuf                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+__swbuf_r                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+__swhatbuf_r                                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+__swrite                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+__swsetup_r                                       /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+__udivsi3                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+_cleanup                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+_cleanup_r                                        /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+_clock                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_close                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+_close_r                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+_ebss                                             FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+_edata                                            FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+_estack                                           FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+_fflush_r                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+_free_r                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+_fstat                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+_fstat_r                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+_fwalk                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+_fwalk_reent                                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+_get_semihosting_exts                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_getpid                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_gettimeofday                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_global_impure_ptr                                /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+_has_ext_exit_extended                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_has_ext_stdout_stderr                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_impure_ptr                                       /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-errno.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+_iprintf_r                                        /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+_isatty                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+_isatty_r                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+_link                                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_lseek                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+_lseek_r                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+_malloc_r                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+_malloc_usable_size_r                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+_open                                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_printf_common                                    /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+_printf_float                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+_printf_i                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+_printf_r                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+_puts_r                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+_read                                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+_read_r                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+_realloc_r                                        /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+_reclaim_reent                                    /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+_rename                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_sbrk                                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+_sbrk_r                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+_sbss                                             FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+_sdata                                            FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+_sidata                                           FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+_stat                                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_swiclose                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_swilseek                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_swiopen                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_swiread                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_swistat                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_swiwrite                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_system                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_times                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_unlink                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+_vfiprintf_r                                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+_vfprintf_r                                       /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+_write                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+_write_r                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+cleanup_glue                                      /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+end                                               /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+errno                                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+fflush                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+g_pfnVectors                                      FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+initialise_monitor_handles                        /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+iprintf                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+main                                              FLASH_RUN/stm32g0_disco/main.o
+                                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+memchr                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+memcpy                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+memmove                                           /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+memset                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+printf                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+                                                  FLASH_RUN/stm32g0_disco/main.o
+puts                                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-puts.o)
+                                                  FLASH_RUN/stm32g0_disco/main.o
+strlen                                            /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-strlen.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/librdimon_nano.a(rdimon-syscalls.o)
+vfiprintf                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+vfprintf                                          /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)

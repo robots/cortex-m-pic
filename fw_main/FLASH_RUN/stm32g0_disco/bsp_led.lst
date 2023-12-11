@@ -1,0 +1,53 @@
+   1              		.cpu cortex-m0plus
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 6
+   9              		.eabi_attribute 34, 0
+  10              		.eabi_attribute 18, 4
+  11              		.file	"bsp_led.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.global	led_gpio
+  16              		.section	.rodata.led_gpio,"a"
+  17              		.align	2
+  20              	led_gpio:
+  21 0000 00000050 		.word	1342177280
+  22 0004 0010     		.short	4096
+  23 0006 01       		.byte	1
+  24 0007 02       		.byte	2
+  25 0008 00000000 		.space	4
+  26              		.global	led_pol
+  27              		.section	.rodata.led_pol,"a"
+  28              		.align	2
+  31              	led_pol:
+  32 0000 00       		.space	1
+  33              		.global	led_gpio_cnt
+  34              		.section	.rodata.led_gpio_cnt,"a"
+  35              		.align	2
+  38              	led_gpio_cnt:
+  39 0000 01000000 		.word	1
+  40              		.text
+  41              	.Letext0:
+  42              		.file 1 "/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/include/machine/_defa
+  43              		.file 2 "/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/include/sys/_stdint.h
+  44              		.file 3 "../lib/stm32h/STM32G0xx/Include/system_stm32g0xx.h"
+  45              		.file 4 "../lib/stm32h/STM32G0xx/Include/stm32g031xx.h"
+  46              		.file 5 "./platform.h"
+  47              		.file 6 "../common/gpio.h"
+  48              		.file 7 "../bsp/bsp_led.h"
+  49              		.file 8 "../bsp/stm32g0_disco/bsp_led.c"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 bsp_led.c
+     /tmp/ccf9RRvv.s:20     .rodata.led_gpio:0000000000000000 led_gpio
+     /tmp/ccf9RRvv.s:17     .rodata.led_gpio:0000000000000000 $d
+     /tmp/ccf9RRvv.s:31     .rodata.led_pol:0000000000000000 led_pol
+     /tmp/ccf9RRvv.s:28     .rodata.led_pol:0000000000000000 $d
+     /tmp/ccf9RRvv.s:38     .rodata.led_gpio_cnt:0000000000000000 led_gpio_cnt
+     /tmp/ccf9RRvv.s:35     .rodata.led_gpio_cnt:0000000000000000 $d
+
+NO UNDEFINED SYMBOLS

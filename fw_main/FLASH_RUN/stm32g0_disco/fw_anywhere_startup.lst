@@ -1,0 +1,400 @@
+   1              	# 1 "fw_anywhere_startup.s"
+   1              	/*
+   0              	
+   0              	
+   2              	 * Assembly initialization routines for bootstrapping PIC firmware images.
+   3              	 *
+   4              	 * v. 1.1 / 2022-01-15 / Janne Paalijarvi, StackLake Ltd / http://stacklake.fi/index.en.html
+   5              	 *
+   6              	 * This file contains assembly initialization routines to bootstrap firmware
+   7              	 * images compiled with position independent code (PIC) options. Bootstrapping
+   8              	 * needs to be done here in assembly because the PIC options would mess up the
+   9              	 * C compilation. It is basically a chicken and egg problem.
+  10              	 *
+  11              	 * I'm proud to say these routines are portable between differnet core types
+  12              	 * and have been tested with Cortex-M0 and Cortex-M4 successfully.
+  13              	 *
+  14              	 * Two core concepts are needed to be handled very carefully here. They are
+  15              	 * the interrupt service routine (ISR) vector table and the global offset table
+  16              	 * (GOT). These tables need to be copied from flash to RAM for access. Now
+  17              	 * comes the twist. The firmware itself is compiled so that it expects to be
+  18              	 * running from first flash address, namely 0x8000000. Nothing special is done
+  19              	 * about it anywhere else. BUT actually the firmware may be running from
+  20              	 * somewhere else. For example from 0x8005200.
+  21              	 *
+  22              	 * Now, if we did not do some special bootstrapping here, the offsetted
+  23              	 * firmware would try to still look up things from 0x8000000. How to prevent
+  24              	 * this? We copy the ISR and GOT tables to RAM. Then if we see in those tables
+  25              	 * addresses that are trying to access flash, we add the offset (0x5200).
+  26              	 *
+  27              	 * The routines first store register values of firmware position data. These
+  28              	 * values are set up by bootloader. Values are verified with a checksum. If
+  29              	 * the checksum matches, we can be quite sure that the we are booting with via
+  30              	 * the bootloader.
+  31              	 *
+  32              	 * Then the routine copies the GOT to RAM and while copying it patches
+  33              	 * relevant addresses with the offset value we calculated. Basically if it
+  34              	 * sees addresses of the flash range (0x8000000 -> flash end boundary), it
+  35              	 * adds the offset.
+  36              	 *
+  37              	 * Basically the same thing is performed next to ISR vector table; offset
+  38              	 * patching.
+  39              	 *
+  40              	 * Next we run routines of copying other initialization data from flash to RAM,
+  41              	 * but also using the offset. We also zero memory ranges which are expected to
+  42              	 * be zero, BUT we take special care not to zero the global variable locations
+  43              	 * we used in the very beginning to store the data we got via bootloader in
+  44              	 * registers.
+  45              	 *
+  46              	 * Then we call the C initialization function SystemInit() which normally sets
+  47              	 * up clocks and does some other necessary initializations. SystemInit() also,
+  48              	 * on platforms having the vector table offset (VTOR) register, sets to VTOR
+  49              	 * register to point it to right location. This happens at least on Cortex-M4.
+  50              	 * On platforms not having VTOR (for example Cortex-M0) other means can be
+  51              	 * used to emulate the functionality.
+  52              	 *
+  53              	 * Next there is the curious case of __libc_init_array . This is a C library
+  54              	 * initialization assembly function. The original version would call functions
+  55              	 * from an array in flash. However as the firmware image running now might be
+  56              	 * relacated with an offset, we need to add an offset also.
+  57              	 * NOTE: I have not extensively verified that this part would function in ALL
+  58              	 * cases. It could be that the functions being called might have dependencies
+  59              	 * to locations needing patching. So keep this in mind if you plan to use this
+  60              	 * code.
+  61              	 *
+  62              	 * After __libc_init_array we are basically done with bootstrap and the
+  63              	 * "calling" platform-specific startup file usually proceeds to call the actual
+  64              	 * main() of the compiled binary.
+  65              	 */
+  66              	
+  67              	
+  68              	.syntax unified
+  69              	.cpu cortex-m0plus
+  70              	.fpu softvfp
+  71              	.thumb
+  72              	
+  73              	.global gu32FirmwareOffset
+  74              	.global gu32FirmwareAbsPosition
+  75              	.global gu32RamVectorTableBegin
+  76              	.global Reset_Handler
+  77              	
+  78              	.bss
+  79              	.align  4
+  80 0000 00000000 	gu32FirmwareOffset:    .long 0
+  81 0004 00000000 	gu32FirmwareAbsPosition: .long 0
+  82 0008 00000000 	gu32RamVectorTableBegin: .long 0
+  83              	
+  84              	  .section .text.Reset_Handler
+  85              	  .weak Reset_Handler
+  87              	Reset_Handler:
+  88 0000 7A46     		mov r2, pc
+  89 0002 484F     		ldr r7, =Reset_Handler
+  90 0004 D71B     		subs r7, r2, r7 // subtract stored pc and reset_handler address
+  91 0006 033F     		subs r7, r7, 3 // adjust for instruction size
+  92              	
+  93 0008 4748     	  ldr   r0, =__stack_end
+  94 000a 8546     	  mov   sp, r0          /* set stack pointer */
+  95              	
+  96              	  // store firmware offset 
+  97 000c 474A     	  ldr r2, =gu32FirmwareOffset
+  98 000e 1760     	  str r7, [r2]
+  99              	
+ 100              	  // calculate absolute position of firmware
+ 101 0010 4749     	  ldr r1, =__flash_begin;
+ 102 0012 C919     		adds r1, r1, r7
+ 103 0014 474A     	  ldr r2, =gu32FirmwareAbsPosition
+ 104 0016 1160     	  str r1, [r2]
+ 105              	
+ 106              	  // Store vector table RAM being address dynamically so systemconfig can map it
+ 107 0018 474F     	  ldr r7, =__ram_vector_table_begin
+ 108 001a 484A     	  ldr r2, =gu32RamVectorTableBegin
+ 109 001c 1760     	  str r7, [r2]
+ 110              	
+ 111              	
+ 112              	
+ 113              	  // GOT needs to be in RAM in every case
+ 114              	GlobalOffsetTableCopyPatchInit:
+ 115 001e 0020     	  movs r0, #0 // Loop variable
+ 116 0020 0021     	  movs r1, #0 // Pointer (just introduction)
+ 117              	
+ 118              	GlobalOffsetTableCopyPatchLoopCond:
+ 119 0022 474A     	  ldr r2, =__flash_global_offset_table_begin // Need global offset table table beginning for pointe
+ 120 0024 474B     	  ldr r3, =__flash_global_offset_table_end // And need end for checking loop
+ 121 0026 414C     	  ldr r4, =gu32FirmwareOffset // Need also data offset variable address
+ 122 0028 2468     	  ldr r4, [r4] // And the actual offset value
+ 123 002a 1219     	  adds r2, r2, r4 // Patching flash global offset table begin to honour offset
+ 124 002c 1B19     	  adds r3, r3, r4 // Patching flash global offset table end to honour offset
+ 125 002e 8118     	  adds r1, r0, r2 // Pointer value is loop variable + offsetted flash global offset table begin
+ 126 0030 9942     	  cmp r1, r3 // Compare pointer against global offset table flash end
+ 127 0032 0ED2     	  bhs GlobalOffsetTableCopyPatchEnd // If getting past limits, go to end
+ 128              	
+ 129              	GlobalOffsetTableCopyPatchLoopBody:
+ 130 0034 0A68     	  ldr r2, [r1] // Load the actual data via pointer
+ 131 0036 3E4B     	  ldr r3, =__flash_begin // Need flash begin boundary for checking
+ 132 0038 434C     	  ldr r4, =__flash_end // Need also flash end boundary for checking
+ 133 003a 9A42     	  cmp r2, r3 // Comparing loaded data to flash begin
+ 134 003c 04D3     	  blo GlobalOffsetTableStoreData // If less than flash begin, jump to store
+ 135 003e A242     	  cmp r2, r4 // Comparing loaded data to flash end
+ 136 0040 02D2     	  bhs GlobalOffsetTableStoreData // If more than or equal to end, jump to store
+ 137              	
+ 138              	GlobalOffsetTablePatchData:
+ 139 0042 3A4B     	  ldr r3, =gu32FirmwareOffset // Need data offset variable address
+ 140 0044 1B68     	  ldr r3, [r3] // And then the actual data
+ 141 0046 D218     	  adds r2, r2, r3 // Patch the data
+ 142              	
+ 143              	GlobalOffsetTableStoreData:
+ 144 0048 404B     	  ldr r3, =__ram_global_offset_table_begin // Get global offset table begin in ram for ram data poi
+ 145 004a 1B18     	  adds r3, r3, r0 // Add loop variable
+ 146 004c 1A60     	  str r2, [r3] // Store the data
+ 147              	
+ 148              	GlobalOffsetTableLoopIncrements:
+ 149 004e 0430     	  adds r0, r0, #4 // Increment loop
+ 150 0050 E7E7     	  b GlobalOffsetTableCopyPatchLoopCond // Jump to loop condition checking
+ 151              	
+ 152              	GlobalOffsetTableCopyPatchEnd:
+ 153 0052 3E48     	  ldr r0, =__ram_global_offset_table_begin
+ 154 0054 8146     	  mov r9, r0 // Stupid trick to put global offset table location to r9, for Cortex-M0
+ 155              	
+ 156              	
+ 157              	  // Need to copy and patch vector table in assembly so nobody comes to mess around
+ 158              	VectorTableCopyPatchInit:
+ 159 0056 0020     	  movs r0, #0 // Loop variable
+ 160 0058 0021     	  movs r1, #0 // Pointer (just introduction)
+ 161              	
+ 162              	VectorTableCopyPatchLoopCond:
+ 163 005a 3D4A     	  ldr r2, =__flash_vector_table_begin // Need vector table beginning for pointer
+ 164 005c 3D4B     	  ldr r3, =__flash_vector_table_end // And need end for checking loop
+ 165 005e 334C     	  ldr r4, =gu32FirmwareOffset // Need also data offset variable address
+ 166 0060 2468     	  ldr r4, [r4] // And the actual offset value
+ 167 0062 1219     	  adds r2, r2, r4 // Patching flash vector table begin to honour offset
+ 168 0064 1B19     	  adds r3, r3, r4 // Patching flash vector table end to honour offset
+ 169 0066 8118     	  adds r1, r0, r2 // Pointer value is loop variable + offsetted flash vector table begin
+ 170 0068 9942     	  cmp r1, r3 // Compare pointer against vector table flash end
+ 171 006a 0BD2     	  bhs VectorTableCopyPatchEnd // If getting past limits, go to end
+ 172              	
+ 173              	VectorTableCopyPatchLoopBody:
+ 174 006c 0A68     	  ldr r2, [r1] // Load the actual data via pointer
+ 175 006e 304B     	  ldr r3, =__flash_begin // Need flash begin boundary for checking
+ 176 0070 354C     	  ldr r4, =__flash_end // Need also flash end boundary for checking
+ 177 0072 9A42     	  cmp r2, r3 // Comparing loaded data to flash begin
+ 178 0074 01D3     	  blo VectorTableStoreData // If less than flash begin, jump to store
+ 179 0076 A242     	  cmp r2, r4 // Comparing loaded data to flash end
+ 180 0078 FFD2     	  bhs VectorTableStoreData // If more than or equal to end, jump to store
+ 181              	
+ 182              	#VectorTablePatchData:
+ 183              	#  ldr r3, =gu32FirmwareOffset // Need data offset variable address
+ 184              	#  ldr r3, [r3] // And then the actual data
+ 185              	#  adds r2, r2, r3 // Patch the data
+ 186              	
+ 187              	VectorTableStoreData:
+ 188 007a 2F4B     	  ldr r3, =__ram_vector_table_begin // Get vector table begin in ram for ram data pointer
+ 189 007c 1B18     	  adds r3, r3, r0 // Add loop variable
+ 190 007e 1A60     	  str r2, [r3] // Store the data
+ 191              	
+ 192              	VectorTableLoopIncrements:
+ 193 0080 0430     	  adds r0, r0, #4 // Increment loop
+ 194 0082 EAE7     	  b VectorTableCopyPatchLoopCond // Jump to loop condition checking
+ 195              	
+ 196              	VectorTableCopyPatchEnd:
+ 197              	
+ 198              	
+ 199              	  // Copy the data segment initializers from flash to SRAM.
+ 200 0084 3448     	  ldr r0, =__data_start
+ 201 0086 3549     	  ldr r1, =__data_end
+ 202 0088 354A     	  ldr r2, =__data_source
+ 203 008a 284F     	  ldr r7, =gu32FirmwareOffset // Load firmware offset variable address
+ 204 008c 3F68     	  ldr r7, [r7] // Load the actual firmware offset variable data
+ 205 008e D219     	  adds r2, r2, r7 // Patch the sidata location with offset
+ 206 0090 0023     	  movs r3, #0
+ 207 0092 02E0     	  b LoopCopyDataInit
+ 208              	
+ 209              	CopyDataInit:
+ 210 0094 D458     	  ldr r4, [r2, r3]
+ 211 0096 C450     	  str r4, [r0, r3]
+ 212 0098 0433     	  adds r3, r3, #4
+ 213              	
+ 214              	LoopCopyDataInit:
+ 215 009a C418     	  adds r4, r0, r3
+ 216 009c 8C42     	  cmp r4, r1
+ 217 009e F9D3     	  bcc CopyDataInit
+ 218              	
+ 219              	  // Zero fill the bss segment.
+ 220 00a0 304A     	  ldr r2, =__bss_start
+ 221 00a2 314C     	  ldr r4, =__bss_end
+ 222 00a4 0023     	  movs r3, #0
+ 223 00a6 0AE0     	  b LoopFillZerobss
+ 224              	
+ 225              	FillZerobss:
+ 226              	  // Here we need to check that we are not zeroing out addresses or needed symbols
+ 227              	
+ 228 00a8 224E     	  ldr r6, =gu32FirmwareAbsPosition // Load address of absolute firmware position variable
+ 229 00aa B242     	  cmp r2, r6 // Compare with what we are going to zero
+ 230 00ac 06D0     	  beq FillZerobssSkip // If we should skip zeroing, jump away
+ 231              	
+ 232 00ae 1F4E     	  ldr r6, =gu32FirmwareOffset // Load address of firmware offset variable
+ 233 00b0 B242     	  cmp r2, r6 // Compare with what we are going to zero
+ 234 00b2 03D0     	  beq FillZerobssSkip // If we should skip zeroing, jump away
+ 235              	
+ 236 00b4 214E     	  ldr r6, =gu32RamVectorTableBegin // Vector table location in RAM
+ 237 00b6 B242     	  cmp r2, r6 // Compare with what we are going to zero
+ 238 00b8 00D0     	  beq FillZerobssSkip // If we should skip zeroing, jump away
+ 239              	
+ 240 00ba 1360     	  str  r3, [r2] // If not escaped yet, make the store
+ 241              	
+ 242              	FillZerobssSkip:
+ 243 00bc 0432     	  adds r2, r2, #4
+ 244              	
+ 245              	LoopFillZerobss:
+ 246 00be A242     	  cmp r2, r4
+ 247 00c0 F2D3     	  bcc FillZerobss
+ 248              	
+ 249              	
+ 250              	// patch relocations
+ 251 00c2 1A4D     	  ldr r5, =gu32FirmwareOffset // Load address of firmware offset variable
+ 252 00c4 2D68     		ldr r5, [r5] // load offset
+ 253              	
+ 254              		// the "best" way would be to get __end_of_flash from GOT
+ 255 00c6 294A     	  ldr r2, =__end_of_flash // Load address of absolute firmware position variable
+ 256 00c8 5219     		adds r2, r2, r5 // add offset to __end_of_flash,
+ 257 00ca 1668     	  ldr r6, [r2] // load relocation count
+ 258              	
+ 259              	LoopRelocations:
+ 260              	
+ 261 00cc 002E     		cmp r6, 0
+ 262 00ce 06D0     		beq LoopRelocationsEnd
+ 263              	
+ 264 00d0 0432     		adds r2, r2, 4 // next member of table
+ 265              	
+ 266 00d2 1368     		ldr r3, [r2] // load address from table
+ 267              	
+ 268 00d4 1C68     		ldr r4, [r3]    // load value from ram 
+ 269              		// TODO: check sanity of address: only addresses pointing to FLASH are to be relocated
+ 270 00d6 6419     		adds r4, r4, r5 // patch ram value
+ 271 00d8 1C60     		str r4, [r3]    // put value back
+ 272              	
+ 273 00da 013E     		subs r6, r6, 1 // decrement
+ 274 00dc F6E7     		b LoopRelocations
+ 275              	
+ 276              	LoopRelocationsEnd:
+ 277              	
+ 278              	
+ 279              	  // Make our own __libc_init_array
+ 280              	CallPreinitsInit:
+ 281 00de 134F     	  ldr r7, =gu32FirmwareOffset
+ 282 00e0 3F68     	  ldr r7, [r7]
+ 283 00e2 2348     	  ldr r0, =__preinit_array_start
+ 284 00e4 C019     	  adds r0, r7
+ 285 00e6 2349     	  ldr r1, =__preinit_array_end
+ 286 00e8 C919     	  adds r1, r7
+ 287              	
+ 288              	CallPreinitsLoopCond:
+ 289 00ea 8842     	  cmp r0, r1
+ 290 00ec 07D0     	  beq CallPreinitsEnd// If same, it is at end, go away
+ 291              	
+ 292              	CallPreinitsLoop:
+ 293 00ee 224D     	  ldr r5, =__init_array_start
+ 294 00f0 224C     	  ldr r4, =__init_array_end // Yes, order is funny to say the least
+ 295 00f2 0368     	  ldr r3, [r0]
+ 296 00f4 FFB4     	  push {r0, r1, r2, r3, r4, r5, r6, r7} // Save context because calling externals
+ 297 00f6 9847     	  blx r3
+ 298 00f8 FFBC     	  pop {r0, r1, r2, r3, r4, r5, r6, r7} // Retrieve context
+ 299 00fa 0430     	  adds r0, r0, #4
+ 300 00fc F5E7     	  b CallPreinitsLoopCond
+ 301              	
+ 302              	CallPreinitsEnd:
+ 303              	
+ 304              	#  ldr r3, =_init
+ 305              	#  adds r3, r7
+ 306              	#  push {r0, r1, r2, r3, r4, r5, r6, r7} // Save context because calling externals
+ 307              	#  blx r3
+ 308              	#  pop {r0, r1, r2, r3, r4, r5, r6, r7} // Retrieve context
+ 309              	
+ 310              	CallInitsInit:
+ 311 00fe 1E4D     	  ldr r5, =__init_array_start
+ 312 0100 ED19     	  adds r5, r7
+ 313 0102 1E4C     	  ldr r4, =__init_array_end
+ 314 0104 E419     	  adds r4, r7
+ 315 0106 094F     	  ldr r7, =gu32FirmwareOffset
+ 316 0108 3F68     	  ldr r7, [r7]
+ 317              	
+ 318              	CallInitsLoopCond:
+ 319 010a A542     	  cmp r5, r4
+ 320 010c 06D0     	  beq CallInitsEnd
+ 321              	
+ 322              	CallInitsLoop:
+ 323 010e 2B68     	  ldr r3, [r5]
+ 324 0110 3B44     	  add r3, r3, r7
+ 325 0112 FFB4     	  push {r0, r1, r2, r3, r4, r5, r6, r7} // Save context because calling externals
+ 326 0114 9847     	  blx r3
+ 327 0116 FFBC     	  pop {r0, r1, r2, r3, r4, r5, r6, r7} // Retrieve context
+ 328 0118 0435     	  adds r5, r5, #4
+ 329 011a F6E7     	  b CallInitsLoopCond
+ 330              	
+ 331              	CallInitsEnd:
+ 332              	
+ 333              	/* Call the application s entry point.*/
+ 334 011c FFF7FEFF 	  bl main
+ 335              	
+ 336              	LoopForever:
+ 337 0120 FEE7     	  b LoopForever
+ 338              	
+DEFINED SYMBOLS
+fw_anywhere_startup.s:80     .bss:0000000000000000 gu32FirmwareOffset
+fw_anywhere_startup.s:81     .bss:0000000000000004 gu32FirmwareAbsPosition
+fw_anywhere_startup.s:82     .bss:0000000000000008 gu32RamVectorTableBegin
+fw_anywhere_startup.s:87     .text.Reset_Handler:0000000000000000 Reset_Handler
+fw_anywhere_startup.s:79     .bss:0000000000000000 $d
+fw_anywhere_startup.s:88     .text.Reset_Handler:0000000000000000 $t
+fw_anywhere_startup.s:114    .text.Reset_Handler:000000000000001e GlobalOffsetTableCopyPatchInit
+fw_anywhere_startup.s:118    .text.Reset_Handler:0000000000000022 GlobalOffsetTableCopyPatchLoopCond
+fw_anywhere_startup.s:152    .text.Reset_Handler:0000000000000052 GlobalOffsetTableCopyPatchEnd
+fw_anywhere_startup.s:129    .text.Reset_Handler:0000000000000034 GlobalOffsetTableCopyPatchLoopBody
+fw_anywhere_startup.s:143    .text.Reset_Handler:0000000000000048 GlobalOffsetTableStoreData
+fw_anywhere_startup.s:138    .text.Reset_Handler:0000000000000042 GlobalOffsetTablePatchData
+fw_anywhere_startup.s:148    .text.Reset_Handler:000000000000004e GlobalOffsetTableLoopIncrements
+fw_anywhere_startup.s:158    .text.Reset_Handler:0000000000000056 VectorTableCopyPatchInit
+fw_anywhere_startup.s:162    .text.Reset_Handler:000000000000005a VectorTableCopyPatchLoopCond
+fw_anywhere_startup.s:196    .text.Reset_Handler:0000000000000084 VectorTableCopyPatchEnd
+fw_anywhere_startup.s:173    .text.Reset_Handler:000000000000006c VectorTableCopyPatchLoopBody
+fw_anywhere_startup.s:187    .text.Reset_Handler:000000000000007a VectorTableStoreData
+fw_anywhere_startup.s:192    .text.Reset_Handler:0000000000000080 VectorTableLoopIncrements
+fw_anywhere_startup.s:214    .text.Reset_Handler:000000000000009a LoopCopyDataInit
+fw_anywhere_startup.s:209    .text.Reset_Handler:0000000000000094 CopyDataInit
+fw_anywhere_startup.s:245    .text.Reset_Handler:00000000000000be LoopFillZerobss
+fw_anywhere_startup.s:225    .text.Reset_Handler:00000000000000a8 FillZerobss
+fw_anywhere_startup.s:242    .text.Reset_Handler:00000000000000bc FillZerobssSkip
+fw_anywhere_startup.s:259    .text.Reset_Handler:00000000000000cc LoopRelocations
+fw_anywhere_startup.s:276    .text.Reset_Handler:00000000000000de LoopRelocationsEnd
+fw_anywhere_startup.s:280    .text.Reset_Handler:00000000000000de CallPreinitsInit
+fw_anywhere_startup.s:288    .text.Reset_Handler:00000000000000ea CallPreinitsLoopCond
+fw_anywhere_startup.s:302    .text.Reset_Handler:00000000000000fe CallPreinitsEnd
+fw_anywhere_startup.s:292    .text.Reset_Handler:00000000000000ee CallPreinitsLoop
+fw_anywhere_startup.s:310    .text.Reset_Handler:00000000000000fe CallInitsInit
+fw_anywhere_startup.s:318    .text.Reset_Handler:000000000000010a CallInitsLoopCond
+fw_anywhere_startup.s:331    .text.Reset_Handler:000000000000011c CallInitsEnd
+fw_anywhere_startup.s:322    .text.Reset_Handler:000000000000010e CallInitsLoop
+fw_anywhere_startup.s:336    .text.Reset_Handler:0000000000000120 LoopForever
+fw_anywhere_startup.s:339    .text.Reset_Handler:0000000000000122 $d
+fw_anywhere_startup.s:339    .text.Reset_Handler:0000000000000124 $d
+
+UNDEFINED SYMBOLS
+__stack_end
+__flash_begin
+__ram_vector_table_begin
+__flash_global_offset_table_begin
+__flash_global_offset_table_end
+__flash_end
+__ram_global_offset_table_begin
+__flash_vector_table_begin
+__flash_vector_table_end
+__data_start
+__data_end
+__data_source
+__bss_start
+__bss_end
+__end_of_flash
+__preinit_array_start
+__preinit_array_end
+__init_array_start
+__init_array_end
+main

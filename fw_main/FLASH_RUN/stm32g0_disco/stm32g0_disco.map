@@ -1,0 +1,1095 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+                              FLASH_RUN/stm32g0_disco/main.o (printf)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+                              (__i_vfprintf)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+                              (__i_vfscanf)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o) (memset)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o) (strchr)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o) (strnlen)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o) (fgetc)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o) (ungetc)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o) (__atomic_exchange_ungetc)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o) (__atomic_compare_exchange_ungetc)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o) (stdout)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o) (sys_semihost_getc)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o) (sys_semihost_putc)
+/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o) (sys_semihost)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o) (__gnu_thumb1_case_uqi)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_si.o)
+                              FLASH_RUN/stm32g0_disco/system_stm32g0xx.o (__gnu_thumb1_case_si)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                              FLASH_RUN/stm32g0_disco/systime.o (__aeabi_uidiv)
+/home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Allocating common symbols
+Common symbol       size              file
+
+led_state           0x2               FLASH_RUN/stm32g0_disco/led.o
+led_timer           0x8               FLASH_RUN/stm32g0_disco/led.o
+systime_timer       0x50              FLASH_RUN/stm32g0_disco/systime.o
+led_mode            0x2               FLASH_RUN/stm32g0_disco/led.o
+led_nextmode        0x2               FLASH_RUN/stm32g0_disco/led.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/main.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/main.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/main.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/syscall.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/syscall.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/syscall.o
+ .bss.heap      0x0000000000000000        0x4 FLASH_RUN/stm32g0_disco/syscall.o
+ .text._sbrk    0x0000000000000000       0x64 FLASH_RUN/stm32g0_disco/syscall.o
+ .debug_info    0x0000000000000000      0x389 FLASH_RUN/stm32g0_disco/syscall.o
+ .debug_abbrev  0x0000000000000000      0x10b FLASH_RUN/stm32g0_disco/syscall.o
+ .debug_loc     0x0000000000000000       0x38 FLASH_RUN/stm32g0_disco/syscall.o
+ .debug_aranges
+                0x0000000000000000       0x20 FLASH_RUN/stm32g0_disco/syscall.o
+ .debug_ranges  0x0000000000000000       0x10 FLASH_RUN/stm32g0_disco/syscall.o
+ .debug_line    0x0000000000000000      0x1fa FLASH_RUN/stm32g0_disco/syscall.o
+ .debug_str     0x0000000000000000      0x331 FLASH_RUN/stm32g0_disco/syscall.o
+ .comment       0x0000000000000000       0x7a FLASH_RUN/stm32g0_disco/syscall.o
+ .debug_frame   0x0000000000000000       0x30 FLASH_RUN/stm32g0_disco/syscall.o
+ .ARM.attributes
+                0x0000000000000000       0x2c FLASH_RUN/stm32g0_disco/syscall.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/gpio.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/gpio.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/gpio.o
+ .text.gpio_wait_state
+                0x0000000000000000       0x58 FLASH_RUN/stm32g0_disco/gpio.o
+ .text.gpio_get
+                0x0000000000000000       0x22 FLASH_RUN/stm32g0_disco/gpio.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/led.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/led.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/led.o
+ .text.led_toggle
+                0x0000000000000000       0xa8 FLASH_RUN/stm32g0_disco/led.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/systime.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/systime.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/systime.o
+ .text.systime_add_
+                0x0000000000000000       0xdc FLASH_RUN/stm32g0_disco/systime.o
+ .text.systime_add
+                0x0000000000000000       0x1e FLASH_RUN/stm32g0_disco/systime.o
+ .text.systime_add_oneshot
+                0x0000000000000000       0x1e FLASH_RUN/stm32g0_disco/systime.o
+ .text.systime_remove
+                0x0000000000000000       0x78 FLASH_RUN/stm32g0_disco/systime.o
+ .text.systime_delay
+                0x0000000000000000       0x34 FLASH_RUN/stm32g0_disco/systime.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/bsp_led.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/bsp_led.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/bsp_led.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .text          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .data          0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .bss           0x0000000000000000        0x0 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .text.scanf_getc
+                0x0000000000000000       0x14 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .text.scanf_ungetc
+                0x0000000000000000       0x14 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .text.putval   0x0000000000000000       0x1c /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .text.skip_spaces
+                0x0000000000000000       0x2a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .rodata.str1.1
+                0x0000000000000000        0xc /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .text.__i_vfscanf
+                0x0000000000000000      0x3fc /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .debug_info    0x0000000000000000      0xb41 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .debug_abbrev  0x0000000000000000      0x3c2 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .debug_loc     0x0000000000000000      0xecf /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .debug_aranges
+                0x0000000000000000       0x40 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .debug_ranges  0x0000000000000000      0x108 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .debug_line    0x0000000000000000      0x89b /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .debug_str     0x0000000000000000      0x41d /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .comment       0x0000000000000000       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .debug_frame   0x0000000000000000       0x94 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .text.memset   0x0000000000000000       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .debug_info    0x0000000000000000      0x7b9 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .debug_abbrev  0x0000000000000000      0x16d /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .debug_loc     0x0000000000000000       0x96 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .debug_ranges  0x0000000000000000       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .debug_line    0x0000000000000000      0x1ee /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .debug_str     0x0000000000000000      0x611 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .comment       0x0000000000000000       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .debug_frame   0x0000000000000000       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .text.strchr   0x0000000000000000       0x1c /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .debug_info    0x0000000000000000       0xfa /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .debug_abbrev  0x0000000000000000       0x80 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .debug_loc     0x0000000000000000       0xae /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .debug_ranges  0x0000000000000000       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .debug_line    0x0000000000000000       0x86 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .debug_str     0x0000000000000000      0x239 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .comment       0x0000000000000000       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .debug_frame   0x0000000000000000       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .text.fgetc    0x0000000000000000       0x3e /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .debug_info    0x0000000000000000      0x29a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .debug_abbrev  0x0000000000000000      0x178 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .debug_loc     0x0000000000000000       0x98 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .debug_ranges  0x0000000000000000       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .debug_line    0x0000000000000000      0x12c /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .debug_str     0x0000000000000000      0x30f /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .comment       0x0000000000000000       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .debug_frame   0x0000000000000000       0x28 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .text.ungetc   0x0000000000000000       0x32 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .debug_info    0x0000000000000000      0x234 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .debug_abbrev  0x0000000000000000      0x128 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .debug_loc     0x0000000000000000       0x98 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .debug_ranges  0x0000000000000000       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .debug_line    0x0000000000000000      0x117 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .debug_str     0x0000000000000000      0x319 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .comment       0x0000000000000000       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .debug_frame   0x0000000000000000       0x2c /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .text.__picolibc_non_atomic_exchange_ungetc
+                0x0000000000000000        0x8 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .debug_info    0x0000000000000000      0x279 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .debug_abbrev  0x0000000000000000      0x15f /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .debug_loc     0x0000000000000000       0x6e /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .debug_ranges  0x0000000000000000       0x28 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .debug_line    0x0000000000000000      0x10e /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .debug_str     0x0000000000000000      0x32f /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .comment       0x0000000000000000       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .debug_frame   0x0000000000000000       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .text.__picolibc_non_atomic_compare_exchange_ungetc
+                0x0000000000000000       0x12 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .debug_info    0x0000000000000000      0x286 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .debug_abbrev  0x0000000000000000      0x13d /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .debug_loc     0x0000000000000000       0x6e /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .debug_ranges  0x0000000000000000       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .debug_line    0x0000000000000000      0x12b /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .debug_str     0x0000000000000000      0x34d /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .comment       0x0000000000000000       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .debug_frame   0x0000000000000000       0x28 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .ARM.attributes
+                0x0000000000000000       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .text          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_si.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_si.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x0000000000000000        0x0 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x0000000020000000 0x0000000000002000 xrw
+FLASH            0x0000000008000000 0x0000000000008000 xr
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000008000e10                vfprintf = __i_vfprintf
+                0x0000000000000000                vfscanf = __i_vfscanf
+LOAD FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+LOAD FLASH_RUN/stm32g0_disco/main.o
+LOAD FLASH_RUN/stm32g0_disco/syscall.o
+LOAD FLASH_RUN/stm32g0_disco/gpio.o
+LOAD FLASH_RUN/stm32g0_disco/led.o
+LOAD FLASH_RUN/stm32g0_disco/systime.o
+LOAD FLASH_RUN/stm32g0_disco/bsp_led.o
+LOAD FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+LOAD FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+LOAD /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
+LOAD /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+LOAD /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a
+START GROUP
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+START GROUP
+LOAD /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
+END GROUP
+END GROUP
+                0x0000000000001000                __stack_size = 0x1000
+                0x0000000000000001                ASSERT ((ORIGIN (FLASH) == ALIGN (ORIGIN (FLASH), 0x80)), Start of memory region flash not aligned for startup vector table)
+                0x0000000008000000                __flash_begin = ORIGIN (FLASH)
+                0x0000000008008000                __flash_end = (ORIGIN (FLASH) + LENGTH (FLASH))
+
+.isr_vectors    0x0000000020000000       0xbc load address 0x0000000008000000
+                0x0000000020000000                . = ALIGN (0x80)
+                0x0000000018000000                _isr_vectors_offs = (. - 0x8000000)
+ *(.isr_vectors)
+ .isr_vectors   0x0000000020000000       0xbc FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+                0x0000000020000000                g_pfnVectors
+ *(.isr_vectors.*)
+                0x00000000200000bc                . = ALIGN (0x4)
+                0x0000000008000000                __flash_vector_table_begin = LOADADDR (.isr_vectors)
+                0x00000000080000bc                __flash_vector_table_end = (__flash_vector_table_begin + SIZEOF (.isr_vectors))
+                0x0000000020000000                __ram_vector_table_begin = ADDR (.isr_vectors)
+                0x00000000200000bc                __ram_vector_table_end = (__ram_vector_table_begin + SIZEOF (.isr_vectors))
+
+.init
+ *(.text.init.enter)
+ *(.data.init.enter)
+ *(SORT_BY_NAME(.init) SORT_BY_NAME(.init.*))
+
+.text           0x00000000080000c0     0x1338
+ *(.text.unlikely .text.unlikely.*)
+ *(.text.startup .text.startup.*)
+ *(.text .text.* .opd .opd.*)
+ .text.Reset_Handler
+                0x00000000080000c0      0x180 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+                0x00000000080000c0                Reset_Handler
+ .text.test     0x0000000008000240       0x10 FLASH_RUN/stm32g0_disco/main.o
+                0x0000000008000240                test
+ .text.main     0x0000000008000250       0x68 FLASH_RUN/stm32g0_disco/main.o
+                0x0000000008000250                main
+ .text.gpio_init
+                0x00000000080002b8      0x326 FLASH_RUN/stm32g0_disco/gpio.o
+                0x00000000080002b8                gpio_init
+ .text.gpio_set
+                0x00000000080005de       0x3c FLASH_RUN/stm32g0_disco/gpio.o
+                0x00000000080005de                gpio_set
+ *fill*         0x000000000800061a        0x2 
+ .text.led_init
+                0x000000000800061c       0x68 FLASH_RUN/stm32g0_disco/led.o
+                0x000000000800061c                led_init
+ .text.led_set  0x0000000008000684       0x50 FLASH_RUN/stm32g0_disco/led.o
+                0x0000000008000684                led_set
+ .text.led_periodic
+                0x00000000080006d4      0x268 FLASH_RUN/stm32g0_disco/led.o
+                0x00000000080006d4                led_periodic
+ .text.__NVIC_SetPriority
+                0x000000000800093c       0xdc FLASH_RUN/stm32g0_disco/systime.o
+ .text.SysTick_Config
+                0x0000000008000a18       0x48 FLASH_RUN/stm32g0_disco/systime.o
+ .text.systime_init
+                0x0000000008000a60       0x68 FLASH_RUN/stm32g0_disco/systime.o
+                0x0000000008000a60                systime_init
+ .text.systime_periodic
+                0x0000000008000ac8       0xe0 FLASH_RUN/stm32g0_disco/systime.o
+                0x0000000008000ac8                systime_periodic
+ .text.systime_get
+                0x0000000008000ba8       0x18 FLASH_RUN/stm32g0_disco/systime.o
+                0x0000000008000ba8                systime_get
+ .text.SysTick_Handler
+                0x0000000008000bc0       0x20 FLASH_RUN/stm32g0_disco/systime.o
+                0x0000000008000bc0                SysTick_Handler
+ .text.Default_Handler
+                0x0000000008000be0        0x6 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+                0x0000000008000be0                TIM1_CC_IRQHandler
+                0x0000000008000be0                HardFault_Handler
+                0x0000000008000be0                PVD_IRQHandler
+                0x0000000008000be0                PendSV_Handler
+                0x0000000008000be0                NMI_Handler
+                0x0000000008000be0                I2C1_IRQHandler
+                0x0000000008000be0                LPTIM2_IRQHandler
+                0x0000000008000be0                RTC_TAMP_IRQHandler
+                0x0000000008000be0                SPI1_IRQHandler
+                0x0000000008000be0                DMA1_Ch4_5_DMAMUX1_OVR_IRQHandler
+                0x0000000008000be0                EXTI2_3_IRQHandler
+                0x0000000008000be0                ADC1_IRQHandler
+                0x0000000008000be0                I2C2_IRQHandler
+                0x0000000008000be0                TIM17_IRQHandler
+                0x0000000008000be0                TIM16_IRQHandler
+                0x0000000008000be0                TIM3_IRQHandler
+                0x0000000008000be0                EXTI4_15_IRQHandler
+                0x0000000008000be0                RCC_IRQHandler
+                0x0000000008000be0                DMA1_Channel1_IRQHandler
+                0x0000000008000be0                Default_Handler
+                0x0000000008000be0                LPUSART1_IRQHandler
+                0x0000000008000be0                TIM14_IRQHandler
+                0x0000000008000be0                EXTI0_1_IRQHandler
+                0x0000000008000be0                SPI2_IRQHandler
+                0x0000000008000be0                MemManage_Handler
+                0x0000000008000be0                SVC_Handler
+                0x0000000008000be0                WWDG_IRQHandler
+                0x0000000008000be0                TIM2_IRQHandler
+                0x0000000008000be0                DMA1_Channel2_3_IRQHandler
+                0x0000000008000be0                USART2_IRQHandler
+                0x0000000008000be0                FLASH_IRQHandler
+                0x0000000008000be0                USART1_IRQHandler
+                0x0000000008000be0                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x0000000008000be0                LPTIM1_IRQHandler
+ *fill*         0x0000000008000be6        0x2 
+ .text.SystemInit
+                0x0000000008000be8       0x20 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000008000be8                SystemInit
+ .text.SystemCoreClockUpdate
+                0x0000000008000c08      0x1a4 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000008000c08                SystemCoreClockUpdate
+ .text.printf   0x0000000008000dac       0x2c /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+                0x0000000008000dac                printf
+ .text.__ultoa_invert
+                0x0000000008000dd8       0x38 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .text.__i_vfprintf
+                0x0000000008000e10      0x460 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+                0x0000000008000e10                __i_vfprintf
+ .text.strnlen  0x0000000008001270       0x16 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+                0x0000000008001270                strnlen
+ .text.sys_semihost_getc
+                0x0000000008001286        0xe /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+                0x0000000008001286                sys_semihost_getc
+ .text.sys_semihost_putc
+                0x0000000008001294       0x16 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+                0x0000000008001294                sys_semihost_putc
+ *fill*         0x00000000080012aa        0x6 
+ .text          0x00000000080012b0        0x4 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+                0x00000000080012b0                sys_semihost
+ .text          0x00000000080012b4       0x14 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                0x00000000080012b4                __gnu_thumb1_case_uqi
+ .text          0x00000000080012c8       0x18 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_si.o)
+                0x00000000080012c8                __gnu_thumb1_case_si
+ .text          0x00000000080012e0      0x114 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x00000000080012e0                __udivsi3
+                0x00000000080012e0                __aeabi_uidiv
+                0x00000000080013ec                __aeabi_uidivmod
+ .text          0x00000000080013f4        0x4 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x00000000080013f4                __aeabi_ldiv0
+                0x00000000080013f4                __aeabi_idiv0
+ *(.gnu.linkonce.t.*)
+ *(.fini .fini.*)
+                0x00000000080013f8                __text_end = .
+                [!provide]                        PROVIDE (__etext = __text_end)
+                [!provide]                        PROVIDE (_etext = __text_end)
+                [!provide]                        PROVIDE (etext = __text_end)
+                0x00000000080013f8                . = ALIGN (0x8)
+                0x00000000080013f8                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000080013f8                PROVIDE (__preinit_array_end = .)
+                0x00000000080013f8                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array .ctors)
+                0x00000000080013f8                PROVIDE (__init_array_end = .)
+
+.glue_7         0x00000000080013f8        0x0
+ .glue_7        0x00000000080013f8        0x0 linker stubs
+
+.glue_7t        0x00000000080013f8        0x0
+ .glue_7t       0x00000000080013f8        0x0 linker stubs
+
+.vfp11_veneer   0x00000000080013f8        0x0
+ .vfp11_veneer  0x00000000080013f8        0x0 linker stubs
+
+.v4_bx          0x00000000080013f8        0x0
+ .v4_bx         0x00000000080013f8        0x0 linker stubs
+
+.iplt           0x00000000080013f8        0x0
+ .iplt          0x00000000080013f8        0x0 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+
+.rodata         0x00000000080013f8      0x1f7
+ *(.rdata)
+ *(.rodata .rodata.*)
+ .rodata        0x00000000080013f8       0x14 FLASH_RUN/stm32g0_disco/main.o
+ .rodata.led_timing
+                0x000000000800140c      0x160 FLASH_RUN/stm32g0_disco/led.o
+                0x000000000800140c                led_timing
+ .rodata.led_gpio
+                0x000000000800156c        0xc FLASH_RUN/stm32g0_disco/bsp_led.o
+                0x000000000800156c                led_gpio
+ .rodata.led_pol
+                0x0000000008001578        0x1 FLASH_RUN/stm32g0_disco/bsp_led.o
+                0x0000000008001578                led_pol
+ *fill*         0x0000000008001579        0x3 
+ .rodata.led_gpio_cnt
+                0x000000000800157c        0x4 FLASH_RUN/stm32g0_disco/bsp_led.o
+                0x000000000800157c                led_gpio_cnt
+ .rodata.AHBPrescTable
+                0x0000000008001580       0x40 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000008001580                AHBPrescTable
+ .rodata.APBPrescTable
+                0x00000000080015c0       0x20 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x00000000080015c0                APBPrescTable
+ .rodata.str1.1
+                0x00000000080015e0        0xf /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ *(.gnu.linkonce.r.*)
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ *(.srodata.cst2)
+ *(.srodata .srodata.*)
+
+.rel.dyn        0x00000000080015f0        0x0
+ .rel.iplt      0x00000000080015f0        0x0 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+ .rel.got       0x00000000080015f0        0x0 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+
+.data.rel.ro    0x00000000080015f0        0x4
+ *(.data.rel.ro .data.rel.ro.*)
+ .data.rel.ro.local
+                0x00000000080015f0        0x4 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+                0x00000000080015f0                stdout
+                0x00000000080015f0                stdin
+                0x00000000080015f0                stderr
+
+.toc
+ *(.toc .toc.*)
+
+.got            0x00000000200000bc       0x64 load address 0x00000000080015f4
+ *(.got.plt)
+ .got.plt       0x00000000200000bc        0xc FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+                0x00000000200000bc                _GLOBAL_OFFSET_TABLE_
+ *(.got)
+ .got           0x00000000200000c8       0x58 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+                0x00000000080015f4                __flash_global_offset_table_begin = LOADADDR (.got)
+                0x0000000008001658                __flash_global_offset_table_end = (__flash_global_offset_table_begin + SIZEOF (.got))
+                0x00000000200000bc                __ram_global_offset_table_begin = ADDR (.got)
+                0x0000000020000120                __ram_global_offset_table_end = (__ram_global_offset_table_begin + SIZEOF (.got))
+
+.preserve       0x0000000020000120        0x0
+                [!provide]                        PROVIDE (__preserve_start__ = .)
+ *(SORT_BY_NAME(.preserve.*))
+ *(.preserve)
+                [!provide]                        PROVIDE (__preserve_end__ = .)
+
+.data           0x0000000020000120       0x18 load address 0x0000000008001658
+ *(.data .data.*)
+ .data.SystemCoreClock
+                0x0000000020000120        0x4 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000020000120                SystemCoreClock
+ .data.SystemAPBClock
+                0x0000000020000124        0x4 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                0x0000000020000124                SystemAPBClock
+ .data.rel      0x0000000020000128       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ *(.gnu.linkonce.d.*)
+                0x0000000020000138                . = ALIGN (0x8)
+                [!provide]                        PROVIDE (__global_pointer$ = (. + 0x800))
+                [!provide]                        PROVIDE (_gp = (. + 0x8000))
+ *(.sdata .sdata.* .sdata2.*)
+ *(.gnu.linkonce.s.*)
+                0x0000000020000120                PROVIDE (__data_start = ADDR (.data))
+                0x0000000008001658                PROVIDE (__data_source = LOADADDR (.data))
+
+.igot.plt       0x0000000020000138        0x0 load address 0x0000000008001670
+ .igot.plt      0x0000000020000138        0x0 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+
+.tdata          0x0000000020000138        0x0 load address 0x0000000008001670
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+                0x0000000020000138                PROVIDE (__data_end = .)
+                [!provide]                        PROVIDE (__tdata_end = .)
+                [!provide]                        PROVIDE (__tls_base = ADDR (.tdata))
+                [!provide]                        PROVIDE (__tdata_start = ADDR (.tdata))
+                [!provide]                        PROVIDE (__tdata_source = LOADADDR (.tdata))
+                0x0000000008001670                PROVIDE (__tdata_source_end = (LOADADDR (.tdata) + SIZEOF (.tdata)))
+                0x0000000008001670                PROVIDE (__data_source_end = __tdata_source_end)
+                [!provide]                        PROVIDE (__tdata_size = SIZEOF (.tdata))
+                [!provide]                        PROVIDE (__edata = __data_end)
+                [!provide]                        PROVIDE (_edata = __data_end)
+                [!provide]                        PROVIDE (edata = __data_end)
+                0x0000000000000018                PROVIDE (__data_size = (__data_end - __data_start))
+                0x0000000000000018                PROVIDE (__data_source_size = (__data_source_end - __data_source))
+
+.tbss           0x0000000020000138        0x0
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+                [!provide]                        PROVIDE (__tls_end = .)
+                [!provide]                        PROVIDE (__tbss_end = .)
+                0x0000000020000138                PROVIDE (__bss_start = ADDR (.tbss))
+                [!provide]                        PROVIDE (__tbss_start = ADDR (.tbss))
+                [!provide]                        PROVIDE (__tbss_offset = (ADDR (.tbss) - ADDR (.tdata)))
+                [!provide]                        PROVIDE (__tbss_size = SIZEOF (.tbss))
+                [!provide]                        PROVIDE (__tls_size = (__tls_end - __tls_base))
+                [!provide]                        PROVIDE (__tls_align = MAX (ALIGNOF (.tdata), ALIGNOF (.tbss)))
+                [!provide]                        PROVIDE (__tls_size_align = (((__tls_size + __tls_align) - 0x1) & ~ ((__tls_align - 0x1))))
+                [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
+                [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
+
+.tbss_space     0x0000000020000138        0x0
+                0x0000000020000138                . = ADDR (.tbss)
+                0x0000000020000138                . = (. + SIZEOF (.tbss))
+
+.bss            0x0000000020000140       0x78
+ *(.sbss*)
+ *(.gnu.linkonce.sb.*)
+ *(.bss .bss.*)
+ .bss           0x0000000020000140        0xc FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+                0x0000000020000140                gu32FirmwareOffset
+                0x0000000020000144                gu32FirmwareAbsPosition
+                0x0000000020000148                gu32RamVectorTableBegin
+ .bss.time_last.5180
+                0x000000002000014c        0x4 FLASH_RUN/stm32g0_disco/led.o
+ .bss.systime_localtime
+                0x0000000020000150        0x4 FLASH_RUN/stm32g0_disco/systime.o
+                0x0000000020000150                systime_localtime
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+ COMMON         0x0000000020000154       0x12 FLASH_RUN/stm32g0_disco/led.o
+                0x0000000020000154                led_state
+                0x0000000020000158                led_timer
+                0x0000000020000160                led_mode
+                0x0000000020000164                led_nextmode
+ *fill*         0x0000000020000166        0x2 
+ COMMON         0x0000000020000168       0x50 FLASH_RUN/stm32g0_disco/systime.o
+                0x0000000020000168                systime_timer
+                0x00000000200001b8                . = ALIGN (0x8)
+                0x00000000200001b8                __bss_end = .
+                [!provide]                        PROVIDE (__non_tls_bss_start = ADDR (.bss))
+                [!provide]                        PROVIDE (__end = __bss_end)
+                0x00000000200001b8                _end = __bss_end
+                [!provide]                        PROVIDE (end = __bss_end)
+                [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
+                [!provide]                        PROVIDE (__heap_start = __end)
+                [!provide]                        PROVIDE (__heap_end = (__stack - DEFINED (__stack_size)?__stack_size:0x1000))
+                [!provide]                        PROVIDE (__heap_size = (__heap_end - __heap_start))
+
+.heap           0x00000000200001b8        0x0
+                0x00000000200001b8                . = (. + DEFINED (__heap_size_min)?__heap_size_min:0x0)
+
+.stack          0x00000000200001b8     0x1000
+                0x00000000200011b8                . = (. + DEFINED (__stack_size)?__stack_size:0x1000)
+ *fill*         0x00000000200001b8     0x1000 
+                0x00000000200011b8                __estack = .
+                0x00000000200011b8                PROVIDE (__stack_end = __estack)
+
+.endofflash     0x0000000008001670        0x0
+                0x0000000008001670                __end_of_flash = .
+
+/DISCARD/
+ *(.note .note.*)
+ *(.eh_frame .eh_frame.*)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.ARM.exidx*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x79
+ *(.comment)
+ .comment       0x0000000000000000       0x79 FLASH_RUN/stm32g0_disco/main.o
+                                         0x7a (size before relaxing)
+ .comment       0x0000000000000079       0x7a FLASH_RUN/stm32g0_disco/gpio.o
+ .comment       0x0000000000000079       0x7a FLASH_RUN/stm32g0_disco/led.o
+ .comment       0x0000000000000079       0x7a FLASH_RUN/stm32g0_disco/systime.o
+ .comment       0x0000000000000079       0x7a FLASH_RUN/stm32g0_disco/bsp_led.o
+ .comment       0x0000000000000079       0x7a FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .comment       0x0000000000000079       0x7a FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .comment       0x0000000000000079       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .comment       0x0000000000000079       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .comment       0x0000000000000079       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .comment       0x0000000000000079       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ .comment       0x0000000000000079       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .comment       0x0000000000000079       0x7a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+
+.ARM.attributes
+                0x0000000000000000       0x32
+ .ARM.attributes
+                0x0000000000000000       0x22 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+ .ARM.attributes
+                0x0000000000000022       0x2c FLASH_RUN/stm32g0_disco/main.o
+ .ARM.attributes
+                0x000000000000004e       0x2c FLASH_RUN/stm32g0_disco/gpio.o
+ .ARM.attributes
+                0x000000000000007a       0x2c FLASH_RUN/stm32g0_disco/led.o
+ .ARM.attributes
+                0x00000000000000a6       0x2c FLASH_RUN/stm32g0_disco/systime.o
+ .ARM.attributes
+                0x00000000000000d2       0x32 FLASH_RUN/stm32g0_disco/bsp_led.o
+ .ARM.attributes
+                0x0000000000000104       0x2c FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .ARM.attributes
+                0x0000000000000130       0x2c FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .ARM.attributes
+                0x000000000000015c       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .ARM.attributes
+                0x000000000000018c       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .ARM.attributes
+                0x00000000000001bc       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .ARM.attributes
+                0x00000000000001ec       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ .ARM.attributes
+                0x000000000000021c       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .ARM.attributes
+                0x000000000000024c       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+ .ARM.attributes
+                0x000000000000027c       0x1c /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+ .ARM.attributes
+                0x0000000000000298       0x1e /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x00000000000002b6       0x1e /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_si.o)
+ .ARM.attributes
+                0x00000000000002d4       0x1e /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000000000002f2       0x1e /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x268
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x20 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+ .debug_aranges
+                0x0000000000000020       0x28 FLASH_RUN/stm32g0_disco/main.o
+ .debug_aranges
+                0x0000000000000048       0x38 FLASH_RUN/stm32g0_disco/gpio.o
+ .debug_aranges
+                0x0000000000000080       0x38 FLASH_RUN/stm32g0_disco/led.o
+ .debug_aranges
+                0x00000000000000b8       0x70 FLASH_RUN/stm32g0_disco/systime.o
+ .debug_aranges
+                0x0000000000000128       0x18 FLASH_RUN/stm32g0_disco/bsp_led.o
+ .debug_aranges
+                0x0000000000000140       0x20 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_aranges
+                0x0000000000000160       0x28 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .debug_aranges
+                0x0000000000000188       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .debug_aranges
+                0x00000000000001a8       0x28 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .debug_aranges
+                0x00000000000001d0       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .debug_aranges
+                0x00000000000001f0       0x18 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ .debug_aranges
+                0x0000000000000208       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .debug_aranges
+                0x0000000000000228       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+ .debug_aranges
+                0x0000000000000248       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x3303
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0x26 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+ .debug_info    0x0000000000000026      0x418 FLASH_RUN/stm32g0_disco/main.o
+ .debug_info    0x000000000000043e      0x4a9 FLASH_RUN/stm32g0_disco/gpio.o
+ .debug_info    0x00000000000008e7      0x5a0 FLASH_RUN/stm32g0_disco/led.o
+ .debug_info    0x0000000000000e87      0x6ff FLASH_RUN/stm32g0_disco/systime.o
+ .debug_info    0x0000000000001586      0x3d8 FLASH_RUN/stm32g0_disco/bsp_led.o
+ .debug_info    0x000000000000195e       0xa9 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_info    0x0000000000001a07      0x427 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .debug_info    0x0000000000001e2e      0x22b /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .debug_info    0x0000000000002059      0xc17 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .debug_info    0x0000000000002c70       0xe6 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .debug_info    0x0000000000002d56      0x1a9 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ .debug_info    0x0000000000002eff      0x1e3 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .debug_info    0x00000000000030e2      0x1fb /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+ .debug_info    0x00000000000032dd       0x26 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+
+.debug_abbrev   0x0000000000000000     0x11df
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x14 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+ .debug_abbrev  0x0000000000000014      0x14f FLASH_RUN/stm32g0_disco/main.o
+ .debug_abbrev  0x0000000000000163      0x1b2 FLASH_RUN/stm32g0_disco/gpio.o
+ .debug_abbrev  0x0000000000000315      0x1d7 FLASH_RUN/stm32g0_disco/led.o
+ .debug_abbrev  0x00000000000004ec      0x267 FLASH_RUN/stm32g0_disco/systime.o
+ .debug_abbrev  0x0000000000000753      0x11f FLASH_RUN/stm32g0_disco/bsp_led.o
+ .debug_abbrev  0x0000000000000872       0x9e FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_abbrev  0x0000000000000910      0x128 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .debug_abbrev  0x0000000000000a38      0x147 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .debug_abbrev  0x0000000000000b7f      0x2d1 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .debug_abbrev  0x0000000000000e50       0x8f /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .debug_abbrev  0x0000000000000edf       0xca /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ .debug_abbrev  0x0000000000000fa9      0x111 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .debug_abbrev  0x00000000000010ba      0x111 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+ .debug_abbrev  0x00000000000011cb       0x14 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+
+.debug_line     0x0000000000000000     0x1f60
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000      0x101 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+ .debug_line    0x0000000000000101      0x1df FLASH_RUN/stm32g0_disco/main.o
+ .debug_line    0x00000000000002e0      0x383 FLASH_RUN/stm32g0_disco/gpio.o
+ .debug_line    0x0000000000000663      0x338 FLASH_RUN/stm32g0_disco/led.o
+ .debug_line    0x000000000000099b      0x401 FLASH_RUN/stm32g0_disco/systime.o
+ .debug_line    0x0000000000000d9c      0x183 FLASH_RUN/stm32g0_disco/bsp_led.o
+ .debug_line    0x0000000000000f1f       0x4f FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_line    0x0000000000000f6e      0x215 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .debug_line    0x0000000000001183      0x15e /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .debug_line    0x00000000000012e1      0x89f /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .debug_line    0x0000000000001b80       0xea /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .debug_line    0x0000000000001c6a       0xb1 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+ .debug_line    0x0000000000001d1b       0xf7 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .debug_line    0x0000000000001e12       0xf7 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+ .debug_line    0x0000000000001f09       0x57 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+
+.debug_frame    0x0000000000000000      0x4a0
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x54 FLASH_RUN/stm32g0_disco/main.o
+ .debug_frame   0x0000000000000054       0x94 FLASH_RUN/stm32g0_disco/gpio.o
+ .debug_frame   0x00000000000000e8       0xa0 FLASH_RUN/stm32g0_disco/led.o
+ .debug_frame   0x0000000000000188      0x180 FLASH_RUN/stm32g0_disco/systime.o
+ .debug_frame   0x0000000000000308       0x2c FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_frame   0x0000000000000334       0x50 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .debug_frame   0x0000000000000384       0x30 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .debug_frame   0x00000000000003b4       0x58 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .debug_frame   0x000000000000040c       0x20 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .debug_frame   0x000000000000042c       0x28 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .debug_frame   0x0000000000000454       0x2c /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+ .debug_frame   0x0000000000000480       0x20 /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+
+.debug_str      0x0000000000000000      0xee1
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0x54 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+ .debug_str     0x0000000000000054      0x2c0 FLASH_RUN/stm32g0_disco/main.o
+                                        0x352 (size before relaxing)
+ .debug_str     0x0000000000000314      0x23f FLASH_RUN/stm32g0_disco/gpio.o
+                                        0x480 (size before relaxing)
+ .debug_str     0x0000000000000553       0x9b FLASH_RUN/stm32g0_disco/led.o
+                                        0x4de (size before relaxing)
+ .debug_str     0x00000000000005ee      0x338 FLASH_RUN/stm32g0_disco/systime.o
+                                        0x5a2 (size before relaxing)
+ .debug_str     0x0000000000000926       0x1f FLASH_RUN/stm32g0_disco/bsp_led.o
+                                        0x47b (size before relaxing)
+ .debug_str     0x0000000000000945       0x47 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+                                        0x18c (size before relaxing)
+ .debug_str     0x000000000000098c       0x6e FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                                        0x356 (size before relaxing)
+ .debug_str     0x00000000000009fa      0x1ca /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+                                        0x2d5 (size before relaxing)
+ .debug_str     0x0000000000000bc4      0x24b /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+                                        0x575 (size before relaxing)
+ .debug_str     0x0000000000000e0f       0x26 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+                                        0x248 (size before relaxing)
+ .debug_str     0x0000000000000e35       0x1a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+                                        0x297 (size before relaxing)
+ .debug_str     0x0000000000000e4f       0x36 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+                                        0x2b8 (size before relaxing)
+ .debug_str     0x0000000000000e85       0x35 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+                                        0x2ce (size before relaxing)
+ .debug_str     0x0000000000000eba       0x27 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+                                         0x80 (size before relaxing)
+
+.debug_loc      0x0000000000000000     0x142e
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000       0x64 FLASH_RUN/stm32g0_disco/main.o
+ .debug_loc     0x0000000000000064       0xe0 FLASH_RUN/stm32g0_disco/gpio.o
+ .debug_loc     0x0000000000000144       0xe0 FLASH_RUN/stm32g0_disco/led.o
+ .debug_loc     0x0000000000000224      0x250 FLASH_RUN/stm32g0_disco/systime.o
+ .debug_loc     0x0000000000000474       0x2c FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_loc     0x00000000000004a0       0x64 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .debug_loc     0x0000000000000504       0x15 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .debug_loc     0x0000000000000519      0xdb8 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .debug_loc     0x00000000000012d1       0xdb /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .debug_loc     0x00000000000013ac       0x3a /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .debug_loc     0x00000000000013e6       0x48 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000      0x1d0
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x18 FLASH_RUN/stm32g0_disco/main.o
+ .debug_ranges  0x0000000000000018       0x28 FLASH_RUN/stm32g0_disco/gpio.o
+ .debug_ranges  0x0000000000000040       0x28 FLASH_RUN/stm32g0_disco/led.o
+ .debug_ranges  0x0000000000000068       0x60 FLASH_RUN/stm32g0_disco/systime.o
+ .debug_ranges  0x00000000000000c8       0x10 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+ .debug_ranges  0x00000000000000d8       0x18 FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+ .debug_ranges  0x00000000000000f0       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+ .debug_ranges  0x0000000000000100       0xa0 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+ .debug_ranges  0x00000000000001a0       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+ .debug_ranges  0x00000000000001b0       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+ .debug_ranges  0x00000000000001c0       0x10 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+                0x0000000000000001                ASSERT ((__data_size == __data_source_size), ERROR: .data/.tdata flash size does not match RAM size)
+OUTPUT(FLASH_RUN/stm32g0_disco/stm32g0_disco.elf elf32-littlearm)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC1_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+AHBPrescTable                                     FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+APBPrescTable                                     FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+DMA1_Ch4_5_DMAMUX1_OVR_IRQHandler                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+DMA1_Channel1_IRQHandler                          FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+DMA1_Channel2_3_IRQHandler                        FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+Default_Handler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+EXTI0_1_IRQHandler                                FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+EXTI2_3_IRQHandler                                FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+EXTI4_15_IRQHandler                               FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+FLASH_IRQHandler                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+HardFault_Handler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+I2C1_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+I2C2_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+LPTIM1_IRQHandler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+LPTIM2_IRQHandler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+LPUSART1_IRQHandler                               FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+MemManage_Handler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+NMI_Handler                                       FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+PVD_IRQHandler                                    FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+PendSV_Handler                                    FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+RCC_IRQHandler                                    FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+RTC_TAMP_IRQHandler                               FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+Reset_Handler                                     FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+                                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+SPI1_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+SPI2_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+SVC_Handler                                       FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+SysTick_Handler                                   FLASH_RUN/stm32g0_disco/systime.o
+SystemAPBClock                                    FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+SystemCoreClock                                   FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                                                  FLASH_RUN/stm32g0_disco/systime.o
+SystemCoreClockUpdate                             FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                                                  FLASH_RUN/stm32g0_disco/main.o
+SystemInit                                        FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                                                  FLASH_RUN/stm32g0_disco/main.o
+TIM14_IRQHandler                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM16_IRQHandler                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM17_IRQHandler                                  FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM1_BRK_UP_TRG_COM_IRQHandler                    FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM1_CC_IRQHandler                                FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM2_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+TIM3_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+USART1_IRQHandler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+USART2_IRQHandler                                 FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+WWDG_IRQHandler                                   FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+_GLOBAL_OFFSET_TABLE_                             FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__aeabi_idiv0                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+__aeabi_ldiv0                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+__aeabi_uidiv                                     /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                                  FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+                                                  FLASH_RUN/stm32g0_disco/systime.o
+__aeabi_uidivmod                                  /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+__atomic_compare_exchange_ungetc                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+__atomic_exchange_ungetc                          /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+__bss_end                                         FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__bss_start                                       FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__data_end                                        FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__data_source                                     FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__data_start                                      FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__end_of_flash                                    FLASH_RUN/stm32g0_disco/main.o
+                                                  FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__flash_begin                                     FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__flash_end                                       FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__flash_global_offset_table_begin                 FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__flash_global_offset_table_end                   FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__flash_vector_table_begin                        FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__flash_vector_table_end                          FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__gnu_thumb1_case_si                              /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_si.o)
+                                                  FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+__gnu_thumb1_case_uqi                             /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+__i_vfprintf                                      /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+__i_vfscanf                                       /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+__init_array_end                                  FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__init_array_start                                FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__picolibc_non_atomic_compare_exchange_ungetc     /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_compare_exchange.c.o)
+__picolibc_non_atomic_exchange_ungetc             /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_exchange.c.o)
+__preinit_array_end                               FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__preinit_array_start                             FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__ram_global_offset_table_begin                   FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__ram_vector_table_begin                          FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__stack_end                                       FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+                                                  FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+__udivsi3                                         /home/robot/devel-twincar/andon/gcc-arm-none-eabi-9-2019-q4-major/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+_end_ram                                          FLASH_RUN/stm32g0_disco/syscall.o
+_end_sram                                         FLASH_RUN/stm32g0_disco/syscall.o
+_sbrk                                             FLASH_RUN/stm32g0_disco/syscall.o
+fgetc                                             /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+g_pfnVectors                                      FLASH_RUN/stm32g0_disco/startup_stm32g031xx.o
+getc                                              /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_fgetc.c.o)
+gpio_get                                          FLASH_RUN/stm32g0_disco/gpio.o
+gpio_init                                         FLASH_RUN/stm32g0_disco/gpio.o
+                                                  FLASH_RUN/stm32g0_disco/led.o
+gpio_set                                          FLASH_RUN/stm32g0_disco/gpio.o
+                                                  FLASH_RUN/stm32g0_disco/led.o
+gpio_wait_state                                   FLASH_RUN/stm32g0_disco/gpio.o
+gu32FirmwareAbsPosition                           FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+gu32FirmwareOffset                                FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+gu32RamVectorTableBegin                           FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+                                                  FLASH_RUN/stm32g0_disco/system_stm32g0xx.o
+led_gpio                                          FLASH_RUN/stm32g0_disco/bsp_led.o
+                                                  FLASH_RUN/stm32g0_disco/led.o
+led_gpio_cnt                                      FLASH_RUN/stm32g0_disco/bsp_led.o
+                                                  FLASH_RUN/stm32g0_disco/led.o
+led_init                                          FLASH_RUN/stm32g0_disco/led.o
+                                                  FLASH_RUN/stm32g0_disco/main.o
+led_mode                                          FLASH_RUN/stm32g0_disco/led.o
+led_nextmode                                      FLASH_RUN/stm32g0_disco/led.o
+led_periodic                                      FLASH_RUN/stm32g0_disco/led.o
+                                                  FLASH_RUN/stm32g0_disco/main.o
+led_pol                                           FLASH_RUN/stm32g0_disco/bsp_led.o
+                                                  FLASH_RUN/stm32g0_disco/led.o
+led_set                                           FLASH_RUN/stm32g0_disco/led.o
+                                                  FLASH_RUN/stm32g0_disco/main.o
+led_state                                         FLASH_RUN/stm32g0_disco/led.o
+led_timer                                         FLASH_RUN/stm32g0_disco/led.o
+led_timing                                        FLASH_RUN/stm32g0_disco/led.o
+led_toggle                                        FLASH_RUN/stm32g0_disco/led.o
+main                                              FLASH_RUN/stm32g0_disco/main.o
+                                                  FLASH_RUN/stm32g0_disco/fw_anywhere_startup.o
+memset                                            /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(memset.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+printf                                            /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+                                                  FLASH_RUN/stm32g0_disco/main.o
+stderr                                            /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+stdin                                             /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+stdout                                            /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)
+strchr                                            /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strchr.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+strnlen                                           /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_string_strnlen.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiprintf.c.o)
+sys_semihost                                      /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(machine_arm_semihost-arm.S.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+sys_semihost_getc                                 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_getc.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+sys_semihost_putc                                 /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(sys_putc.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libsemihost.a(iob.c.o)
+systime_add                                       FLASH_RUN/stm32g0_disco/systime.o
+systime_add_oneshot                               FLASH_RUN/stm32g0_disco/systime.o
+systime_delay                                     FLASH_RUN/stm32g0_disco/systime.o
+systime_get                                       FLASH_RUN/stm32g0_disco/systime.o
+                                                  FLASH_RUN/stm32g0_disco/led.o
+systime_init                                      FLASH_RUN/stm32g0_disco/systime.o
+                                                  FLASH_RUN/stm32g0_disco/main.o
+systime_localtime                                 FLASH_RUN/stm32g0_disco/systime.o
+systime_periodic                                  FLASH_RUN/stm32g0_disco/systime.o
+                                                  FLASH_RUN/stm32g0_disco/main.o
+systime_remove                                    FLASH_RUN/stm32g0_disco/systime.o
+systime_timer                                     FLASH_RUN/stm32g0_disco/systime.o
+test                                              FLASH_RUN/stm32g0_disco/main.o
+ungetc                                            /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_ungetc.c.o)
+                                                  /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_vfiscanf.c.o)
+vfprintf                                          /home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_tinystdio_printf.c.o)

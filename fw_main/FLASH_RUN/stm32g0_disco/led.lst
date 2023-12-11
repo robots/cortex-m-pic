@@ -1,0 +1,989 @@
+   1              		.cpu cortex-m0plus
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 6
+   9              		.eabi_attribute 34, 0
+  10              		.eabi_attribute 18, 4
+  11              		.file	"led.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.global	led_timing
+  16              		.section	.rodata.led_timing,"a"
+  17              		.align	2
+  20              	led_timing:
+  21 0000 00       		.byte	0
+  22 0001 000000   		.space	3
+  23 0004 00000000 		.space	40
+  23      00000000 
+  23      00000000 
+  23      00000000 
+  23      00000000 
+  24 002c 02       		.byte	2
+  25 002d 000000   		.space	3
+  26 0030 00000000 		.word	0
+  27 0034 32000000 		.word	50
+  28 0038 00000000 		.space	32
+  28      00000000 
+  28      00000000 
+  28      00000000 
+  28      00000000 
+  29 0058 02       		.byte	2
+  30 0059 000000   		.space	3
+  31 005c 32000000 		.word	50
+  32 0060 00000000 		.word	0
+  33 0064 00000000 		.space	32
+  33      00000000 
+  33      00000000 
+  33      00000000 
+  33      00000000 
+  34 0084 02       		.byte	2
+  35 0085 000000   		.space	3
+  36 0088 32000000 		.word	50
+  37 008c 32000000 		.word	50
+  38 0090 00000000 		.space	32
+  38      00000000 
+  38      00000000 
+  38      00000000 
+  38      00000000 
+  39 00b0 02       		.byte	2
+  40 00b1 000000   		.space	3
+  41 00b4 C8000000 		.word	200
+  42 00b8 C8000000 		.word	200
+  43 00bc 00000000 		.space	32
+  43      00000000 
+  43      00000000 
+  43      00000000 
+  43      00000000 
+  44 00dc 04       		.byte	4
+  45 00dd 000000   		.space	3
+  46 00e0 C8000000 		.word	200
+  47 00e4 C8000000 		.word	200
+  48 00e8 C8000000 		.word	200
+  49 00ec E8030000 		.word	1000
+  50 00f0 00000000 		.space	24
+  50      00000000 
+  50      00000000 
+  50      00000000 
+  50      00000000 
+  51 0108 06       		.byte	6
+  52 0109 000000   		.space	3
+  53 010c C8000000 		.word	200
+  54 0110 C8000000 		.word	200
+  55 0114 C8000000 		.word	200
+  56 0118 C8000000 		.word	200
+  57 011c C8000000 		.word	200
+  58 0120 E8030000 		.word	1000
+  59 0124 00000000 		.space	16
+  59      00000000 
+  59      00000000 
+  59      00000000 
+  60 0134 08       		.byte	8
+  61 0135 000000   		.space	3
+  62 0138 C8000000 		.word	200
+  63 013c C8000000 		.word	200
+  64 0140 C8000000 		.word	200
+  65 0144 C8000000 		.word	200
+  66 0148 C8000000 		.word	200
+  67 014c C8000000 		.word	200
+  68 0150 C8000000 		.word	200
+  69 0154 E8030000 		.word	1000
+  70 0158 00000000 		.space	8
+  70      00000000 
+  71              		.comm	led_timer,8,4
+  72              		.comm	led_state,2,4
+  73              		.comm	led_mode,2,4
+  74              		.comm	led_nextmode,2,4
+  75              		.section	.text.led_init,"ax",%progbits
+  76              		.align	1
+  77              		.global	led_init
+  78              		.arch armv6s-m
+  79              		.syntax unified
+  80              		.code	16
+  81              		.thumb_func
+  82              		.fpu softvfp
+  84              	led_init:
+  85              	.LFB47:
+  86              		.file 1 "../common/led.c"
+   1:../common/led.c **** 
+   2:../common/led.c **** #include "platform.h"
+   3:../common/led.c **** 
+   4:../common/led.c **** #include "gpio.h"
+   5:../common/led.c **** #include "bsp_led.h"
+   6:../common/led.c **** #include "led.h"
+   7:../common/led.c **** #include "systime.h"
+   8:../common/led.c **** 
+   9:../common/led.c **** #undef DEBUG
+  10:../common/led.c **** 
+  11:../common/led.c **** #ifdef DEBUG
+  12:../common/led.c **** #include <stdlib.h>
+  13:../common/led.c **** #include "console.h"
+  14:../common/led.c **** static struct console_command_t led_cmd;
+  15:../common/led.c **** #endif
+  16:../common/led.c **** 
+  17:../common/led.c **** const struct {
+  18:../common/led.c **** 	uint8_t num;
+  19:../common/led.c **** 	uint32_t time[10];
+  20:../common/led.c **** } led_timing[] = {
+  21:../common/led.c **** 	{0, {}},
+  22:../common/led.c **** 	{2, {0, 50}},
+  23:../common/led.c **** 	{2, {50, 0}},
+  24:../common/led.c **** 	{2, {50, 50}},
+  25:../common/led.c **** 	{2, {200, 200}},
+  26:../common/led.c **** 	{4, {200, 200, 200, 1000}},
+  27:../common/led.c **** 	{6, {200, 200, 200, 200, 200, 1000}},
+  28:../common/led.c **** 	{8, {200, 200, 200, 200, 200, 200, 200, 1000}},
+  29:../common/led.c **** };
+  30:../common/led.c **** 
+  31:../common/led.c **** uint32_t led_timer[2];
+  32:../common/led.c **** uint8_t led_state[2];
+  33:../common/led.c **** uint8_t led_mode[2];
+  34:../common/led.c **** uint8_t led_nextmode[2];
+  35:../common/led.c **** 
+  36:../common/led.c **** void led_init(void)
+  37:../common/led.c **** {
+  87              		.loc 1 37 1
+  88              		.cfi_startproc
+  89              		@ args = 0, pretend = 0, frame = 8
+  90              		@ frame_needed = 1, uses_anonymous_args = 0
+  91 0000 90B5     		push	{r4, r7, lr}
+  92              	.LCFI0:
+  93              		.cfi_def_cfa_offset 12
+  94              		.cfi_offset 4, -12
+  95              		.cfi_offset 7, -8
+  96              		.cfi_offset 14, -4
+  97 0002 83B0     		sub	sp, sp, #12
+  98              	.LCFI1:
+  99              		.cfi_def_cfa_offset 24
+ 100 0004 00AF     		add	r7, sp, #0
+ 101              	.LCFI2:
+ 102              		.cfi_def_cfa_register 7
+ 103 0006 4C46     		mov	r4, r9
+  38:../common/led.c **** 	gpio_init(led_gpio, led_gpio_cnt); 
+ 104              		.loc 1 38 2
+ 105 0008 134B     		ldr	r3, .L4
+ 106 000a E358     		ldr	r3, [r4, r3]
+ 107 000c 1B68     		ldr	r3, [r3]
+ 108 000e 1A00     		movs	r2, r3
+ 109 0010 124B     		ldr	r3, .L4+4
+ 110 0012 E358     		ldr	r3, [r4, r3]
+ 111 0014 1100     		movs	r1, r2
+ 112 0016 1800     		movs	r0, r3
+ 113 0018 FFF7FEFF 		bl	gpio_init
+ 114              	.LBB2:
+  39:../common/led.c **** 
+  40:../common/led.c **** 	for (uint32_t i = 0; i < led_gpio_cnt; i++) {
+ 115              		.loc 1 40 16
+ 116 001c 0023     		movs	r3, #0
+ 117 001e 7B60     		str	r3, [r7, #4]
+ 118              		.loc 1 40 2
+ 119 0020 0EE0     		b	.L2
+ 120              	.L3:
+  41:../common/led.c **** 		led_mode[i] = 0;
+ 121              		.loc 1 41 15 discriminator 3
+ 122 0022 0F4B     		ldr	r3, .L4+8
+ 123 0024 E258     		ldr	r2, [r4, r3]
+ 124 0026 7B68     		ldr	r3, [r7, #4]
+ 125 0028 D318     		adds	r3, r2, r3
+ 126 002a 0022     		movs	r2, #0
+ 127 002c 1A70     		strb	r2, [r3]
+  42:../common/led.c **** 		led_nextmode[i] = 0xff;
+ 128              		.loc 1 42 19 discriminator 3
+ 129 002e 0D4B     		ldr	r3, .L4+12
+ 130 0030 E258     		ldr	r2, [r4, r3]
+ 131 0032 7B68     		ldr	r3, [r7, #4]
+ 132 0034 D318     		adds	r3, r2, r3
+ 133 0036 FF22     		movs	r2, #255
+ 134 0038 1A70     		strb	r2, [r3]
+  40:../common/led.c **** 		led_mode[i] = 0;
+ 135              		.loc 1 40 42 discriminator 3
+ 136 003a 7B68     		ldr	r3, [r7, #4]
+ 137 003c 0133     		adds	r3, r3, #1
+ 138 003e 7B60     		str	r3, [r7, #4]
+ 139              	.L2:
+  40:../common/led.c **** 		led_mode[i] = 0;
+ 140              		.loc 1 40 25 discriminator 1
+ 141 0040 054B     		ldr	r3, .L4
+ 142 0042 E358     		ldr	r3, [r4, r3]
+ 143 0044 1B68     		ldr	r3, [r3]
+  40:../common/led.c **** 		led_mode[i] = 0;
+ 144              		.loc 1 40 2 discriminator 1
+ 145 0046 7A68     		ldr	r2, [r7, #4]
+ 146 0048 9A42     		cmp	r2, r3
+ 147 004a EAD3     		bcc	.L3
+ 148              	.LBE2:
+  43:../common/led.c **** 	}
+  44:../common/led.c **** 
+  45:../common/led.c **** #ifdef DEBUG
+  46:../common/led.c **** 	console_add_command(&led_cmd);
+  47:../common/led.c **** 	console_printf(CON_INFO, "Led: menu added\r\n");
+  48:../common/led.c **** #endif
+  49:../common/led.c **** }
+ 149              		.loc 1 49 1
+ 150 004c C046     		nop
+ 151 004e C046     		nop
+ 152 0050 BD46     		mov	sp, r7
+ 153 0052 03B0     		add	sp, sp, #12
+ 154              		@ sp needed
+ 155 0054 90BD     		pop	{r4, r7, pc}
+ 156              	.L5:
+ 157 0056 C046     		.align	2
+ 158              	.L4:
+ 159 0058 00000000 		.word	led_gpio_cnt(GOT)
+ 160 005c 00000000 		.word	led_gpio(GOT)
+ 161 0060 00000000 		.word	led_mode(GOT)
+ 162 0064 00000000 		.word	led_nextmode(GOT)
+ 163              		.cfi_endproc
+ 164              	.LFE47:
+ 166              		.section	.text.led_set,"ax",%progbits
+ 167              		.align	1
+ 168              		.global	led_set
+ 169              		.syntax unified
+ 170              		.code	16
+ 171              		.thumb_func
+ 172              		.fpu softvfp
+ 174              	led_set:
+ 175              	.LFB48:
+  50:../common/led.c **** 
+  51:../common/led.c **** void led_set(uint8_t led, uint8_t mode)
+  52:../common/led.c **** {
+ 176              		.loc 1 52 1
+ 177              		.cfi_startproc
+ 178              		@ args = 0, pretend = 0, frame = 8
+ 179              		@ frame_needed = 1, uses_anonymous_args = 0
+ 180 0000 80B5     		push	{r7, lr}
+ 181              	.LCFI3:
+ 182              		.cfi_def_cfa_offset 8
+ 183              		.cfi_offset 7, -8
+ 184              		.cfi_offset 14, -4
+ 185 0002 82B0     		sub	sp, sp, #8
+ 186              	.LCFI4:
+ 187              		.cfi_def_cfa_offset 16
+ 188 0004 00AF     		add	r7, sp, #0
+ 189              	.LCFI5:
+ 190              		.cfi_def_cfa_register 7
+ 191 0006 0200     		movs	r2, r0
+ 192 0008 FB1D     		adds	r3, r7, #7
+ 193 000a 1A70     		strb	r2, [r3]
+ 194 000c BB1D     		adds	r3, r7, #6
+ 195 000e 0A1C     		adds	r2, r1, #0
+ 196 0010 1A70     		strb	r2, [r3]
+ 197 0012 4B46     		mov	r3, r9
+  53:../common/led.c **** 	if (led >= led_gpio_cnt)
+ 198              		.loc 1 53 10
+ 199 0014 FA1D     		adds	r2, r7, #7
+ 200 0016 1178     		ldrb	r1, [r2]
+ 201 0018 0B4A     		ldr	r2, .L12
+ 202 001a 9A58     		ldr	r2, [r3, r2]
+ 203 001c 1268     		ldr	r2, [r2]
+ 204              		.loc 1 53 5
+ 205 001e 9142     		cmp	r1, r2
+ 206 0020 0CD2     		bcs	.L10
+  54:../common/led.c **** 		return;
+  55:../common/led.c **** 
+  56:../common/led.c **** 	if ((mode & 0x7f) >= ARRAY_SIZE(led_timing))
+ 207              		.loc 1 56 12
+ 208 0022 BA1D     		adds	r2, r7, #6
+ 209 0024 1278     		ldrb	r2, [r2]
+ 210              		.loc 1 56 20
+ 211 0026 7821     		movs	r1, #120
+ 212 0028 0A40     		ands	r2, r1
+ 213              		.loc 1 56 5
+ 214 002a 09D1     		bne	.L11
+  57:../common/led.c **** 		return;
+  58:../common/led.c **** 
+  59:../common/led.c **** 	led_nextmode[led] = mode;
+ 215              		.loc 1 59 14
+ 216 002c FA1D     		adds	r2, r7, #7
+ 217 002e 1278     		ldrb	r2, [r2]
+ 218              		.loc 1 59 20
+ 219 0030 0649     		ldr	r1, .L12+4
+ 220 0032 5B58     		ldr	r3, [r3, r1]
+ 221 0034 B91D     		adds	r1, r7, #6
+ 222 0036 0978     		ldrb	r1, [r1]
+ 223 0038 9954     		strb	r1, [r3, r2]
+ 224 003a 02E0     		b	.L6
+ 225              	.L10:
+  54:../common/led.c **** 		return;
+ 226              		.loc 1 54 3
+ 227 003c C046     		nop
+ 228 003e 00E0     		b	.L6
+ 229              	.L11:
+  57:../common/led.c **** 		return;
+ 230              		.loc 1 57 3
+ 231 0040 C046     		nop
+ 232              	.L6:
+  60:../common/led.c **** }
+ 233              		.loc 1 60 1
+ 234 0042 BD46     		mov	sp, r7
+ 235 0044 02B0     		add	sp, sp, #8
+ 236              		@ sp needed
+ 237 0046 80BD     		pop	{r7, pc}
+ 238              	.L13:
+ 239              		.align	2
+ 240              	.L12:
+ 241 0048 00000000 		.word	led_gpio_cnt(GOT)
+ 242 004c 00000000 		.word	led_nextmode(GOT)
+ 243              		.cfi_endproc
+ 244              	.LFE48:
+ 246              		.section	.text.led_toggle,"ax",%progbits
+ 247              		.align	1
+ 248              		.global	led_toggle
+ 249              		.syntax unified
+ 250              		.code	16
+ 251              		.thumb_func
+ 252              		.fpu softvfp
+ 254              	led_toggle:
+ 255              	.LFB49:
+  61:../common/led.c **** 
+  62:../common/led.c **** void led_toggle(uint8_t led)
+  63:../common/led.c **** {
+ 256              		.loc 1 63 1
+ 257              		.cfi_startproc
+ 258              		@ args = 0, pretend = 0, frame = 16
+ 259              		@ frame_needed = 1, uses_anonymous_args = 0
+ 260 0000 90B5     		push	{r4, r7, lr}
+ 261              	.LCFI6:
+ 262              		.cfi_def_cfa_offset 12
+ 263              		.cfi_offset 4, -12
+ 264              		.cfi_offset 7, -8
+ 265              		.cfi_offset 14, -4
+ 266 0002 85B0     		sub	sp, sp, #20
+ 267              	.LCFI7:
+ 268              		.cfi_def_cfa_offset 32
+ 269 0004 00AF     		add	r7, sp, #0
+ 270              	.LCFI8:
+ 271              		.cfi_def_cfa_register 7
+ 272 0006 0200     		movs	r2, r0
+ 273 0008 FB1D     		adds	r3, r7, #7
+ 274 000a 1A70     		strb	r2, [r3]
+ 275 000c 4B46     		mov	r3, r9
+  64:../common/led.c **** 	uint8_t state;
+  65:../common/led.c **** 
+  66:../common/led.c **** 	if (led >= led_gpio_cnt)
+ 276              		.loc 1 66 10
+ 277 000e FA1D     		adds	r2, r7, #7
+ 278 0010 1178     		ldrb	r1, [r2]
+ 279 0012 204A     		ldr	r2, .L20
+ 280 0014 9A58     		ldr	r2, [r3, r2]
+ 281 0016 1268     		ldr	r2, [r2]
+ 282              		.loc 1 66 5
+ 283 0018 9142     		cmp	r1, r2
+ 284 001a 36D2     		bcs	.L19
+  67:../common/led.c **** 		return;
+  68:../common/led.c **** 
+  69:../common/led.c **** 	// into manual mode
+  70:../common/led.c **** 	led_mode[led] = 0;
+ 285              		.loc 1 70 10
+ 286 001c FA1D     		adds	r2, r7, #7
+ 287 001e 1278     		ldrb	r2, [r2]
+ 288              		.loc 1 70 16
+ 289 0020 1D49     		ldr	r1, .L20+4
+ 290 0022 5958     		ldr	r1, [r3, r1]
+ 291 0024 0020     		movs	r0, #0
+ 292 0026 8854     		strb	r0, [r1, r2]
+  71:../common/led.c **** 
+  72:../common/led.c **** 	led_state[led] = !led_state[led];
+ 293              		.loc 1 72 29
+ 294 0028 FA1D     		adds	r2, r7, #7
+ 295 002a 1278     		ldrb	r2, [r2]
+ 296 002c 1B49     		ldr	r1, .L20+8
+ 297 002e 5958     		ldr	r1, [r3, r1]
+ 298 0030 8A5C     		ldrb	r2, [r1, r2]
+ 299              		.loc 1 72 19
+ 300 0032 5142     		rsbs	r1, r2, #0
+ 301 0034 4A41     		adcs	r2, r2, r1
+ 302 0036 D1B2     		uxtb	r1, r2
+ 303              		.loc 1 72 11
+ 304 0038 FA1D     		adds	r2, r7, #7
+ 305 003a 1278     		ldrb	r2, [r2]
+ 306              		.loc 1 72 19
+ 307 003c 0800     		movs	r0, r1
+ 308              		.loc 1 72 17
+ 309 003e 1749     		ldr	r1, .L20+8
+ 310 0040 5958     		ldr	r1, [r3, r1]
+ 311 0042 8854     		strb	r0, [r1, r2]
+  73:../common/led.c **** 
+  74:../common/led.c **** 	state = led_state[led] ^ led_pol[led];
+ 312              		.loc 1 74 19
+ 313 0044 FA1D     		adds	r2, r7, #7
+ 314 0046 1278     		ldrb	r2, [r2]
+ 315 0048 1449     		ldr	r1, .L20+8
+ 316 004a 5958     		ldr	r1, [r3, r1]
+ 317 004c 885C     		ldrb	r0, [r1, r2]
+ 318              		.loc 1 74 34
+ 319 004e FA1D     		adds	r2, r7, #7
+ 320 0050 1278     		ldrb	r2, [r2]
+ 321 0052 1349     		ldr	r1, .L20+12
+ 322 0054 5958     		ldr	r1, [r3, r1]
+ 323 0056 895C     		ldrb	r1, [r1, r2]
+ 324              		.loc 1 74 8
+ 325 0058 0F24     		movs	r4, #15
+ 326 005a 3A19     		adds	r2, r7, r4
+ 327 005c 4140     		eors	r1, r0
+ 328 005e 1170     		strb	r1, [r2]
+  75:../common/led.c **** 
+  76:../common/led.c **** 	gpio_set(&led_gpio[led], state ? GPIO_RESET : GPIO_SET);
+ 329              		.loc 1 76 20
+ 330 0060 FA1D     		adds	r2, r7, #7
+ 331 0062 1178     		ldrb	r1, [r2]
+ 332              		.loc 1 76 2
+ 333 0064 0A00     		movs	r2, r1
+ 334 0066 5200     		lsls	r2, r2, #1
+ 335 0068 5218     		adds	r2, r2, r1
+ 336 006a 9200     		lsls	r2, r2, #2
+ 337 006c 0D49     		ldr	r1, .L20+16
+ 338 006e 5B58     		ldr	r3, [r3, r1]
+ 339 0070 D218     		adds	r2, r2, r3
+ 340 0072 3B19     		adds	r3, r7, r4
+ 341 0074 1B78     		ldrb	r3, [r3]
+ 342 0076 002B     		cmp	r3, #0
+ 343 0078 01D0     		beq	.L17
+ 344              		.loc 1 76 2 is_stmt 0 discriminator 1
+ 345 007a 0123     		movs	r3, #1
+ 346 007c 00E0     		b	.L18
+ 347              	.L17:
+ 348              		.loc 1 76 2 discriminator 2
+ 349 007e 0223     		movs	r3, #2
+ 350              	.L18:
+ 351              		.loc 1 76 2 discriminator 4
+ 352 0080 1900     		movs	r1, r3
+ 353 0082 1000     		movs	r0, r2
+ 354 0084 FFF7FEFF 		bl	gpio_set
+ 355 0088 00E0     		b	.L14
+ 356              	.L19:
+  67:../common/led.c **** 
+ 357              		.loc 1 67 3 is_stmt 1
+ 358 008a C046     		nop
+ 359              	.L14:
+  77:../common/led.c **** }
+ 360              		.loc 1 77 1
+ 361 008c BD46     		mov	sp, r7
+ 362 008e 05B0     		add	sp, sp, #20
+ 363              		@ sp needed
+ 364 0090 90BD     		pop	{r4, r7, pc}
+ 365              	.L21:
+ 366 0092 C046     		.align	2
+ 367              	.L20:
+ 368 0094 00000000 		.word	led_gpio_cnt(GOT)
+ 369 0098 00000000 		.word	led_mode(GOT)
+ 370 009c 00000000 		.word	led_state(GOT)
+ 371 00a0 00000000 		.word	led_pol(GOT)
+ 372 00a4 00000000 		.word	led_gpio(GOT)
+ 373              		.cfi_endproc
+ 374              	.LFE49:
+ 376              		.section	.text.led_periodic,"ax",%progbits
+ 377              		.align	1
+ 378              		.global	led_periodic
+ 379              		.syntax unified
+ 380              		.code	16
+ 381              		.thumb_func
+ 382              		.fpu softvfp
+ 384              	led_periodic:
+ 385              	.LFB50:
+  78:../common/led.c **** 
+  79:../common/led.c **** void led_periodic()
+  80:../common/led.c **** {
+ 386              		.loc 1 80 1
+ 387              		.cfi_startproc
+ 388              		@ args = 0, pretend = 0, frame = 16
+ 389              		@ frame_needed = 1, uses_anonymous_args = 0
+ 390 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 391              	.LCFI9:
+ 392              		.cfi_def_cfa_offset 20
+ 393              		.cfi_offset 4, -20
+ 394              		.cfi_offset 5, -16
+ 395              		.cfi_offset 6, -12
+ 396              		.cfi_offset 7, -8
+ 397              		.cfi_offset 14, -4
+ 398 0002 85B0     		sub	sp, sp, #20
+ 399              	.LCFI10:
+ 400              		.cfi_def_cfa_offset 40
+ 401 0004 00AF     		add	r7, sp, #0
+ 402              	.LCFI11:
+ 403              		.cfi_def_cfa_register 7
+ 404 0006 4C46     		mov	r4, r9
+  81:../common/led.c **** 	static uint32_t time_last = 0;
+  82:../common/led.c **** 	uint8_t mode;
+  83:../common/led.c **** 	uint32_t state;
+  84:../common/led.c **** 
+  85:../common/led.c **** 	uint32_t diff = systime_get() - time_last;
+ 405              		.loc 1 85 18
+ 406 0008 FFF7FEFF 		bl	systime_get
+ 407 000c 0200     		movs	r2, r0
+ 408              		.loc 1 85 32
+ 409 000e 8D4B     		ldr	r3, .L33
+ 410 0010 E358     		ldr	r3, [r4, r3]
+ 411 0012 1B68     		ldr	r3, [r3]
+ 412              		.loc 1 85 11
+ 413 0014 D31A     		subs	r3, r2, r3
+ 414 0016 BB60     		str	r3, [r7, #8]
+  86:../common/led.c **** 	time_last = systime_get();
+ 415              		.loc 1 86 14
+ 416 0018 FFF7FEFF 		bl	systime_get
+ 417 001c 0200     		movs	r2, r0
+ 418              		.loc 1 86 12
+ 419 001e 894B     		ldr	r3, .L33
+ 420 0020 E358     		ldr	r3, [r4, r3]
+ 421 0022 1A60     		str	r2, [r3]
+ 422              	.LBB3:
+  87:../common/led.c **** 
+  88:../common/led.c **** 	for (uint8_t i = 0; i < led_gpio_cnt; i++) {
+ 423              		.loc 1 88 15
+ 424 0024 0E23     		movs	r3, #14
+ 425 0026 FB18     		adds	r3, r7, r3
+ 426 0028 0022     		movs	r2, #0
+ 427 002a 1A70     		strb	r2, [r3]
+ 428              		.loc 1 88 2
+ 429 002c FBE0     		b	.L23
+ 430              	.L32:
+  89:../common/led.c **** 		mode = led_mode[i] & 0x7f;
+ 431              		.loc 1 89 18
+ 432 002e 0E20     		movs	r0, #14
+ 433 0030 3B18     		adds	r3, r7, r0
+ 434 0032 1B78     		ldrb	r3, [r3]
+ 435 0034 844A     		ldr	r2, .L33+4
+ 436 0036 A258     		ldr	r2, [r4, r2]
+ 437 0038 D25C     		ldrb	r2, [r2, r3]
+ 438              		.loc 1 89 8
+ 439 003a 0F25     		movs	r5, #15
+ 440 003c 7B19     		adds	r3, r7, r5
+ 441 003e 7F21     		movs	r1, #127
+ 442 0040 0A40     		ands	r2, r1
+ 443 0042 1A70     		strb	r2, [r3]
+  90:../common/led.c **** 
+  91:../common/led.c **** 		if (mode == 0) {
+ 444              		.loc 1 91 6
+ 445 0044 7B19     		adds	r3, r7, r5
+ 446 0046 1B78     		ldrb	r3, [r3]
+ 447 0048 002B     		cmp	r3, #0
+ 448 004a 25D1     		bne	.L24
+  92:../common/led.c **** 			if (led_nextmode[i] != 0xff) {
+ 449              		.loc 1 92 20
+ 450 004c 3B18     		adds	r3, r7, r0
+ 451 004e 1B78     		ldrb	r3, [r3]
+ 452 0050 7E4A     		ldr	r2, .L33+8
+ 453 0052 A258     		ldr	r2, [r4, r2]
+ 454 0054 D35C     		ldrb	r3, [r2, r3]
+ 455              		.loc 1 92 7
+ 456 0056 FF2B     		cmp	r3, #255
+ 457 0058 00D1     		bne	.LCB324
+ 458 005a DEE0     		b	.L25	@long jump
+ 459              	.LCB324:
+  93:../common/led.c **** 				led_mode[i] = led_nextmode[i];
+ 460              		.loc 1 93 31
+ 461 005c 3B18     		adds	r3, r7, r0
+ 462 005e 1A78     		ldrb	r2, [r3]
+ 463              		.loc 1 93 13
+ 464 0060 3B18     		adds	r3, r7, r0
+ 465 0062 1B78     		ldrb	r3, [r3]
+ 466              		.loc 1 93 31
+ 467 0064 7949     		ldr	r1, .L33+8
+ 468 0066 6158     		ldr	r1, [r4, r1]
+ 469 0068 895C     		ldrb	r1, [r1, r2]
+ 470              		.loc 1 93 17
+ 471 006a 774A     		ldr	r2, .L33+4
+ 472 006c A258     		ldr	r2, [r4, r2]
+ 473 006e D154     		strb	r1, [r2, r3]
+  94:../common/led.c **** 				led_nextmode[i] = 0xff;
+ 474              		.loc 1 94 17
+ 475 0070 3B18     		adds	r3, r7, r0
+ 476 0072 1B78     		ldrb	r3, [r3]
+ 477              		.loc 1 94 21
+ 478 0074 754A     		ldr	r2, .L33+8
+ 479 0076 A258     		ldr	r2, [r4, r2]
+ 480 0078 FF21     		movs	r1, #255
+ 481 007a D154     		strb	r1, [r2, r3]
+  95:../common/led.c **** 				led_state[i] = 0;
+ 482              		.loc 1 95 14
+ 483 007c 3B18     		adds	r3, r7, r0
+ 484 007e 1B78     		ldrb	r3, [r3]
+ 485              		.loc 1 95 18
+ 486 0080 734A     		ldr	r2, .L33+12
+ 487 0082 A258     		ldr	r2, [r4, r2]
+ 488 0084 0021     		movs	r1, #0
+ 489 0086 D154     		strb	r1, [r2, r3]
+  96:../common/led.c **** 				led_timer[i] = 0;
+ 490              		.loc 1 96 14
+ 491 0088 3B18     		adds	r3, r7, r0
+ 492 008a 1A78     		ldrb	r2, [r3]
+ 493              		.loc 1 96 18
+ 494 008c 714B     		ldr	r3, .L33+16
+ 495 008e E358     		ldr	r3, [r4, r3]
+ 496 0090 9200     		lsls	r2, r2, #2
+ 497 0092 0021     		movs	r1, #0
+ 498 0094 D150     		str	r1, [r2, r3]
+ 499 0096 C0E0     		b	.L25
+ 500              	.L24:
+  97:../common/led.c **** 			}
+  98:../common/led.c **** 		} else if (led_timer[i] == 0) {
+ 501              		.loc 1 98 23
+ 502 0098 0E25     		movs	r5, #14
+ 503 009a 7B19     		adds	r3, r7, r5
+ 504 009c 1A78     		ldrb	r2, [r3]
+ 505 009e 6D4B     		ldr	r3, .L33+16
+ 506 00a0 E358     		ldr	r3, [r4, r3]
+ 507 00a2 9200     		lsls	r2, r2, #2
+ 508 00a4 D358     		ldr	r3, [r2, r3]
+ 509              		.loc 1 98 13
+ 510 00a6 002B     		cmp	r3, #0
+ 511 00a8 00D0     		beq	.LCB371
+ 512 00aa 94E0     		b	.L26	@long jump
+ 513              	.LCB371:
+  99:../common/led.c **** 
+ 100:../common/led.c **** 			// is end of pattern?
+ 101:../common/led.c **** 			if (led_state[i] >= led_timing[mode].num) {
+ 514              		.loc 1 101 17
+ 515 00ac 7B19     		adds	r3, r7, r5
+ 516 00ae 1B78     		ldrb	r3, [r3]
+ 517 00b0 674A     		ldr	r2, .L33+12
+ 518 00b2 A258     		ldr	r2, [r4, r2]
+ 519 00b4 D25C     		ldrb	r2, [r2, r3]
+ 520              		.loc 1 101 21
+ 521 00b6 0F23     		movs	r3, #15
+ 522 00b8 FB18     		adds	r3, r7, r3
+ 523 00ba 1978     		ldrb	r1, [r3]
+ 524              		.loc 1 101 40
+ 525 00bc 664B     		ldr	r3, .L33+20
+ 526 00be E358     		ldr	r3, [r4, r3]
+ 527 00c0 2C20     		movs	r0, #44
+ 528 00c2 4143     		muls	r1, r0
+ 529 00c4 CB5C     		ldrb	r3, [r1, r3]
+ 530              		.loc 1 101 7
+ 531 00c6 9A42     		cmp	r2, r3
+ 532 00c8 3AD3     		bcc	.L27
+ 102:../common/led.c **** 				led_state[i] = 0;
+ 533              		.loc 1 102 14
+ 534 00ca 7B19     		adds	r3, r7, r5
+ 535 00cc 1B78     		ldrb	r3, [r3]
+ 536              		.loc 1 102 18
+ 537 00ce 604A     		ldr	r2, .L33+12
+ 538 00d0 A258     		ldr	r2, [r4, r2]
+ 539 00d2 0021     		movs	r1, #0
+ 540 00d4 D154     		strb	r1, [r2, r3]
+ 103:../common/led.c **** 				if (led_mode[i] & 0x80) {
+ 541              		.loc 1 103 17
+ 542 00d6 7B19     		adds	r3, r7, r5
+ 543 00d8 1B78     		ldrb	r3, [r3]
+ 544 00da 5B4A     		ldr	r2, .L33+4
+ 545 00dc A258     		ldr	r2, [r4, r2]
+ 546 00de D35C     		ldrb	r3, [r2, r3]
+ 547              		.loc 1 103 9
+ 548 00e0 5BB2     		sxtb	r3, r3
+ 549              		.loc 1 103 8
+ 550 00e2 002B     		cmp	r3, #0
+ 551 00e4 1FDA     		bge	.L28
+ 104:../common/led.c **** 					if (led_nextmode[i] != 0xff) {
+ 552              		.loc 1 104 22
+ 553 00e6 7B19     		adds	r3, r7, r5
+ 554 00e8 1B78     		ldrb	r3, [r3]
+ 555 00ea 584A     		ldr	r2, .L33+8
+ 556 00ec A258     		ldr	r2, [r4, r2]
+ 557 00ee D35C     		ldrb	r3, [r2, r3]
+ 558              		.loc 1 104 9
+ 559 00f0 FF2B     		cmp	r3, #255
+ 560 00f2 25D0     		beq	.L27
+ 105:../common/led.c **** 						led_mode[i] = led_nextmode[i];
+ 561              		.loc 1 105 33
+ 562 00f4 7B19     		adds	r3, r7, r5
+ 563 00f6 1A78     		ldrb	r2, [r3]
+ 564              		.loc 1 105 15
+ 565 00f8 2800     		movs	r0, r5
+ 566 00fa 7B19     		adds	r3, r7, r5
+ 567 00fc 1B78     		ldrb	r3, [r3]
+ 568              		.loc 1 105 33
+ 569 00fe 5349     		ldr	r1, .L33+8
+ 570 0100 6158     		ldr	r1, [r4, r1]
+ 571 0102 895C     		ldrb	r1, [r1, r2]
+ 572              		.loc 1 105 19
+ 573 0104 504A     		ldr	r2, .L33+4
+ 574 0106 A258     		ldr	r2, [r4, r2]
+ 575 0108 D154     		strb	r1, [r2, r3]
+ 106:../common/led.c **** 						led_nextmode[i] = 0xff;
+ 576              		.loc 1 106 19
+ 577 010a 3B18     		adds	r3, r7, r0
+ 578 010c 1B78     		ldrb	r3, [r3]
+ 579              		.loc 1 106 23
+ 580 010e 4F4A     		ldr	r2, .L33+8
+ 581 0110 A258     		ldr	r2, [r4, r2]
+ 582 0112 FF21     		movs	r1, #255
+ 583 0114 D154     		strb	r1, [r2, r3]
+ 107:../common/led.c **** 						led_timer[i] = 0;
+ 584              		.loc 1 107 16
+ 585 0116 3B18     		adds	r3, r7, r0
+ 586 0118 1A78     		ldrb	r2, [r3]
+ 587              		.loc 1 107 20
+ 588 011a 4E4B     		ldr	r3, .L33+16
+ 589 011c E358     		ldr	r3, [r4, r3]
+ 590 011e 9200     		lsls	r2, r2, #2
+ 591 0120 0021     		movs	r1, #0
+ 592 0122 D150     		str	r1, [r2, r3]
+ 108:../common/led.c **** 						continue;
+ 593              		.loc 1 108 7
+ 594 0124 79E0     		b	.L25
+ 595              	.L28:
+ 109:../common/led.c **** 					}
+ 110:../common/led.c **** 				} else {
+ 111:../common/led.c **** 					mode = led_mode[i] = 0;
+ 596              		.loc 1 111 21
+ 597 0126 0E23     		movs	r3, #14
+ 598 0128 FB18     		adds	r3, r7, r3
+ 599 012a 1B78     		ldrb	r3, [r3]
+ 600              		.loc 1 111 25
+ 601 012c 464A     		ldr	r2, .L33+4
+ 602 012e A258     		ldr	r2, [r4, r2]
+ 603 0130 0021     		movs	r1, #0
+ 604 0132 D154     		strb	r1, [r2, r3]
+ 605              		.loc 1 111 11
+ 606 0134 0F22     		movs	r2, #15
+ 607 0136 BA18     		adds	r2, r7, r2
+ 608 0138 4349     		ldr	r1, .L33+4
+ 609 013a 6158     		ldr	r1, [r4, r1]
+ 610 013c CB5C     		ldrb	r3, [r1, r3]
+ 611 013e 1370     		strb	r3, [r2]
+ 612              	.L27:
+ 112:../common/led.c **** 				}
+ 113:../common/led.c **** 			}
+ 114:../common/led.c **** 
+ 115:../common/led.c **** 			led_timer[i] = led_timing[mode].time[led_state[i]];
+ 613              		.loc 1 115 40
+ 614 0140 0F23     		movs	r3, #15
+ 615 0142 FB18     		adds	r3, r7, r3
+ 616 0144 1A78     		ldrb	r2, [r3]
+ 617              		.loc 1 115 50
+ 618 0146 0E26     		movs	r6, #14
+ 619 0148 BB19     		adds	r3, r7, r6
+ 620 014a 1B78     		ldrb	r3, [r3]
+ 621 014c 4049     		ldr	r1, .L33+12
+ 622 014e 6158     		ldr	r1, [r4, r1]
+ 623 0150 CB5C     		ldrb	r3, [r1, r3]
+ 624 0152 1D00     		movs	r5, r3
+ 625              		.loc 1 115 13
+ 626 0154 BB19     		adds	r3, r7, r6
+ 627 0156 1878     		ldrb	r0, [r3]
+ 628              		.loc 1 115 40
+ 629 0158 3F4B     		ldr	r3, .L33+20
+ 630 015a E158     		ldr	r1, [r4, r3]
+ 631 015c 1300     		movs	r3, r2
+ 632 015e 9B00     		lsls	r3, r3, #2
+ 633 0160 9B18     		adds	r3, r3, r2
+ 634 0162 5B00     		lsls	r3, r3, #1
+ 635 0164 9B18     		adds	r3, r3, r2
+ 636 0166 5B19     		adds	r3, r3, r5
+ 637 0168 9B00     		lsls	r3, r3, #2
+ 638 016a CB18     		adds	r3, r1, r3
+ 639 016c 0433     		adds	r3, r3, #4
+ 640 016e 1968     		ldr	r1, [r3]
+ 641              		.loc 1 115 17
+ 642 0170 384B     		ldr	r3, .L33+16
+ 643 0172 E358     		ldr	r3, [r4, r3]
+ 644 0174 8200     		lsls	r2, r0, #2
+ 645 0176 D150     		str	r1, [r2, r3]
+ 116:../common/led.c **** 			state = (led_state[i] % 0x02) ^ led_pol[i];
+ 646              		.loc 1 116 22
+ 647 0178 BB19     		adds	r3, r7, r6
+ 648 017a 1B78     		ldrb	r3, [r3]
+ 649 017c 344A     		ldr	r2, .L33+12
+ 650 017e A258     		ldr	r2, [r4, r2]
+ 651 0180 D35C     		ldrb	r3, [r2, r3]
+ 652              		.loc 1 116 34
+ 653 0182 0122     		movs	r2, #1
+ 654 0184 1340     		ands	r3, r2
+ 655 0186 DAB2     		uxtb	r2, r3
+ 656              		.loc 1 116 43
+ 657 0188 BB19     		adds	r3, r7, r6
+ 658 018a 1B78     		ldrb	r3, [r3]
+ 659 018c 3349     		ldr	r1, .L33+24
+ 660 018e 6158     		ldr	r1, [r4, r1]
+ 661 0190 CB5C     		ldrb	r3, [r1, r3]
+ 662              		.loc 1 116 34
+ 663 0192 5340     		eors	r3, r2
+ 664 0194 DBB2     		uxtb	r3, r3
+ 665              		.loc 1 116 10
+ 666 0196 7B60     		str	r3, [r7, #4]
+ 117:../common/led.c **** 
+ 118:../common/led.c **** 			gpio_set(&led_gpio[i], state ? GPIO_RESET : GPIO_SET);
+ 667              		.loc 1 118 22
+ 668 0198 BB19     		adds	r3, r7, r6
+ 669 019a 1A78     		ldrb	r2, [r3]
+ 670              		.loc 1 118 4
+ 671 019c 1300     		movs	r3, r2
+ 672 019e 5B00     		lsls	r3, r3, #1
+ 673 01a0 9B18     		adds	r3, r3, r2
+ 674 01a2 9B00     		lsls	r3, r3, #2
+ 675 01a4 2E4A     		ldr	r2, .L33+28
+ 676 01a6 A258     		ldr	r2, [r4, r2]
+ 677 01a8 9A18     		adds	r2, r3, r2
+ 678 01aa 7B68     		ldr	r3, [r7, #4]
+ 679 01ac 002B     		cmp	r3, #0
+ 680 01ae 01D0     		beq	.L29
+ 681              		.loc 1 118 4 is_stmt 0 discriminator 1
+ 682 01b0 0123     		movs	r3, #1
+ 683 01b2 00E0     		b	.L30
+ 684              	.L29:
+ 685              		.loc 1 118 4 discriminator 2
+ 686 01b4 0223     		movs	r3, #2
+ 687              	.L30:
+ 688              		.loc 1 118 4 discriminator 4
+ 689 01b6 1900     		movs	r1, r3
+ 690 01b8 1000     		movs	r0, r2
+ 691 01ba FFF7FEFF 		bl	gpio_set
+ 119:../common/led.c **** 
+ 120:../common/led.c **** 			led_state[i]++;
+ 692              		.loc 1 120 13 is_stmt 1 discriminator 4
+ 693 01be 0E23     		movs	r3, #14
+ 694 01c0 FB18     		adds	r3, r7, r3
+ 695 01c2 1B78     		ldrb	r3, [r3]
+ 696 01c4 224A     		ldr	r2, .L33+12
+ 697 01c6 A258     		ldr	r2, [r4, r2]
+ 698 01c8 D25C     		ldrb	r2, [r2, r3]
+ 699              		.loc 1 120 16 discriminator 4
+ 700 01ca 0132     		adds	r2, r2, #1
+ 701 01cc D1B2     		uxtb	r1, r2
+ 702 01ce 204A     		ldr	r2, .L33+12
+ 703 01d0 A258     		ldr	r2, [r4, r2]
+ 704 01d2 D154     		strb	r1, [r2, r3]
+ 705 01d4 21E0     		b	.L25
+ 706              	.L26:
+ 121:../common/led.c **** 		} else {
+ 122:../common/led.c **** 			if (led_timer[i] >= diff) {
+ 707              		.loc 1 122 17
+ 708 01d6 0E21     		movs	r1, #14
+ 709 01d8 7B18     		adds	r3, r7, r1
+ 710 01da 1A78     		ldrb	r2, [r3]
+ 711 01dc 1D4B     		ldr	r3, .L33+16
+ 712 01de E358     		ldr	r3, [r4, r3]
+ 713 01e0 9200     		lsls	r2, r2, #2
+ 714 01e2 D358     		ldr	r3, [r2, r3]
+ 715              		.loc 1 122 7
+ 716 01e4 BA68     		ldr	r2, [r7, #8]
+ 717 01e6 9A42     		cmp	r2, r3
+ 718 01e8 0FD8     		bhi	.L31
+ 123:../common/led.c **** 				led_timer[i] -= diff;
+ 719              		.loc 1 123 18
+ 720 01ea 0800     		movs	r0, r1
+ 721 01ec 7B18     		adds	r3, r7, r1
+ 722 01ee 1A78     		ldrb	r2, [r3]
+ 723 01f0 184B     		ldr	r3, .L33+16
+ 724 01f2 E358     		ldr	r3, [r4, r3]
+ 725 01f4 9200     		lsls	r2, r2, #2
+ 726 01f6 D158     		ldr	r1, [r2, r3]
+ 727 01f8 3B18     		adds	r3, r7, r0
+ 728 01fa 1A78     		ldrb	r2, [r3]
+ 729 01fc BB68     		ldr	r3, [r7, #8]
+ 730 01fe C91A     		subs	r1, r1, r3
+ 731 0200 144B     		ldr	r3, .L33+16
+ 732 0202 E358     		ldr	r3, [r4, r3]
+ 733 0204 9200     		lsls	r2, r2, #2
+ 734 0206 D150     		str	r1, [r2, r3]
+ 735 0208 07E0     		b	.L25
+ 736              	.L31:
+ 124:../common/led.c **** 			} else {
+ 125:../common/led.c **** 				led_timer[i] = 0;
+ 737              		.loc 1 125 14
+ 738 020a 0E23     		movs	r3, #14
+ 739 020c FB18     		adds	r3, r7, r3
+ 740 020e 1A78     		ldrb	r2, [r3]
+ 741              		.loc 1 125 18
+ 742 0210 104B     		ldr	r3, .L33+16
+ 743 0212 E358     		ldr	r3, [r4, r3]
+ 744 0214 9200     		lsls	r2, r2, #2
+ 745 0216 0021     		movs	r1, #0
+ 746 0218 D150     		str	r1, [r2, r3]
+ 747              	.L25:
+  88:../common/led.c **** 		mode = led_mode[i] & 0x7f;
+ 748              		.loc 1 88 41 discriminator 2
+ 749 021a 0E21     		movs	r1, #14
+ 750 021c 7B18     		adds	r3, r7, r1
+ 751 021e 1A78     		ldrb	r2, [r3]
+ 752 0220 7B18     		adds	r3, r7, r1
+ 753 0222 0132     		adds	r2, r2, #1
+ 754 0224 1A70     		strb	r2, [r3]
+ 755              	.L23:
+  88:../common/led.c **** 		mode = led_mode[i] & 0x7f;
+ 756              		.loc 1 88 24 discriminator 1
+ 757 0226 0E23     		movs	r3, #14
+ 758 0228 FB18     		adds	r3, r7, r3
+ 759 022a 1A78     		ldrb	r2, [r3]
+ 760 022c 0D4B     		ldr	r3, .L33+32
+ 761 022e E358     		ldr	r3, [r4, r3]
+ 762 0230 1B68     		ldr	r3, [r3]
+  88:../common/led.c **** 		mode = led_mode[i] & 0x7f;
+ 763              		.loc 1 88 2 discriminator 1
+ 764 0232 9A42     		cmp	r2, r3
+ 765 0234 00D2     		bcs	.LCB602
+ 766 0236 FAE6     		b	.L32	@long jump
+ 767              	.LCB602:
+ 768              	.LBE3:
+ 126:../common/led.c **** 			}
+ 127:../common/led.c **** 		}
+ 128:../common/led.c **** 	}
+ 129:../common/led.c **** }
+ 769              		.loc 1 129 1
+ 770 0238 C046     		nop
+ 771 023a C046     		nop
+ 772 023c BD46     		mov	sp, r7
+ 773 023e 05B0     		add	sp, sp, #20
+ 774              		@ sp needed
+ 775 0240 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 776              	.L34:
+ 777 0242 C046     		.align	2
+ 778              	.L33:
+ 779 0244 00000000 		.word	time_last.5180(GOT)
+ 780 0248 00000000 		.word	led_mode(GOT)
+ 781 024c 00000000 		.word	led_nextmode(GOT)
+ 782 0250 00000000 		.word	led_state(GOT)
+ 783 0254 00000000 		.word	led_timer(GOT)
+ 784 0258 00000000 		.word	led_timing(GOT)
+ 785 025c 00000000 		.word	led_pol(GOT)
+ 786 0260 00000000 		.word	led_gpio(GOT)
+ 787 0264 00000000 		.word	led_gpio_cnt(GOT)
+ 788              		.cfi_endproc
+ 789              	.LFE50:
+ 791              		.section	.bss.time_last.5180,"aw",%nobits
+ 792              		.align	2
+ 795              	time_last.5180:
+ 796 0000 00000000 		.space	4
+ 797              		.text
+ 798              	.Letext0:
+ 799              		.file 2 "/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/include/machine/_defa
+ 800              		.file 3 "/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/include/sys/_stdint.h
+ 801              		.file 4 "../lib/stm32h/STM32G0xx/Include/system_stm32g0xx.h"
+ 802              		.file 5 "../lib/stm32h/STM32G0xx/Include/stm32g031xx.h"
+ 803              		.file 6 "./platform.h"
+ 804              		.file 7 "../common/gpio.h"
+ 805              		.file 8 "../bsp/bsp_led.h"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 led.c
+     /tmp/ccuNrmfd.s:20     .rodata.led_timing:0000000000000000 led_timing
+     /tmp/ccuNrmfd.s:17     .rodata.led_timing:0000000000000000 $d
+                            *COM*:0000000000000008 led_timer
+                            *COM*:0000000000000002 led_state
+                            *COM*:0000000000000002 led_mode
+                            *COM*:0000000000000002 led_nextmode
+     /tmp/ccuNrmfd.s:76     .text.led_init:0000000000000000 $t
+     /tmp/ccuNrmfd.s:84     .text.led_init:0000000000000000 led_init
+     /tmp/ccuNrmfd.s:159    .text.led_init:0000000000000058 $d
+     /tmp/ccuNrmfd.s:167    .text.led_set:0000000000000000 $t
+     /tmp/ccuNrmfd.s:174    .text.led_set:0000000000000000 led_set
+     /tmp/ccuNrmfd.s:241    .text.led_set:0000000000000048 $d
+     /tmp/ccuNrmfd.s:247    .text.led_toggle:0000000000000000 $t
+     /tmp/ccuNrmfd.s:254    .text.led_toggle:0000000000000000 led_toggle
+     /tmp/ccuNrmfd.s:368    .text.led_toggle:0000000000000094 $d
+     /tmp/ccuNrmfd.s:377    .text.led_periodic:0000000000000000 $t
+     /tmp/ccuNrmfd.s:384    .text.led_periodic:0000000000000000 led_periodic
+     /tmp/ccuNrmfd.s:779    .text.led_periodic:0000000000000244 $d
+     /tmp/ccuNrmfd.s:795    .bss.time_last.5180:0000000000000000 time_last.5180
+     /tmp/ccuNrmfd.s:792    .bss.time_last.5180:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+gpio_init
+led_gpio_cnt
+led_gpio
+gpio_set
+led_pol
+systime_get

@@ -1,0 +1,198 @@
+   1              		.cpu cortex-m0plus
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 6
+   9              		.eabi_attribute 34, 0
+  10              		.eabi_attribute 18, 4
+  11              		.file	"main.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.test,"ax",%progbits
+  16              		.align	1
+  17              		.global	test
+  18              		.arch armv6s-m
+  19              		.syntax unified
+  20              		.code	16
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	test:
+  25              	.LFB48:
+  26              		.file 1 "main.c"
+   1:main.c        **** #include "platform.h"
+   2:main.c        **** 
+   3:main.c        **** #include <stdio.h>
+   4:main.c        **** 
+   5:main.c        **** #include "systime.h"
+   6:main.c        **** #include "led.h"
+   7:main.c        **** 
+   8:main.c        **** void test(void *arg)
+   9:main.c        **** {
+  27              		.loc 1 9 1
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 8
+  30              		@ frame_needed = 1, uses_anonymous_args = 0
+  31 0000 80B5     		push	{r7, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 7, -8
+  35              		.cfi_offset 14, -4
+  36 0002 82B0     		sub	sp, sp, #8
+  37              	.LCFI1:
+  38              		.cfi_def_cfa_offset 16
+  39 0004 00AF     		add	r7, sp, #0
+  40              	.LCFI2:
+  41              		.cfi_def_cfa_register 7
+  42 0006 7860     		str	r0, [r7, #4]
+  10:main.c        **** 	(void) arg;
+  11:main.c        **** //	while(1);
+  12:main.c        **** 	return;
+  43              		.loc 1 12 2
+  44 0008 C046     		nop
+  13:main.c        **** }
+  45              		.loc 1 13 1
+  46 000a BD46     		mov	sp, r7
+  47 000c 02B0     		add	sp, sp, #8
+  48              		@ sp needed
+  49 000e 80BD     		pop	{r7, pc}
+  50              		.cfi_endproc
+  51              	.LFE48:
+  53              		.section	.rodata
+  54              		.align	2
+  55              	.LC0:
+  56 0000 6F752079 		.ascii	"ou yeah! %08x %08x\012\000"
+  56      65616821 
+  56      20253038 
+  56      78202530 
+  56      38780A00 
+  57              		.section	.text.main,"ax",%progbits
+  58              		.align	1
+  59              		.global	main
+  60              		.syntax unified
+  61              		.code	16
+  62              		.thumb_func
+  63              		.fpu softvfp
+  65              	main:
+  66              	.LFB49:
+  14:main.c        **** 
+  15:main.c        **** extern char __end_of_flash[];
+  16:main.c        **** 
+  17:main.c        **** int main(void)
+  18:main.c        **** {
+  67              		.loc 1 18 1
+  68              		.cfi_startproc
+  69              		@ args = 0, pretend = 0, frame = 0
+  70              		@ frame_needed = 1, uses_anonymous_args = 0
+  71 0000 B0B5     		push	{r4, r5, r7, lr}
+  72              	.LCFI3:
+  73              		.cfi_def_cfa_offset 16
+  74              		.cfi_offset 4, -16
+  75              		.cfi_offset 5, -12
+  76              		.cfi_offset 7, -8
+  77              		.cfi_offset 14, -4
+  78 0002 00AF     		add	r7, sp, #0
+  79              	.LCFI4:
+  80              		.cfi_def_cfa_register 7
+  81 0004 4C46     		mov	r4, r9
+  19:main.c        **** 	SystemInit();
+  82              		.loc 1 19 2
+  83 0006 FFF7FEFF 		bl	SystemInit
+  20:main.c        **** 	SystemCoreClockUpdate();
+  84              		.loc 1 20 2
+  85 000a FFF7FEFF 		bl	SystemCoreClockUpdate
+  21:main.c        **** 
+  22:main.c        **** 	RCC->IOPENR |= 0x2f;
+  86              		.loc 1 22 14
+  87 000e 124B     		ldr	r3, .L5
+  88 0010 5A6B     		ldr	r2, [r3, #52]
+  89 0012 114B     		ldr	r3, .L5
+  90 0014 2F21     		movs	r1, #47
+  91 0016 0A43     		orrs	r2, r1
+  92 0018 5A63     		str	r2, [r3, #52]
+  23:main.c        **** 	RCC->APBENR2 |= RCC_APBENR2_SYSCFGEN;
+  93              		.loc 1 23 15
+  94 001a 0F4B     		ldr	r3, .L5
+  95 001c 1A6C     		ldr	r2, [r3, #64]
+  96 001e 0E4B     		ldr	r3, .L5
+  97 0020 0121     		movs	r1, #1
+  98 0022 0A43     		orrs	r2, r1
+  99 0024 1A64     		str	r2, [r3, #64]
+  24:main.c        **** 
+  25:main.c        **** 	systime_init();
+ 100              		.loc 1 25 2
+ 101 0026 FFF7FEFF 		bl	systime_init
+  26:main.c        **** 	led_init();
+ 102              		.loc 1 26 2
+ 103 002a FFF7FEFF 		bl	led_init
+  27:main.c        **** 
+  28:main.c        **** 	led_set(0, LED_3BLINK);	
+ 104              		.loc 1 28 2
+ 105 002e 8621     		movs	r1, #134
+ 106 0030 0020     		movs	r0, #0
+ 107 0032 FFF7FEFF 		bl	led_set
+  29:main.c        **** 
+  30:main.c        **** 	printf("ou yeah! %08x %08x\n", __end_of_flash, test);
+ 108              		.loc 1 30 2
+ 109 0036 094B     		ldr	r3, .L5+4
+ 110 0038 E358     		ldr	r3, [r4, r3]
+ 111 003a 1A00     		movs	r2, r3
+ 112 003c 084B     		ldr	r3, .L5+8
+ 113 003e E358     		ldr	r3, [r4, r3]
+ 114 0040 1900     		movs	r1, r3
+ 115 0042 084B     		ldr	r3, .L5+12
+ 116 0044 E358     		ldr	r3, [r4, r3]
+ 117 0046 1800     		movs	r0, r3
+ 118 0048 FFF7FEFF 		bl	printf
+ 119              	.L4:
+  31:main.c        **** 
+  32:main.c        **** 	while (1) {
+  33:main.c        **** 		systime_periodic();
+ 120              		.loc 1 33 3 discriminator 1
+ 121 004c FFF7FEFF 		bl	systime_periodic
+  34:main.c        **** 		led_periodic();
+ 122              		.loc 1 34 3 discriminator 1
+ 123 0050 FFF7FEFF 		bl	led_periodic
+  33:main.c        **** 		led_periodic();
+ 124              		.loc 1 33 3 discriminator 1
+ 125 0054 FAE7     		b	.L4
+ 126              	.L6:
+ 127 0056 C046     		.align	2
+ 128              	.L5:
+ 129 0058 00100240 		.word	1073876992
+ 130 005c 00000000 		.word	test(GOT)
+ 131 0060 00000000 		.word	__end_of_flash(GOT)
+ 132 0064 00000000 		.word	.LC0(GOT)
+ 133              		.cfi_endproc
+ 134              	.LFE49:
+ 136              		.text
+ 137              	.Letext0:
+ 138              		.file 2 "/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/include/machine/_defa
+ 139              		.file 3 "/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/include/sys/_stdint.h
+ 140              		.file 4 "../lib/stm32h/STM32G0xx/Include/system_stm32g0xx.h"
+ 141              		.file 5 "../lib/stm32h/STM32G0xx/Include/stm32g031xx.h"
+ 142              		.file 6 "platform.h"
+ 143              		.file 7 "/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/include/stdio.h"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 main.c
+     /tmp/ccuZ8AI6.s:16     .text.test:0000000000000000 $t
+     /tmp/ccuZ8AI6.s:24     .text.test:0000000000000000 test
+     /tmp/ccuZ8AI6.s:54     .rodata:0000000000000000 $d
+     /tmp/ccuZ8AI6.s:55     .rodata:0000000000000000 .LC0
+     /tmp/ccuZ8AI6.s:58     .text.main:0000000000000000 $t
+     /tmp/ccuZ8AI6.s:65     .text.main:0000000000000000 main
+     /tmp/ccuZ8AI6.s:129    .text.main:0000000000000058 $d
+
+UNDEFINED SYMBOLS
+SystemInit
+SystemCoreClockUpdate
+systime_init
+led_init
+led_set
+printf
+systime_periodic
+led_periodic
+__end_of_flash

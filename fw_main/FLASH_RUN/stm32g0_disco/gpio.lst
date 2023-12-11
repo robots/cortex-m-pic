@@ -1,0 +1,946 @@
+   1              		.cpu cortex-m0plus
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 6
+   9              		.eabi_attribute 34, 0
+  10              		.eabi_attribute 18, 4
+  11              		.file	"gpio.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.gpio_init,"ax",%progbits
+  16              		.align	1
+  17              		.global	gpio_init
+  18              		.arch armv6s-m
+  19              		.syntax unified
+  20              		.code	16
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	gpio_init:
+  25              	.LFB47:
+  26              		.file 1 "../common/gpio.c"
+   1:../common/gpio.c **** 
+   2:../common/gpio.c **** #include "platform.h"
+   3:../common/gpio.c **** 
+   4:../common/gpio.c **** #include "gpio.h"
+   5:../common/gpio.c **** 
+   6:../common/gpio.c **** 
+   7:../common/gpio.c **** void gpio_init(const struct gpio_init_table_t *t, int num)
+   8:../common/gpio.c **** {
+  27              		.loc 1 8 1
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 24
+  30              		@ frame_needed = 1, uses_anonymous_args = 0
+  31 0000 90B5     		push	{r4, r7, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 12
+  34              		.cfi_offset 4, -12
+  35              		.cfi_offset 7, -8
+  36              		.cfi_offset 14, -4
+  37 0002 87B0     		sub	sp, sp, #28
+  38              	.LCFI1:
+  39              		.cfi_def_cfa_offset 40
+  40 0004 00AF     		add	r7, sp, #0
+  41              	.LCFI2:
+  42              		.cfi_def_cfa_register 7
+  43 0006 7860     		str	r0, [r7, #4]
+  44 0008 3960     		str	r1, [r7]
+   9:../common/gpio.c **** 	int i;
+  10:../common/gpio.c **** #if defined(STM32F4XX) || defined(STM32F0XX) || defined(STM32G0)
+  11:../common/gpio.c **** 	uint32_t reg;
+  12:../common/gpio.c **** 	for (i = 0; i < num; i++) {
+  45              		.loc 1 12 9
+  46 000a 0023     		movs	r3, #0
+  47 000c 7B61     		str	r3, [r7, #20]
+  48              		.loc 1 12 2
+  49 000e 80E1     		b	.L2
+  50              	.L10:
+  51              	.LBB2:
+  13:../common/gpio.c **** 		uint16_t pos = 0;
+  52              		.loc 1 13 12
+  53 0010 1224     		movs	r4, #18
+  54 0012 3B19     		adds	r3, r7, r4
+  55 0014 0022     		movs	r2, #0
+  56 0016 1A80     		strh	r2, [r3]
+  14:../common/gpio.c **** 
+  15:../common/gpio.c **** 		gpio_set(&t[i], t[i].state);
+  57              		.loc 1 15 14
+  58 0018 7A69     		ldr	r2, [r7, #20]
+  59 001a 1300     		movs	r3, r2
+  60 001c 5B00     		lsls	r3, r3, #1
+  61 001e 9B18     		adds	r3, r3, r2
+  62 0020 9B00     		lsls	r3, r3, #2
+  63 0022 1A00     		movs	r2, r3
+  64              		.loc 1 15 3
+  65 0024 7B68     		ldr	r3, [r7, #4]
+  66 0026 9818     		adds	r0, r3, r2
+  67              		.loc 1 15 20
+  68 0028 7A69     		ldr	r2, [r7, #20]
+  69 002a 1300     		movs	r3, r2
+  70 002c 5B00     		lsls	r3, r3, #1
+  71 002e 9B18     		adds	r3, r3, r2
+  72 0030 9B00     		lsls	r3, r3, #2
+  73 0032 1A00     		movs	r2, r3
+  74 0034 7B68     		ldr	r3, [r7, #4]
+  75 0036 9B18     		adds	r3, r3, r2
+  76              		.loc 1 15 23
+  77 0038 9B7A     		ldrb	r3, [r3, #10]
+  78              		.loc 1 15 3
+  79 003a 1900     		movs	r1, r3
+  80 003c FFF7FEFF 		bl	gpio_set
+  16:../common/gpio.c **** 
+  17:../common/gpio.c **** 		for (pos = 0; pos < 16; pos++) {
+  81              		.loc 1 17 12
+  82 0040 3B19     		adds	r3, r7, r4
+  83 0042 0022     		movs	r2, #0
+  84 0044 1A80     		strh	r2, [r3]
+  85              		.loc 1 17 3
+  86 0046 5BE1     		b	.L3
+  87              	.L9:
+  18:../common/gpio.c **** 			if (!(t[i].pin & (1 << pos))) {
+  88              		.loc 1 18 11
+  89 0048 7A69     		ldr	r2, [r7, #20]
+  90 004a 1300     		movs	r3, r2
+  91 004c 5B00     		lsls	r3, r3, #1
+  92 004e 9B18     		adds	r3, r3, r2
+  93 0050 9B00     		lsls	r3, r3, #2
+  94 0052 1A00     		movs	r2, r3
+  95 0054 7B68     		ldr	r3, [r7, #4]
+  96 0056 9B18     		adds	r3, r3, r2
+  97              		.loc 1 18 14
+  98 0058 9B88     		ldrh	r3, [r3, #4]
+  99 005a 1A00     		movs	r2, r3
+ 100              		.loc 1 18 8
+ 101 005c 1221     		movs	r1, #18
+ 102 005e 7B18     		adds	r3, r7, r1
+ 103 0060 1B88     		ldrh	r3, [r3]
+ 104 0062 1A41     		asrs	r2, r2, r3
+ 105 0064 1300     		movs	r3, r2
+ 106 0066 0122     		movs	r2, #1
+ 107 0068 1340     		ands	r3, r2
+ 108              		.loc 1 18 7
+ 109 006a 00D1     		bne	.LCB74
+ 110 006c 41E1     		b	.L11	@long jump
+ 111              	.LCB74:
+  19:../common/gpio.c **** 				continue;
+  20:../common/gpio.c **** 			}
+  21:../common/gpio.c **** 
+  22:../common/gpio.c **** 			if (t[i].af) {
+ 112              		.loc 1 22 9
+ 113 006e 7A69     		ldr	r2, [r7, #20]
+ 114 0070 1300     		movs	r3, r2
+ 115 0072 5B00     		lsls	r3, r3, #1
+ 116 0074 9B18     		adds	r3, r3, r2
+ 117 0076 9B00     		lsls	r3, r3, #2
+ 118 0078 1A00     		movs	r2, r3
+ 119 007a 7B68     		ldr	r3, [r7, #4]
+ 120 007c 9B18     		adds	r3, r3, r2
+ 121              		.loc 1 22 12
+ 122 007e 1B89     		ldrh	r3, [r3, #8]
+ 123              		.loc 1 22 7
+ 124 0080 002B     		cmp	r3, #0
+ 125 0082 3FD0     		beq	.L6
+ 126              	.LBB3:
+  23:../common/gpio.c **** 				uint32_t idx = ((uint32_t)(pos & (uint32_t)0x07U) * 4U);
+ 127              		.loc 1 23 21
+ 128 0084 7B18     		adds	r3, r7, r1
+ 129 0086 1B88     		ldrh	r3, [r3]
+ 130 0088 0722     		movs	r2, #7
+ 131 008a 1340     		ands	r3, r2
+ 132              		.loc 1 23 14
+ 133 008c 9B00     		lsls	r3, r3, #2
+ 134 008e FB60     		str	r3, [r7, #12]
+  24:../common/gpio.c **** 				reg = t[i].gpio->AFR[pos >> 3];
+ 135              		.loc 1 24 12
+ 136 0090 7A69     		ldr	r2, [r7, #20]
+ 137 0092 1300     		movs	r3, r2
+ 138 0094 5B00     		lsls	r3, r3, #1
+ 139 0096 9B18     		adds	r3, r3, r2
+ 140 0098 9B00     		lsls	r3, r3, #2
+ 141 009a 1A00     		movs	r2, r3
+ 142 009c 7B68     		ldr	r3, [r7, #4]
+ 143 009e 9B18     		adds	r3, r3, r2
+ 144              		.loc 1 24 15
+ 145 00a0 1B68     		ldr	r3, [r3]
+ 146              		.loc 1 24 30
+ 147 00a2 7A18     		adds	r2, r7, r1
+ 148 00a4 1288     		ldrh	r2, [r2]
+ 149 00a6 D208     		lsrs	r2, r2, #3
+ 150 00a8 92B2     		uxth	r2, r2
+ 151              		.loc 1 24 9
+ 152 00aa 0832     		adds	r2, r2, #8
+ 153 00ac 9200     		lsls	r2, r2, #2
+ 154 00ae D358     		ldr	r3, [r2, r3]
+ 155 00b0 BB60     		str	r3, [r7, #8]
+  25:../common/gpio.c **** 				reg &= ~((uint32_t)0xFU << idx) ;
+ 156              		.loc 1 25 29
+ 157 00b2 0F22     		movs	r2, #15
+ 158 00b4 FB68     		ldr	r3, [r7, #12]
+ 159 00b6 9A40     		lsls	r2, r2, r3
+ 160 00b8 1300     		movs	r3, r2
+ 161              		.loc 1 25 12
+ 162 00ba DA43     		mvns	r2, r3
+ 163              		.loc 1 25 9
+ 164 00bc BB68     		ldr	r3, [r7, #8]
+ 165 00be 1340     		ands	r3, r2
+ 166 00c0 BB60     		str	r3, [r7, #8]
+  26:../common/gpio.c **** 				reg |= ((uint32_t)(t[i].af) << idx);
+ 167              		.loc 1 26 25
+ 168 00c2 7A69     		ldr	r2, [r7, #20]
+ 169 00c4 1300     		movs	r3, r2
+ 170 00c6 5B00     		lsls	r3, r3, #1
+ 171 00c8 9B18     		adds	r3, r3, r2
+ 172 00ca 9B00     		lsls	r3, r3, #2
+ 173 00cc 1A00     		movs	r2, r3
+ 174 00ce 7B68     		ldr	r3, [r7, #4]
+ 175 00d0 9B18     		adds	r3, r3, r2
+ 176              		.loc 1 26 28
+ 177 00d2 1B89     		ldrh	r3, [r3, #8]
+ 178              		.loc 1 26 13
+ 179 00d4 1A00     		movs	r2, r3
+ 180              		.loc 1 26 33
+ 181 00d6 FB68     		ldr	r3, [r7, #12]
+ 182 00d8 9A40     		lsls	r2, r2, r3
+ 183 00da 1300     		movs	r3, r2
+ 184              		.loc 1 26 9
+ 185 00dc BA68     		ldr	r2, [r7, #8]
+ 186 00de 1343     		orrs	r3, r2
+ 187 00e0 BB60     		str	r3, [r7, #8]
+  27:../common/gpio.c **** 				t[i].gpio->AFR[pos >> 3] = reg;
+ 188              		.loc 1 27 6
+ 189 00e2 7A69     		ldr	r2, [r7, #20]
+ 190 00e4 1300     		movs	r3, r2
+ 191 00e6 5B00     		lsls	r3, r3, #1
+ 192 00e8 9B18     		adds	r3, r3, r2
+ 193 00ea 9B00     		lsls	r3, r3, #2
+ 194 00ec 1A00     		movs	r2, r3
+ 195 00ee 7B68     		ldr	r3, [r7, #4]
+ 196 00f0 9B18     		adds	r3, r3, r2
+ 197              		.loc 1 27 9
+ 198 00f2 1B68     		ldr	r3, [r3]
+ 199              		.loc 1 27 24
+ 200 00f4 7A18     		adds	r2, r7, r1
+ 201 00f6 1288     		ldrh	r2, [r2]
+ 202 00f8 D208     		lsrs	r2, r2, #3
+ 203 00fa 92B2     		uxth	r2, r2
+ 204              		.loc 1 27 30
+ 205 00fc 0832     		adds	r2, r2, #8
+ 206 00fe 9200     		lsls	r2, r2, #2
+ 207 0100 B968     		ldr	r1, [r7, #8]
+ 208 0102 D150     		str	r1, [r2, r3]
+ 209              	.L6:
+ 210              	.LBE3:
+  28:../common/gpio.c **** 			}
+  29:../common/gpio.c **** 
+  30:../common/gpio.c **** 			if (((t[i].mode & 3) == 1) || ((t[i].mode & 3) == 2)) {
+ 211              		.loc 1 30 11
+ 212 0104 7A69     		ldr	r2, [r7, #20]
+ 213 0106 1300     		movs	r3, r2
+ 214 0108 5B00     		lsls	r3, r3, #1
+ 215 010a 9B18     		adds	r3, r3, r2
+ 216 010c 9B00     		lsls	r3, r3, #2
+ 217 010e 1A00     		movs	r2, r3
+ 218 0110 7B68     		ldr	r3, [r7, #4]
+ 219 0112 9B18     		adds	r3, r3, r2
+ 220              		.loc 1 30 14
+ 221 0114 9B79     		ldrb	r3, [r3, #6]
+ 222              		.loc 1 30 20
+ 223 0116 1A00     		movs	r2, r3
+ 224 0118 0323     		movs	r3, #3
+ 225 011a 1340     		ands	r3, r2
+ 226              		.loc 1 30 7
+ 227 011c 012B     		cmp	r3, #1
+ 228 011e 0DD0     		beq	.L7
+ 229              		.loc 1 30 37 discriminator 1
+ 230 0120 7A69     		ldr	r2, [r7, #20]
+ 231 0122 1300     		movs	r3, r2
+ 232 0124 5B00     		lsls	r3, r3, #1
+ 233 0126 9B18     		adds	r3, r3, r2
+ 234 0128 9B00     		lsls	r3, r3, #2
+ 235 012a 1A00     		movs	r2, r3
+ 236 012c 7B68     		ldr	r3, [r7, #4]
+ 237 012e 9B18     		adds	r3, r3, r2
+ 238              		.loc 1 30 40 discriminator 1
+ 239 0130 9B79     		ldrb	r3, [r3, #6]
+ 240              		.loc 1 30 46 discriminator 1
+ 241 0132 1A00     		movs	r2, r3
+ 242 0134 0323     		movs	r3, #3
+ 243 0136 1340     		ands	r3, r2
+ 244              		.loc 1 30 31 discriminator 1
+ 245 0138 022B     		cmp	r3, #2
+ 246 013a 6CD1     		bne	.L8
+ 247              	.L7:
+  31:../common/gpio.c **** 				reg = t[i].gpio->OSPEEDR;
+ 248              		.loc 1 31 12
+ 249 013c 7A69     		ldr	r2, [r7, #20]
+ 250 013e 1300     		movs	r3, r2
+ 251 0140 5B00     		lsls	r3, r3, #1
+ 252 0142 9B18     		adds	r3, r3, r2
+ 253 0144 9B00     		lsls	r3, r3, #2
+ 254 0146 1A00     		movs	r2, r3
+ 255 0148 7B68     		ldr	r3, [r7, #4]
+ 256 014a 9B18     		adds	r3, r3, r2
+ 257              		.loc 1 31 15
+ 258 014c 1B68     		ldr	r3, [r3]
+ 259              		.loc 1 31 9
+ 260 014e 9B68     		ldr	r3, [r3, #8]
+ 261 0150 BB60     		str	r3, [r7, #8]
+  32:../common/gpio.c **** 				reg &= ~(3 << (pos * 2));
+ 262              		.loc 1 32 24
+ 263 0152 1221     		movs	r1, #18
+ 264 0154 7B18     		adds	r3, r7, r1
+ 265 0156 1B88     		ldrh	r3, [r3]
+ 266 0158 5B00     		lsls	r3, r3, #1
+ 267              		.loc 1 32 16
+ 268 015a 0322     		movs	r2, #3
+ 269 015c 9A40     		lsls	r2, r2, r3
+ 270 015e 1300     		movs	r3, r2
+ 271              		.loc 1 32 12
+ 272 0160 DB43     		mvns	r3, r3
+ 273 0162 1A00     		movs	r2, r3
+ 274              		.loc 1 32 9
+ 275 0164 BB68     		ldr	r3, [r7, #8]
+ 276 0166 1340     		ands	r3, r2
+ 277 0168 BB60     		str	r3, [r7, #8]
+  33:../common/gpio.c **** 				reg |= (t[i].speed << (pos * 2));
+ 278              		.loc 1 33 14
+ 279 016a 7A69     		ldr	r2, [r7, #20]
+ 280 016c 1300     		movs	r3, r2
+ 281 016e 5B00     		lsls	r3, r3, #1
+ 282 0170 9B18     		adds	r3, r3, r2
+ 283 0172 9B00     		lsls	r3, r3, #2
+ 284 0174 1A00     		movs	r2, r3
+ 285 0176 7B68     		ldr	r3, [r7, #4]
+ 286 0178 9B18     		adds	r3, r3, r2
+ 287              		.loc 1 33 17
+ 288 017a DB79     		ldrb	r3, [r3, #7]
+ 289 017c 1A00     		movs	r2, r3
+ 290              		.loc 1 33 32
+ 291 017e 7B18     		adds	r3, r7, r1
+ 292 0180 1B88     		ldrh	r3, [r3]
+ 293 0182 5B00     		lsls	r3, r3, #1
+ 294              		.loc 1 33 24
+ 295 0184 9A40     		lsls	r2, r2, r3
+ 296 0186 1300     		movs	r3, r2
+ 297 0188 1A00     		movs	r2, r3
+ 298              		.loc 1 33 9
+ 299 018a BB68     		ldr	r3, [r7, #8]
+ 300 018c 1343     		orrs	r3, r2
+ 301 018e BB60     		str	r3, [r7, #8]
+  34:../common/gpio.c **** 				t[i].gpio->OSPEEDR = reg;
+ 302              		.loc 1 34 6
+ 303 0190 7A69     		ldr	r2, [r7, #20]
+ 304 0192 1300     		movs	r3, r2
+ 305 0194 5B00     		lsls	r3, r3, #1
+ 306 0196 9B18     		adds	r3, r3, r2
+ 307 0198 9B00     		lsls	r3, r3, #2
+ 308 019a 1A00     		movs	r2, r3
+ 309 019c 7B68     		ldr	r3, [r7, #4]
+ 310 019e 9B18     		adds	r3, r3, r2
+ 311              		.loc 1 34 9
+ 312 01a0 1B68     		ldr	r3, [r3]
+ 313              		.loc 1 34 24
+ 314 01a2 BA68     		ldr	r2, [r7, #8]
+ 315 01a4 9A60     		str	r2, [r3, #8]
+  35:../common/gpio.c **** 
+  36:../common/gpio.c **** 				reg = t[i].gpio->OTYPER;
+ 316              		.loc 1 36 12
+ 317 01a6 7A69     		ldr	r2, [r7, #20]
+ 318 01a8 1300     		movs	r3, r2
+ 319 01aa 5B00     		lsls	r3, r3, #1
+ 320 01ac 9B18     		adds	r3, r3, r2
+ 321 01ae 9B00     		lsls	r3, r3, #2
+ 322 01b0 1A00     		movs	r2, r3
+ 323 01b2 7B68     		ldr	r3, [r7, #4]
+ 324 01b4 9B18     		adds	r3, r3, r2
+ 325              		.loc 1 36 15
+ 326 01b6 1B68     		ldr	r3, [r3]
+ 327              		.loc 1 36 9
+ 328 01b8 5B68     		ldr	r3, [r3, #4]
+ 329 01ba BB60     		str	r3, [r7, #8]
+  37:../common/gpio.c **** 				reg &= ~(1 << pos);
+ 330              		.loc 1 37 16
+ 331 01bc 7B18     		adds	r3, r7, r1
+ 332 01be 1B88     		ldrh	r3, [r3]
+ 333 01c0 0122     		movs	r2, #1
+ 334 01c2 9A40     		lsls	r2, r2, r3
+ 335 01c4 1300     		movs	r3, r2
+ 336              		.loc 1 37 12
+ 337 01c6 DB43     		mvns	r3, r3
+ 338 01c8 1A00     		movs	r2, r3
+ 339              		.loc 1 37 9
+ 340 01ca BB68     		ldr	r3, [r7, #8]
+ 341 01cc 1340     		ands	r3, r2
+ 342 01ce BB60     		str	r3, [r7, #8]
+  38:../common/gpio.c **** 				reg |= (((t[i].mode >> 4) & 1) << pos);
+ 343              		.loc 1 38 16
+ 344 01d0 7A69     		ldr	r2, [r7, #20]
+ 345 01d2 1300     		movs	r3, r2
+ 346 01d4 5B00     		lsls	r3, r3, #1
+ 347 01d6 9B18     		adds	r3, r3, r2
+ 348 01d8 9B00     		lsls	r3, r3, #2
+ 349 01da 1A00     		movs	r2, r3
+ 350 01dc 7B68     		ldr	r3, [r7, #4]
+ 351 01de 9B18     		adds	r3, r3, r2
+ 352              		.loc 1 38 19
+ 353 01e0 9B79     		ldrb	r3, [r3, #6]
+ 354              		.loc 1 38 31
+ 355 01e2 1B09     		lsrs	r3, r3, #4
+ 356 01e4 DBB2     		uxtb	r3, r3
+ 357 01e6 1A00     		movs	r2, r3
+ 358 01e8 0123     		movs	r3, #1
+ 359 01ea 1A40     		ands	r2, r3
+ 360              		.loc 1 38 36
+ 361 01ec 7B18     		adds	r3, r7, r1
+ 362 01ee 1B88     		ldrh	r3, [r3]
+ 363 01f0 9A40     		lsls	r2, r2, r3
+ 364 01f2 1300     		movs	r3, r2
+ 365 01f4 1A00     		movs	r2, r3
+ 366              		.loc 1 38 9
+ 367 01f6 BB68     		ldr	r3, [r7, #8]
+ 368 01f8 1343     		orrs	r3, r2
+ 369 01fa BB60     		str	r3, [r7, #8]
+  39:../common/gpio.c **** 				t[i].gpio->OTYPER = (uint16_t)reg;
+ 370              		.loc 1 39 25
+ 371 01fc BB68     		ldr	r3, [r7, #8]
+ 372 01fe 99B2     		uxth	r1, r3
+ 373              		.loc 1 39 6
+ 374 0200 7A69     		ldr	r2, [r7, #20]
+ 375 0202 1300     		movs	r3, r2
+ 376 0204 5B00     		lsls	r3, r3, #1
+ 377 0206 9B18     		adds	r3, r3, r2
+ 378 0208 9B00     		lsls	r3, r3, #2
+ 379 020a 1A00     		movs	r2, r3
+ 380 020c 7B68     		ldr	r3, [r7, #4]
+ 381 020e 9B18     		adds	r3, r3, r2
+ 382              		.loc 1 39 9
+ 383 0210 1B68     		ldr	r3, [r3]
+ 384              		.loc 1 39 25
+ 385 0212 0A00     		movs	r2, r1
+ 386              		.loc 1 39 23
+ 387 0214 5A60     		str	r2, [r3, #4]
+ 388              	.L8:
+  40:../common/gpio.c **** 			}
+  41:../common/gpio.c **** 
+  42:../common/gpio.c **** 			reg = t[i].gpio->MODER;
+ 389              		.loc 1 42 11
+ 390 0216 7A69     		ldr	r2, [r7, #20]
+ 391 0218 1300     		movs	r3, r2
+ 392 021a 5B00     		lsls	r3, r3, #1
+ 393 021c 9B18     		adds	r3, r3, r2
+ 394 021e 9B00     		lsls	r3, r3, #2
+ 395 0220 1A00     		movs	r2, r3
+ 396 0222 7B68     		ldr	r3, [r7, #4]
+ 397 0224 9B18     		adds	r3, r3, r2
+ 398              		.loc 1 42 14
+ 399 0226 1B68     		ldr	r3, [r3]
+ 400              		.loc 1 42 8
+ 401 0228 1B68     		ldr	r3, [r3]
+ 402 022a BB60     		str	r3, [r7, #8]
+  43:../common/gpio.c **** 			reg &= ~(3 << (pos * 2));
+ 403              		.loc 1 43 23
+ 404 022c 1221     		movs	r1, #18
+ 405 022e 7B18     		adds	r3, r7, r1
+ 406 0230 1B88     		ldrh	r3, [r3]
+ 407 0232 5B00     		lsls	r3, r3, #1
+ 408              		.loc 1 43 15
+ 409 0234 0322     		movs	r2, #3
+ 410 0236 9A40     		lsls	r2, r2, r3
+ 411 0238 1300     		movs	r3, r2
+ 412              		.loc 1 43 11
+ 413 023a DB43     		mvns	r3, r3
+ 414 023c 1A00     		movs	r2, r3
+ 415              		.loc 1 43 8
+ 416 023e BB68     		ldr	r3, [r7, #8]
+ 417 0240 1340     		ands	r3, r2
+ 418 0242 BB60     		str	r3, [r7, #8]
+  44:../common/gpio.c **** 			reg |= (t[i].mode << (pos * 2));
+ 419              		.loc 1 44 13
+ 420 0244 7A69     		ldr	r2, [r7, #20]
+ 421 0246 1300     		movs	r3, r2
+ 422 0248 5B00     		lsls	r3, r3, #1
+ 423 024a 9B18     		adds	r3, r3, r2
+ 424 024c 9B00     		lsls	r3, r3, #2
+ 425 024e 1A00     		movs	r2, r3
+ 426 0250 7B68     		ldr	r3, [r7, #4]
+ 427 0252 9B18     		adds	r3, r3, r2
+ 428              		.loc 1 44 16
+ 429 0254 9B79     		ldrb	r3, [r3, #6]
+ 430 0256 1A00     		movs	r2, r3
+ 431              		.loc 1 44 30
+ 432 0258 7B18     		adds	r3, r7, r1
+ 433 025a 1B88     		ldrh	r3, [r3]
+ 434 025c 5B00     		lsls	r3, r3, #1
+ 435              		.loc 1 44 22
+ 436 025e 9A40     		lsls	r2, r2, r3
+ 437 0260 1300     		movs	r3, r2
+ 438 0262 1A00     		movs	r2, r3
+ 439              		.loc 1 44 8
+ 440 0264 BB68     		ldr	r3, [r7, #8]
+ 441 0266 1343     		orrs	r3, r2
+ 442 0268 BB60     		str	r3, [r7, #8]
+  45:../common/gpio.c **** 			t[i].gpio->MODER = reg;
+ 443              		.loc 1 45 5
+ 444 026a 7A69     		ldr	r2, [r7, #20]
+ 445 026c 1300     		movs	r3, r2
+ 446 026e 5B00     		lsls	r3, r3, #1
+ 447 0270 9B18     		adds	r3, r3, r2
+ 448 0272 9B00     		lsls	r3, r3, #2
+ 449 0274 1A00     		movs	r2, r3
+ 450 0276 7B68     		ldr	r3, [r7, #4]
+ 451 0278 9B18     		adds	r3, r3, r2
+ 452              		.loc 1 45 8
+ 453 027a 1B68     		ldr	r3, [r3]
+ 454              		.loc 1 45 21
+ 455 027c BA68     		ldr	r2, [r7, #8]
+ 456 027e 1A60     		str	r2, [r3]
+  46:../common/gpio.c **** 
+  47:../common/gpio.c **** 			reg = t[i].gpio->PUPDR;
+ 457              		.loc 1 47 11
+ 458 0280 7A69     		ldr	r2, [r7, #20]
+ 459 0282 1300     		movs	r3, r2
+ 460 0284 5B00     		lsls	r3, r3, #1
+ 461 0286 9B18     		adds	r3, r3, r2
+ 462 0288 9B00     		lsls	r3, r3, #2
+ 463 028a 1A00     		movs	r2, r3
+ 464 028c 7B68     		ldr	r3, [r7, #4]
+ 465 028e 9B18     		adds	r3, r3, r2
+ 466              		.loc 1 47 14
+ 467 0290 1B68     		ldr	r3, [r3]
+ 468              		.loc 1 47 8
+ 469 0292 DB68     		ldr	r3, [r3, #12]
+ 470 0294 BB60     		str	r3, [r7, #8]
+  48:../common/gpio.c **** 			reg &= ~(3 << (pos * 2));
+ 471              		.loc 1 48 23
+ 472 0296 7B18     		adds	r3, r7, r1
+ 473 0298 1B88     		ldrh	r3, [r3]
+ 474 029a 5B00     		lsls	r3, r3, #1
+ 475              		.loc 1 48 15
+ 476 029c 0322     		movs	r2, #3
+ 477 029e 9A40     		lsls	r2, r2, r3
+ 478 02a0 1300     		movs	r3, r2
+ 479              		.loc 1 48 11
+ 480 02a2 DB43     		mvns	r3, r3
+ 481 02a4 1A00     		movs	r2, r3
+ 482              		.loc 1 48 8
+ 483 02a6 BB68     		ldr	r3, [r7, #8]
+ 484 02a8 1340     		ands	r3, r2
+ 485 02aa BB60     		str	r3, [r7, #8]
+  49:../common/gpio.c **** 			reg |= (((t[i].mode >> 6) & 1) << (pos * 2));
+ 486              		.loc 1 49 15
+ 487 02ac 7A69     		ldr	r2, [r7, #20]
+ 488 02ae 1300     		movs	r3, r2
+ 489 02b0 5B00     		lsls	r3, r3, #1
+ 490 02b2 9B18     		adds	r3, r3, r2
+ 491 02b4 9B00     		lsls	r3, r3, #2
+ 492 02b6 1A00     		movs	r2, r3
+ 493 02b8 7B68     		ldr	r3, [r7, #4]
+ 494 02ba 9B18     		adds	r3, r3, r2
+ 495              		.loc 1 49 18
+ 496 02bc 9B79     		ldrb	r3, [r3, #6]
+ 497              		.loc 1 49 30
+ 498 02be 9B09     		lsrs	r3, r3, #6
+ 499 02c0 DBB2     		uxtb	r3, r3
+ 500 02c2 1A00     		movs	r2, r3
+ 501 02c4 0123     		movs	r3, #1
+ 502 02c6 1A40     		ands	r2, r3
+ 503              		.loc 1 49 43
+ 504 02c8 7B18     		adds	r3, r7, r1
+ 505 02ca 1B88     		ldrh	r3, [r3]
+ 506 02cc 5B00     		lsls	r3, r3, #1
+ 507              		.loc 1 49 35
+ 508 02ce 9A40     		lsls	r2, r2, r3
+ 509 02d0 1300     		movs	r3, r2
+ 510 02d2 1A00     		movs	r2, r3
+ 511              		.loc 1 49 8
+ 512 02d4 BB68     		ldr	r3, [r7, #8]
+ 513 02d6 1343     		orrs	r3, r2
+ 514 02d8 BB60     		str	r3, [r7, #8]
+  50:../common/gpio.c **** 			t[i].gpio->PUPDR = reg;
+ 515              		.loc 1 50 5
+ 516 02da 7A69     		ldr	r2, [r7, #20]
+ 517 02dc 1300     		movs	r3, r2
+ 518 02de 5B00     		lsls	r3, r3, #1
+ 519 02e0 9B18     		adds	r3, r3, r2
+ 520 02e2 9B00     		lsls	r3, r3, #2
+ 521 02e4 1A00     		movs	r2, r3
+ 522 02e6 7B68     		ldr	r3, [r7, #4]
+ 523 02e8 9B18     		adds	r3, r3, r2
+ 524              		.loc 1 50 8
+ 525 02ea 1B68     		ldr	r3, [r3]
+ 526              		.loc 1 50 21
+ 527 02ec BA68     		ldr	r2, [r7, #8]
+ 528 02ee DA60     		str	r2, [r3, #12]
+ 529 02f0 00E0     		b	.L5
+ 530              	.L11:
+  19:../common/gpio.c **** 			}
+ 531              		.loc 1 19 5
+ 532 02f2 C046     		nop
+ 533              	.L5:
+  17:../common/gpio.c **** 			if (!(t[i].pin & (1 << pos))) {
+ 534              		.loc 1 17 30 discriminator 2
+ 535 02f4 1221     		movs	r1, #18
+ 536 02f6 7B18     		adds	r3, r7, r1
+ 537 02f8 1A88     		ldrh	r2, [r3]
+ 538 02fa 7B18     		adds	r3, r7, r1
+ 539 02fc 0132     		adds	r2, r2, #1
+ 540 02fe 1A80     		strh	r2, [r3]
+ 541              	.L3:
+  17:../common/gpio.c **** 			if (!(t[i].pin & (1 << pos))) {
+ 542              		.loc 1 17 3 discriminator 1
+ 543 0300 1223     		movs	r3, #18
+ 544 0302 FB18     		adds	r3, r7, r3
+ 545 0304 1B88     		ldrh	r3, [r3]
+ 546 0306 0F2B     		cmp	r3, #15
+ 547 0308 00D8     		bhi	.LCB432
+ 548 030a 9DE6     		b	.L9	@long jump
+ 549              	.LCB432:
+ 550              	.LBE2:
+  12:../common/gpio.c **** 		uint16_t pos = 0;
+ 551              		.loc 1 12 24 discriminator 2
+ 552 030c 7B69     		ldr	r3, [r7, #20]
+ 553 030e 0133     		adds	r3, r3, #1
+ 554 0310 7B61     		str	r3, [r7, #20]
+ 555              	.L2:
+  12:../common/gpio.c **** 		uint16_t pos = 0;
+ 556              		.loc 1 12 2 discriminator 1
+ 557 0312 7A69     		ldr	r2, [r7, #20]
+ 558 0314 3B68     		ldr	r3, [r7]
+ 559 0316 9A42     		cmp	r2, r3
+ 560 0318 00DA     		bge	.LCB442
+ 561 031a 79E6     		b	.L10	@long jump
+ 562              	.LCB442:
+  51:../common/gpio.c **** 		}
+  52:../common/gpio.c **** 	}
+  53:../common/gpio.c **** #else
+  54:../common/gpio.c **** 	for (i = 0; i < num; i++) {
+  55:../common/gpio.c **** 		uint16_t pos = 0;
+  56:../common/gpio.c **** 		uint32_t mode;
+  57:../common/gpio.c **** 
+  58:../common/gpio.c **** 		mode = t[i].mode & 0xf;
+  59:../common/gpio.c **** 		if (t[i].mode & 0x10) {
+  60:../common/gpio.c **** 			mode |= t[i].speed;
+  61:../common/gpio.c **** 		}
+  62:../common/gpio.c **** 
+  63:../common/gpio.c **** 		if (t[i].pin & 0xff) {
+  64:../common/gpio.c **** 			uint32_t cr;
+  65:../common/gpio.c **** 			cr = t[i].gpio->CRL;
+  66:../common/gpio.c **** 			
+  67:../common/gpio.c **** 			for (pos = 0; pos < 8; pos++) {
+  68:../common/gpio.c **** 				if (!(t[i].pin & (1 << pos))) {
+  69:../common/gpio.c **** 					continue;
+  70:../common/gpio.c **** 				}
+  71:../common/gpio.c **** 
+  72:../common/gpio.c **** 				uint32_t pinmask = 0x0f << (4*pos);
+  73:../common/gpio.c **** 
+  74:../common/gpio.c **** 				cr &= ~pinmask;
+  75:../common/gpio.c **** 				cr |= mode << (4*pos);
+  76:../common/gpio.c **** 
+  77:../common/gpio.c **** 				if (t[i].mode == GPIO_MODE_IPD) {
+  78:../common/gpio.c **** 					t[i].gpio->BRR = 0x01 << pos;
+  79:../common/gpio.c **** 				} else if (t[i].mode == GPIO_MODE_IPU) {
+  80:../common/gpio.c **** 					t[i].gpio->BSRR = 0x01 << pos;
+  81:../common/gpio.c **** 				}
+  82:../common/gpio.c **** 			}
+  83:../common/gpio.c **** 
+  84:../common/gpio.c **** 			t[i].gpio->CRL = cr;
+  85:../common/gpio.c **** 		}
+  86:../common/gpio.c **** 
+  87:../common/gpio.c **** 		if (t[i].pin & 0xff00) {
+  88:../common/gpio.c **** 			uint32_t cr;
+  89:../common/gpio.c **** 			cr = t[i].gpio->CRH;
+  90:../common/gpio.c **** 
+  91:../common/gpio.c **** 			for (pos = 0; pos < 8; pos++) {
+  92:../common/gpio.c **** 				if (!(t[i].pin & (1 << (pos+8)))) {
+  93:../common/gpio.c **** 					continue;
+  94:../common/gpio.c **** 				}
+  95:../common/gpio.c **** 
+  96:../common/gpio.c **** 				uint32_t pinmask = 0x0f << (4*pos);
+  97:../common/gpio.c **** 
+  98:../common/gpio.c **** 				cr &= ~pinmask;
+  99:../common/gpio.c **** 				cr |= mode << (4*pos);
+ 100:../common/gpio.c **** 
+ 101:../common/gpio.c **** 				if (t[i].mode == GPIO_MODE_IPD) {
+ 102:../common/gpio.c **** 					t[i].gpio->BRR = 0x01 << pos;
+ 103:../common/gpio.c **** 				} else if (t[i].mode == GPIO_MODE_IPU) {
+ 104:../common/gpio.c **** 					t[i].gpio->BSRR = 0x01 << pos;
+ 105:../common/gpio.c **** 				}
+ 106:../common/gpio.c **** 			}
+ 107:../common/gpio.c **** 
+ 108:../common/gpio.c **** 			t[i].gpio->CRH = cr;
+ 109:../common/gpio.c **** 		}
+ 110:../common/gpio.c **** 
+ 111:../common/gpio.c **** 		if (!(t[i].mode == GPIO_MODE_AIN || t[i].mode == GPIO_MODE_IN_FLOATING || t[i].mode == GPIO_MODE_
+ 112:../common/gpio.c **** 			gpio_set(&t[i], t[i].state);
+ 113:../common/gpio.c **** 		}
+ 114:../common/gpio.c **** 	}
+ 115:../common/gpio.c **** #endif
+ 116:../common/gpio.c **** }
+ 563              		.loc 1 116 1
+ 564 031c C046     		nop
+ 565 031e C046     		nop
+ 566 0320 BD46     		mov	sp, r7
+ 567 0322 07B0     		add	sp, sp, #28
+ 568              		@ sp needed
+ 569 0324 90BD     		pop	{r4, r7, pc}
+ 570              		.cfi_endproc
+ 571              	.LFE47:
+ 573              		.section	.text.gpio_wait_state,"ax",%progbits
+ 574              		.align	1
+ 575              		.global	gpio_wait_state
+ 576              		.syntax unified
+ 577              		.code	16
+ 578              		.thumb_func
+ 579              		.fpu softvfp
+ 581              	gpio_wait_state:
+ 582              	.LFB48:
+ 117:../common/gpio.c **** 
+ 118:../common/gpio.c **** uint8_t gpio_wait_state(const struct gpio_init_table_t *gpio, uint8_t state)
+ 119:../common/gpio.c **** {
+ 583              		.loc 1 119 1
+ 584              		.cfi_startproc
+ 585              		@ args = 0, pretend = 0, frame = 16
+ 586              		@ frame_needed = 1, uses_anonymous_args = 0
+ 587 0000 80B5     		push	{r7, lr}
+ 588              	.LCFI3:
+ 589              		.cfi_def_cfa_offset 8
+ 590              		.cfi_offset 7, -8
+ 591              		.cfi_offset 14, -4
+ 592 0002 84B0     		sub	sp, sp, #16
+ 593              	.LCFI4:
+ 594              		.cfi_def_cfa_offset 24
+ 595 0004 00AF     		add	r7, sp, #0
+ 596              	.LCFI5:
+ 597              		.cfi_def_cfa_register 7
+ 598 0006 7860     		str	r0, [r7, #4]
+ 599 0008 0A00     		movs	r2, r1
+ 600 000a FB1C     		adds	r3, r7, #3
+ 601 000c 1A70     		strb	r2, [r3]
+ 120:../common/gpio.c **** 	volatile uint32_t time = 0xFFFFFF;
+ 602              		.loc 1 120 20
+ 603 000e 114B     		ldr	r3, .L16
+ 604 0010 FB60     		str	r3, [r7, #12]
+ 121:../common/gpio.c **** 
+ 122:../common/gpio.c **** 	while (--time && ((!!(gpio->gpio->IDR & gpio->pin)) != (!!state)));
+ 605              		.loc 1 122 8
+ 606 0012 C046     		nop
+ 607              	.L14:
+ 608              		.loc 1 122 9 discriminator 2
+ 609 0014 FB68     		ldr	r3, [r7, #12]
+ 610 0016 013B     		subs	r3, r3, #1
+ 611              		.loc 1 122 8 discriminator 2
+ 612 0018 FB60     		str	r3, [r7, #12]
+ 613 001a 002B     		cmp	r3, #0
+ 614 001c 11D0     		beq	.L13
+ 615              		.loc 1 122 28 discriminator 1
+ 616 001e 7B68     		ldr	r3, [r7, #4]
+ 617 0020 1B68     		ldr	r3, [r3]
+ 618              		.loc 1 122 34 discriminator 1
+ 619 0022 1B69     		ldr	r3, [r3, #16]
+ 620              		.loc 1 122 46 discriminator 1
+ 621 0024 7A68     		ldr	r2, [r7, #4]
+ 622 0026 9288     		ldrh	r2, [r2, #4]
+ 623              		.loc 1 122 40 discriminator 1
+ 624 0028 1340     		ands	r3, r2
+ 625              		.loc 1 122 54 discriminator 1
+ 626 002a 5A1E     		subs	r2, r3, #1
+ 627 002c 9341     		sbcs	r3, r3, r2
+ 628 002e DAB2     		uxtb	r2, r3
+ 629 0030 FB1C     		adds	r3, r7, #3
+ 630 0032 1B78     		ldrb	r3, [r3]
+ 631 0034 591E     		subs	r1, r3, #1
+ 632 0036 8B41     		sbcs	r3, r3, r1
+ 633 0038 DBB2     		uxtb	r3, r3
+ 634 003a 5340     		eors	r3, r2
+ 635 003c DBB2     		uxtb	r3, r3
+ 636              		.loc 1 122 16 discriminator 1
+ 637 003e 002B     		cmp	r3, #0
+ 638 0040 E8D1     		bne	.L14
+ 639              	.L13:
+ 123:../common/gpio.c **** 
+ 124:../common/gpio.c **** 	return (time > 0)?0:1;
+ 640              		.loc 1 124 21
+ 641 0042 FB68     		ldr	r3, [r7, #12]
+ 642 0044 5A42     		rsbs	r2, r3, #0
+ 643 0046 5341     		adcs	r3, r3, r2
+ 644 0048 DBB2     		uxtb	r3, r3
+ 125:../common/gpio.c **** }
+ 645              		.loc 1 125 1
+ 646 004a 1800     		movs	r0, r3
+ 647 004c BD46     		mov	sp, r7
+ 648 004e 04B0     		add	sp, sp, #16
+ 649              		@ sp needed
+ 650 0050 80BD     		pop	{r7, pc}
+ 651              	.L17:
+ 652 0052 C046     		.align	2
+ 653              	.L16:
+ 654 0054 FFFFFF00 		.word	16777215
+ 655              		.cfi_endproc
+ 656              	.LFE48:
+ 658              		.section	.text.gpio_set,"ax",%progbits
+ 659              		.align	1
+ 660              		.global	gpio_set
+ 661              		.syntax unified
+ 662              		.code	16
+ 663              		.thumb_func
+ 664              		.fpu softvfp
+ 666              	gpio_set:
+ 667              	.LFB49:
+ 126:../common/gpio.c **** 
+ 127:../common/gpio.c **** void gpio_set(const struct gpio_init_table_t *gpio, uint8_t state)
+ 128:../common/gpio.c **** {
+ 668              		.loc 1 128 1
+ 669              		.cfi_startproc
+ 670              		@ args = 0, pretend = 0, frame = 8
+ 671              		@ frame_needed = 1, uses_anonymous_args = 0
+ 672 0000 80B5     		push	{r7, lr}
+ 673              	.LCFI6:
+ 674              		.cfi_def_cfa_offset 8
+ 675              		.cfi_offset 7, -8
+ 676              		.cfi_offset 14, -4
+ 677 0002 82B0     		sub	sp, sp, #8
+ 678              	.LCFI7:
+ 679              		.cfi_def_cfa_offset 16
+ 680 0004 00AF     		add	r7, sp, #0
+ 681              	.LCFI8:
+ 682              		.cfi_def_cfa_register 7
+ 683 0006 7860     		str	r0, [r7, #4]
+ 684 0008 0A00     		movs	r2, r1
+ 685 000a FB1C     		adds	r3, r7, #3
+ 686 000c 1A70     		strb	r2, [r3]
+ 129:../common/gpio.c **** 	switch (state) {
+ 687              		.loc 1 129 2
+ 688 000e FB1C     		adds	r3, r7, #3
+ 689 0010 1B78     		ldrb	r3, [r3]
+ 690 0012 012B     		cmp	r3, #1
+ 691 0014 07D0     		beq	.L19
+ 692 0016 022B     		cmp	r3, #2
+ 693 0018 0BD1     		bne	.L22
+ 130:../common/gpio.c **** 		case GPIO_SET:
+ 131:../common/gpio.c **** #if defined(STM32F4XX)
+ 132:../common/gpio.c **** 			gpio->gpio->BSRRL = gpio->pin;
+ 133:../common/gpio.c **** #else
+ 134:../common/gpio.c **** 			gpio->gpio->BSRR = gpio->pin;
+ 694              		.loc 1 134 27
+ 695 001a 7B68     		ldr	r3, [r7, #4]
+ 696 001c 9A88     		ldrh	r2, [r3, #4]
+ 697              		.loc 1 134 8
+ 698 001e 7B68     		ldr	r3, [r7, #4]
+ 699 0020 1B68     		ldr	r3, [r3]
+ 700              		.loc 1 134 21
+ 701 0022 9A61     		str	r2, [r3, #24]
+ 135:../common/gpio.c **** #endif
+ 136:../common/gpio.c **** 			break;
+ 702              		.loc 1 136 4
+ 703 0024 06E0     		b	.L21
+ 704              	.L19:
+ 137:../common/gpio.c **** 		case GPIO_RESET:
+ 138:../common/gpio.c **** #if defined(STM32F4XX)
+ 139:../common/gpio.c **** 			gpio->gpio->BSRRH = gpio->pin;
+ 140:../common/gpio.c **** #else
+ 141:../common/gpio.c **** 			gpio->gpio->BRR = gpio->pin;
+ 705              		.loc 1 141 26
+ 706 0026 7B68     		ldr	r3, [r7, #4]
+ 707 0028 9A88     		ldrh	r2, [r3, #4]
+ 708              		.loc 1 141 8
+ 709 002a 7B68     		ldr	r3, [r7, #4]
+ 710 002c 1B68     		ldr	r3, [r3]
+ 711              		.loc 1 141 20
+ 712 002e 9A62     		str	r2, [r3, #40]
+ 142:../common/gpio.c **** #endif
+ 143:../common/gpio.c **** 			break;
+ 713              		.loc 1 143 4
+ 714 0030 00E0     		b	.L21
+ 715              	.L22:
+ 144:../common/gpio.c **** 		default:
+ 145:../common/gpio.c **** 			break;
+ 716              		.loc 1 145 4
+ 717 0032 C046     		nop
+ 718              	.L21:
+ 146:../common/gpio.c **** 	}
+ 147:../common/gpio.c **** }
+ 719              		.loc 1 147 1
+ 720 0034 C046     		nop
+ 721 0036 BD46     		mov	sp, r7
+ 722 0038 02B0     		add	sp, sp, #8
+ 723              		@ sp needed
+ 724 003a 80BD     		pop	{r7, pc}
+ 725              		.cfi_endproc
+ 726              	.LFE49:
+ 728              		.section	.text.gpio_get,"ax",%progbits
+ 729              		.align	1
+ 730              		.global	gpio_get
+ 731              		.syntax unified
+ 732              		.code	16
+ 733              		.thumb_func
+ 734              		.fpu softvfp
+ 736              	gpio_get:
+ 737              	.LFB50:
+ 148:../common/gpio.c **** 
+ 149:../common/gpio.c **** uint8_t gpio_get(const struct gpio_init_table_t *gpio)
+ 150:../common/gpio.c **** {
+ 738              		.loc 1 150 1
+ 739              		.cfi_startproc
+ 740              		@ args = 0, pretend = 0, frame = 8
+ 741              		@ frame_needed = 1, uses_anonymous_args = 0
+ 742 0000 80B5     		push	{r7, lr}
+ 743              	.LCFI9:
+ 744              		.cfi_def_cfa_offset 8
+ 745              		.cfi_offset 7, -8
+ 746              		.cfi_offset 14, -4
+ 747 0002 82B0     		sub	sp, sp, #8
+ 748              	.LCFI10:
+ 749              		.cfi_def_cfa_offset 16
+ 750 0004 00AF     		add	r7, sp, #0
+ 751              	.LCFI11:
+ 752              		.cfi_def_cfa_register 7
+ 753 0006 7860     		str	r0, [r7, #4]
+ 151:../common/gpio.c **** 	return !!(gpio->gpio->IDR & gpio->pin);
+ 754              		.loc 1 151 16
+ 755 0008 7B68     		ldr	r3, [r7, #4]
+ 756 000a 1B68     		ldr	r3, [r3]
+ 757              		.loc 1 151 22
+ 758 000c 1B69     		ldr	r3, [r3, #16]
+ 759              		.loc 1 151 34
+ 760 000e 7A68     		ldr	r2, [r7, #4]
+ 761 0010 9288     		ldrh	r2, [r2, #4]
+ 762              		.loc 1 151 28
+ 763 0012 1340     		ands	r3, r2
+ 764              		.loc 1 151 9
+ 765 0014 5A1E     		subs	r2, r3, #1
+ 766 0016 9341     		sbcs	r3, r3, r2
+ 767 0018 DBB2     		uxtb	r3, r3
+ 152:../common/gpio.c **** }
+ 768              		.loc 1 152 1
+ 769 001a 1800     		movs	r0, r3
+ 770 001c BD46     		mov	sp, r7
+ 771 001e 02B0     		add	sp, sp, #8
+ 772              		@ sp needed
+ 773 0020 80BD     		pop	{r7, pc}
+ 774              		.cfi_endproc
+ 775              	.LFE50:
+ 777              		.text
+ 778              	.Letext0:
+ 779              		.file 2 "/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/include/machine/_defa
+ 780              		.file 3 "/home/robot/devel-cortex-m3/lib/picolibc-pic/picolibc/arm-none-eabi/include/sys/_stdint.h
+ 781              		.file 4 "../lib/stm32h/STM32G0xx/Include/system_stm32g0xx.h"
+ 782              		.file 5 "../lib/stm32h/STM32G0xx/Include/stm32g031xx.h"
+ 783              		.file 6 "./platform.h"
+ 784              		.file 7 "../common/gpio.h"
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 gpio.c
+     /tmp/ccrf4oNx.s:16     .text.gpio_init:0000000000000000 $t
+     /tmp/ccrf4oNx.s:24     .text.gpio_init:0000000000000000 gpio_init
+     /tmp/ccrf4oNx.s:666    .text.gpio_set:0000000000000000 gpio_set
+     /tmp/ccrf4oNx.s:574    .text.gpio_wait_state:0000000000000000 $t
+     /tmp/ccrf4oNx.s:581    .text.gpio_wait_state:0000000000000000 gpio_wait_state
+     /tmp/ccrf4oNx.s:654    .text.gpio_wait_state:0000000000000054 $d
+     /tmp/ccrf4oNx.s:659    .text.gpio_set:0000000000000000 $t
+     /tmp/ccrf4oNx.s:729    .text.gpio_get:0000000000000000 $t
+     /tmp/ccrf4oNx.s:736    .text.gpio_get:0000000000000000 gpio_get
+
+NO UNDEFINED SYMBOLS
